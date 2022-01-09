@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+.easyui-linkbutton {
+	border-radius: 20px;
+	margin: 5px;
+	width: 150px;
+	height: 30px;
+}
+
+.panel-title {font-family: 微软雅黑;}
+.icon {
+	margin: -28px 11px;/*-25px 11px;*/
+	position: absolute;
+}
+	
+.more:hover {
+   /* color: #65CCCF; */
+   color:#1588DA;
+}
+.more {
+    padding: 11px;
+    cursor: pointer;
+    font-size: 15;
+    position: absolute;
+/*     color: #7BA7F1; 
+	color: #6DBAF1;*/
+	color:#1187E6;
+}
+.title8 {margin: -36px 150px}/*-34px 140px;*/
+.title6 {margin: -36px 120px}/*-34px 110px;*/
+.title4 {margin: -36px 90px;}/* -34px 80px; */

@@ -1,0 +1,121 @@
+@charset "UTF-8";
+
+body {
+	background: linear-gradient(to top,#5EAECF 0%,#B7D6EE 100%);/* linear-gradient(to right,#69B5D5 0%,#3E88AD 100%); */
+	height:100%;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #0ff;
+}
+
+.left, .right {
+	float:left;
+	width:15%;
+	height:98%;
+	margin-left:1px;
+	border-radius: 5px;
+	border: #0ff 1px solid;
+	box-shadow: 0px 0px 2px 2px rgba(0, 255, 255, .7);
+}
+
+.right {
+	width: 84.3%;
+	height: 98%;
+    float: left;
+    margin-right: -10px;
+    margin-left: 8px;
+	border-radius: 5px;
+	border: #0ff 1px solid;
+	box-shadow: 0px 0px 2px 2px rgba(0, 255, 255, .7);
+}
+
+.block {
+	width: 99.73%;
+	height: 100%;
+}
+
+.commonBoder {
+	border-radius: 5px;
+	border: 1px solid;
+}
+
+.commonBoder h1 {
+	font-family: 方正粗倩简体;
+	font-weight: normal;
+	font-size: 20px;
+	color: white;
+	margin: 0;
+	padding: 1px 0 0 5px;
+	background: rgba(0, 255, 255, .1);
+	border-bottom: rgba(0, 255, 255, .3) 1px solid;
+}
+
+.commonBoder h1 a {
+	height: 65px;
+	display: block;
+	line-height: 65px;
+	padding-left: 50px;
+	background-repeat: no-repeat;
+	background-size: 65px;
+}
+
+.commonBoder h1 a.zzsj {
+	background-image: url(../img/shujuluru.png);
+}
+
+.commonBoder h1 a.cj:hover {
+	background-image: url(../img/shujuluru_o.png);
+}
+
+.commonBoder h1 a.sjcx {
+	background-image: url(../img/shujuchaxun.png);
+}
+
+.commonBoder h1 a.sjcx {
+	background-image: url(../img/shujuchaxun_o.png);
+}
+
+.commonBoder h1 a.sjtj {
+	background-image: url(../img/tongjifenxi.png);
+}
+
+.commonBoder h1 a.sjtj:hover {
+	background-image: url(../img/tongjifenxi_o.png);
+}
+
+.commonBoder h1 a.sjrh {
+	background-image: url(../img/shujuchuanshu.png);
+}
+
+.commonBoder h1 a.sjrh:hover {
+	background-image: url(../img/shujuchuanshu_o.png);
+}
+
+.commonBoder h1 a.ysjwh {
+	background-image: url(../img/zbwh.png);
+}
+
+.commonBoder h1 a.ysjwh:hover {
+	background-image: url(../img/zbwh_o.png);
+}
+
+.commonBoder h1 a.sjwh {
+	background-image: url(../img/shujuweihu.png);
+}
+
+.commonBoder h1 a.sjwh:hover {
+	background-image: url(../img/shujuweihu_o.png);
+}
+
+.navDiv {
+	width: 99%;
+	height: 8%;
+	text-align: center;
+	margin-bottom: 9px;
+}

@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+.table {
+	width: 100%;
+	/* background: #CCE6F8;浅蓝 */
+	background:/* #5e6e86; */#2b3747;
+	border-collapse: collapse;
+	border: #adc3d7 1px solid;
+	border-spacing: 0px;
+	padd: expression(this. cellpadding = 0);
+	color:white;
+}
+.table tr th, .table tr td{
+	line-height: 20px;
+	text-align: center;
+	height: 25px !important;
+	font-family: arial;
+    vertical-align: middle !important;
+}
+.table td {
+	border: #adc3d7 1px solid;
+	font-size: 12px;
+}
+
+.table span{font-size: 5px;}
+.table th {
+	border: #adc3d7 1px solid;
+	padding: 0px 5px;
+	font-size: 14px;
+	/* background: #F3F3F3; */
+}
+#jbxx th, #jbxx td{border: none;text-align: left;}
+#jbxx th{width: 8%;}
+#jbxx .tableFrameForm_info {
+	/* background:#eee; */
+	/* background: #CCE6F8; */
+	 background-color: #495662;
+	line-height:20px;
+	height:20px;
+	text-align:center;
+	border-bottom: #246CAE  1px solid;
+}
+.tableFrameForm_info span {
+	/* color:#555; */
+	color:white;
+	font-size: 14px;
+}
+
+tr .item1 {
+	width: 2%;
+}
+#addRymc .item1 {
+	width:15%;
+}
+
+div > .winButton {
+	width: 80px;
+	float: right;
+	margin-top: 10px;
+}
+
+/* .easyui-window table, .easyui-window td {
+	background:white;
+	border: none;
+	padding: 3.5px;
+} */
+
+.easyui-window input, .easyui-window td > span {
+	width: 160px;
+}
+
+.span{
+	font-size: 8px;
+	line-height: 20px;
+}
+
+.switchbutton-on{
+	background: #CCE6F8;
+}

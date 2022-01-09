@@ -1,0 +1,204 @@
+body {
+	margin: 0px;
+}
+
+.icon-menu {
+	background: url(../jsp/zzsj/img/minus.gif) center center no-repeat;
+}
+
+.icon-logo {
+	background: url(../jsp/mainFrame/img/icon-logo.png) center center
+		no-repeat;
+}
+
+.icon-user{
+	    background: url(../img/change_user_icon.png) center center no-repeat;
+	   }
+	   
+span.tabs-icon{
+	left:8px;
+}
+span.icon-China{
+	width:20px;
+	height: 16px;
+	background: url('../img/China32.png') no-repeat center center;
+	background-size: 100%;
+}
+span.icon-American{
+	width:20px;
+	height: 16px;
+	background: url('../img/American32.png') no-repeat center center;
+	background-size: 100% 100%;
+}
+span.icon-Russia{
+	width:20px;
+	height: 16px;
+	background: url('../img/Russia32.png') no-repeat center center;
+	background-size: 100% 100%;
+}
+span.icon-India{
+	width:20px;
+	height: 16px;
+	background: url('../img/India32.png') no-repeat center center;
+	background-size: 100% 100%;
+}
+span.icon-Vietnam{
+	width:20px;
+	height: 16px;
+	background: url('../img/Vietnam32.png') no-repeat center center;
+	background-size: 100% 100%;
+}
+span.icon-japan{
+	width:20px;
+	height: 16px;
+	background: url('../img/japan32.png') no-repeat center center;
+	background-size: 100% 100%;
+}
+span.icon-Korea{
+	width:20px;
+	height: 16px;
+	background: url('../img/Korea32.png') no-repeat center center;
+	background-size: 100% 100%;
+}
+span.icon-North-Korea{
+	width:20px;
+	height: 16px;
+	background: url('../img/North-Korea32.png') no-repeat center center;
+	background-size: 100% 100%;
+}
+span.icon-Turkey{
+	width:20px;
+	height: 16px;
+	background: url('../img/turkey32.png') no-repeat center center;
+	background-size: 100% 100%;
+}
+	   
+#contain {
+	/* box ���Ա���ʹ�úв��� */
+	height: 100%;
+	width: 100%;
+}
+
+#left {
+	width: 300px;
+	display: -moz-box;
+	display: -webkit-box;
+	/* �в���Ĭ��ˮƽ���� */
+	-moz-box-orient: vertical;
+	-webkit-box-orient: vertical;
+	/* border-right: 1px solid #CCC; */
+	/* background-image: linear-gradient(to top, #FFF1EB 0%, #E1EEF5 100%); */
+}
+
+#head {
+	height: 40px;
+	border-bottom: 1px solid #CCC;
+	padding: 5px;
+}
+
+#tree {
+	-moz-box-flex: 1;
+	-webkit-box-flex: 1;
+}
+
+/* #main {
+	border-right: 1px solid #CCC;
+} */
+
+#contain  div { /* �����Ӽ��� */
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+input {
+	outline-style: none;
+	border: 1px solid #CCC;
+	border-radius: 3px;
+	padding: 5px;
+	font-family: "΢���ź�";
+}
+
+input:focus {
+	border-color: #66afe9;
+	outline: 0;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px
+		rgba(102, 175, 233, .6);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px
+		rgba(102, 175, 233, .6);
+}
+
+input::-webkit-input-placeholder{
+	color: #ccc;
+}
+
+.a_Btn {
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2);
+	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+	padding: 5px 10px;
+	border-radius: 5px;
+	color: #FFFFFF;
+	background-color: #61ba9e; /*#61ba9e*/
+	border-color: #4fb393; /*#4fb393*/
+	display: inline-block;
+	cursor: pointer;
+	border: 1px solid transparent;
+	white-space: nowrap;
+}
+
+.a_Btn:hover {
+	background-color: #46A285; /*#46A285*/
+	border-color: #3B8970; /*#3B8970*/
+}
+
+.vie_table  td:nth-child(odd) { /* ��������ʽ */
+	font-size: 14px;
+	text-align: right;
+	padding-right: 10px;
+	font-weight: bold;
+	background-color:
+}
+
+.vie_table  td:nth-child(even) { /* ��������ʽ */
+	font-size: 14px;
+	text-align: left;
+	padding-left: 10px;
+}
+
+.vie_table {
+	width: 98%;
+	background: #f1f1f1;
+	border-collapse: collapse;
+	border: #adc3d7 1px solid;
+	border-spacing: 0px;
+	padd: expression(this. cellpadding = 0);
+	line-height: 20px;
+}
+
+.vie_table tr {
+	height: 25px;
+	font-family: arial;
+}
+
+.vie_table td {
+	border: #adc3d7 1px solid;
+	line-height: 24px;
+	background-color: white;
+	font-size: 5px;
+	text-align: center;
+}
+
+.link-right {
+	width: 1px;
+	height: 99%;
+	border-right: dashed #ACC0D8 1px;
+	float: right;
+}
+
+.btnDiv {
+	height: 30px;
+	width: 32%;
+	position: fixed;
+	border-top: 1px #CCC dashed;
+	text-align: center;
+	vertical-align: middle;
+}

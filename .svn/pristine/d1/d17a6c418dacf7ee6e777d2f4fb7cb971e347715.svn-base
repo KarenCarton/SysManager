@@ -1,0 +1,344 @@
+/* 鏃ユ湡閫夋嫨瀹瑰櫒 DIV */
+.WdateDiv{
+	width:260px;
+	background-color:#fff;
+	border:1px solid #333333;
+}
+/* 鍙屾湀鏃ュ巻鐨勫搴� */
+.WdateDiv2{
+	width:480px;
+}
+.WdateDiv *{
+	font-size:13px;
+	font-family:"寰蒋闆呴粦";
+}
+
+/****************************
+ * 瀵艰埅鍥炬爣 鍏ㄩ儴鏄疉鏍囩
+ ***************************/
+.WdateDiv .NavImg a{
+	margin-top:8px;
+	cursor:pointer;
+	display:block;
+	width:17px;
+	height:13px;
+}
+.WdateDiv .NavImgll a{
+	background:url(left-btn2.jpg) no-repeat center center;
+	float:left; 
+	margin-left:8px;
+}
+.WdateDiv .NavImgl a{
+	background:url(left-btn.jpg) no-repeat center center;
+	float:left; 
+	margin-left:2px;
+}
+.WdateDiv .NavImgr a{
+	background:url(right-btn.jpg) no-repeat center center;
+	float:right;
+	margin-right:2px;
+}
+.WdateDiv .NavImgrr a{
+	background:url(right-btn2.jpg) no-repeat center center;
+	float:right;
+	margin-right:8px;
+}
+
+/****************************
+ * 骞翠唤鏈堜唤鐩稿叧
+ ***************************/
+/* 骞翠唤鏈堜唤鏍� DIV */
+.WdateDiv #dpTitle{
+	height:32px;
+	color:#FFFFFF;
+	font-size-adjust:none;
+	font-stretch:normal;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:bold;
+	padding-top:4px;
+	background-color:#48a7f1;
+	background-repeat:repeat-x;
+	background-position:0% 100%;
+}
+/* 骞翠唤鏈堜唤杈撳叆妗� INPUT */
+.WdateDiv .yminput{
+	margin-top:2px;
+	text-align:center;
+	border:0px;
+	height:20px;
+	width:50px;
+	color:#FFF;
+	background-color:transparent;
+	cursor:pointer;
+}
+/* 骞翠唤鏈堜唤杈撳叆妗嗚幏寰楃劍鐐规椂鐨勬牱寮� INPUT */
+.WdateDiv .yminputfocus{
+	margin-top:2px;
+	text-align:center;
+	border:#939393 1px solid;
+	font-weight:bold;
+	color:#034c50;	
+	height:16px;
+	width:50px;
+}
+/* 鑿滃崟閫夋嫨妗� DIV */
+.WdateDiv .menuSel{
+	z-index:1;
+	position:absolute;
+	background-color:#FFFFFF;
+	border:1px solid #718BB7;
+	display:none;
+}
+/* 鑿滃崟鐨勬牱寮� TD */
+.WdateDiv .menu{
+	cursor:pointer;
+	background-color:#fff;
+	color:#0b5ea0;/*鏃堕棿鏂囧瓧棰滆壊*/
+}
+/* 鑿滃崟鐨刴ouseover鏍峰紡 TD */
+.WdateDiv .menuOn{
+	cursor:pointer;
+	background-color: #376bfc;
+	color:#ffffff;
+}
+/* 鑿滃崟鏃犳晥鏃剁殑鏍峰紡 TD */
+.WdateDiv .invalidMenu{
+	color:#aaa;
+}
+/* 骞撮�夋嫨妗嗙殑鍋忕Щ DIV */
+.WdateDiv .YMenu{
+	margin-top:16px;
+}
+/* 鏈堥�夋嫨妗嗙殑鍋忕Щ DIV */
+.WdateDiv .MMenu{
+	margin-top:16px;
+	*width:62px;
+}
+/* 鏃堕�夋嫨妗嗙殑浣嶇疆 DIV */
+.WdateDiv .hhMenu{
+	margin-top:-90px; 
+	margin-left:26px;
+}
+/* 鍒嗛�夋嫨妗嗙殑浣嶇疆 DIV */
+.WdateDiv .mmMenu{
+	margin-top:-46px; 
+	margin-left:26px;
+}
+/* 绉掗�夋嫨妗嗙殑浣嶇疆 DIV */
+.WdateDiv .ssMenu{
+	margin-top:-24px; 
+	margin-left:26px;
+}
+
+/****************************
+ * 鍛ㄧ浉鍏�
+ ***************************/
+ .WdateDiv .Wweek {
+ 	text-align:center;
+	background:#DAF3F5;
+	border-right:#BDEBEE 1px solid;
+ }
+/****************************
+ * 鏄熸湡,鏃ユ湡鐩稿叧
+ ***************************/
+ /* 鏄熸湡鏍� TR */
+.WdateDiv .MTitle{
+	color:#233D6D;
+	color:#233D6D;
+	cursor:default;
+	display:none;
+	
+}
+.WdateDiv .MTitle td{
+	border-bottom:1px solid #d8d9de;
+	height:0px;
+}
+.WdateDiv .WdayTable2{
+	border-collapse:collapse;
+	border:black 1px solid;
+}
+.WdateDiv .WdayTable2 table{
+	border:0;
+}
+/* 鏃ユ湡鏍忚〃鏍� TABLE */
+.WdateDiv .WdayTable{
+	line-height:23px;	
+	color:black; 
+	background-color:#ffffff;
+}
+.WdateDiv .WdayTable td{
+	text-align:center;
+}
+/* 鏃ユ湡鏍肩殑鏍峰紡 TD */
+.WdateDiv .Wday{
+	cursor:pointer;
+	border-left:solid 1px #e2e2e2;
+	border-bottom:solid 1px #e2e2e2;
+	background-image: url(day-bg.png);
+	background-repeat: repeat-x;
+	background-position:0% 100%;
+	height:32px;
+}
+/* 鏃ユ湡鏍肩殑mouseover鏍峰紡 TD */
+.WdateDiv .WdayOn{
+	cursor:pointer;
+	background-color:#48a7f1;
+	color:#ffffff;
+	border-left:solid 1px #e2e2e2;
+	border-bottom:solid 1px #e2e2e2;
+	height:32px;
+}
+/* 鍛ㄦ湯鏃ユ湡鏍肩殑鏍峰紡 TD */
+.WdateDiv .Wwday{
+	cursor:pointer;
+	color:#ab1e1e;
+	border-left:solid 1px #e2e2e2;
+	border-bottom:solid 1px #e2e2e2;
+	background-image: url(day-bg.png);
+	background-repeat: repeat-x;
+	background-position:0% 100%;
+	height:32px;
+}
+/* 鍛ㄦ湯鏃ユ湡鏍肩殑mouseover鏍峰紡 TD */
+.WdateDiv .WwdayOn{
+	cursor:pointer;
+	background-color:#376bfc;
+	color:#ffffff;
+	border-left:solid 1px #e2e2e2;
+	border-bottom:solid 1px #e2e2e2;
+	height:32px;
+}
+.WdateDiv .Wtoday{
+	cursor:pointer;
+	color:red;
+}
+.WdateDiv .Wselday{
+	background-color:#48a7f1;
+	color:#ffffff;
+	border-left:solid 1px #e2e2e2;
+	border-bottom:solid 1px #e2e2e2;
+	height:32px;
+}
+.WdateDiv .WspecialDay{
+	background-color:#66F4DF;
+}
+/* 鍏朵粬鏈堜唤鐨勬棩鏈� */
+.WdateDiv .WotherDay{ 
+	cursor:pointer;
+	color:#AAAAAA;
+	border-left:solid 1px #e2e2e2;
+	border-bottom:solid 1px #e2e2e2;
+	background-image: url(day-bg.png);
+	background-repeat: repeat-x;
+	background-position:0% 100%;
+	height:32px;
+}
+/* 鍏朵粬鏈堜唤鐨勬棩鏈焟ouseover鏍峰紡 */
+.WdateDiv .WotherDayOn{ 
+	cursor:pointer;
+	background-color:#48a7f1;
+	color:#ffffff;
+	border-left:solid 1px #e2e2e2;
+	border-bottom:solid 1px #e2e2e2;
+	height:32px;
+}
+/* 鏃犳晥鏃ユ湡鐨勬牱寮�,鍗冲湪鏃ユ湡鑼冨洿浠ュ鏃ユ湡鏍肩殑鏍峰紡,涓嶈兘閫夋嫨鐨勬棩鏈� */
+.WdateDiv .WinvalidDay{
+	color:#aaa;
+}
+
+/****************************
+ * 鏃堕棿鐩稿叧
+ ***************************/
+/* 鏃堕棿鏍� DIV */
+.WdateDiv #dpTime{
+	width:120px;
+	text-align:left;
+	margin-left:32px;
+	height:20px;
+	line-height:20px;
+	padding-top:1px;
+}
+/* 鏃堕棿鏂囧瓧 SPAN */
+.WdateDiv #dpTime #dpTimeStr{
+	margin-left:1px;
+	color:#233D6D;
+}
+/* 鏃堕棿杈撳叆妗� INPUT */
+.WdateDiv #dpTime input{
+	height:20px;
+	line-height:20px;
+	width:18px;
+	text-align:center;
+	color:#333;
+	border:#A3BAD9 1px solid;	
+}
+/* 鏃堕棿 鏃� INPUT */
+.WdateDiv #dpTime .tB{
+	border-right:0px;
+}
+/* 鏃堕棿 鍒嗗拰闂撮殧绗� ':' INPUT */
+.WdateDiv #dpTime .tE{
+	border-left:0;
+	border-right:0;
+}
+/* 鏃堕棿 绉� INPUT */
+.WdateDiv #dpTime .tm{
+	width:7px;
+	border-left:0;
+	border-right:0;
+}
+/* 鏃堕棿鍙宠竟鐨勫悜涓婃寜閽� BUTTON */
+.WdateDiv #dpTime #dpTimeUp{
+	height:8px;
+	width:13px;
+	border:0px;
+	background:url(img.png) no-repeat -32px -16px;
+	cursor:pointer;
+	margin-bottom:0;
+	padding-bottom:0;
+}
+/* 鏃堕棿鍙宠竟鐨勫悜涓嬫寜閽� BUTTON */
+.WdateDiv #dpTime #dpTimeDown{
+	height:8px;
+	width:13px;
+	border:0px;
+	background:url(img.png) no-repeat -48px -16px;
+	cursor:pointer;
+	margin-top:0;
+	padding-top:0;
+}
+/****************************
+ * 鍏朵粬
+ ***************************/
+ .WdateDiv #dpQS {
+ 	float:left;
+	margin-left:3px;
+	margin-top:9px;
+	background:url(dateselect.gif) no-repeat;
+	width:20px;
+	height:20px;
+	cursor:pointer;
+	background-position:50% 50%;
+ }
+.WdateDiv #dpControl {
+	text-align:right;
+	margin-top:3px;
+	
+	padding:4px;
+}
+.WdateDiv .dpButton{ 
+	width:54px;
+	height:28px;
+	background:#f4f7f8 none repeat scroll 0 0;/*鎸夐挳鑳屾櫙鑹�*/
+	border-color:#d3dbde;/*鎸夐挳杈规 涓婂彸涓嬪乏*/
+	border-style:solid;
+	border-width:1px;
+	color:white;
+	cursor:pointer;
+	line-height:20px;
+	border-radius: 3px 3px 3px 3px;
+	margin:0 2px 0 0;
+	color:#000000;
+}

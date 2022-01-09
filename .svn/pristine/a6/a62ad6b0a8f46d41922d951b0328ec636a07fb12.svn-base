@@ -1,0 +1,1836 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*全局样式*/
+body,ul,ol,li,dl,dt,dd,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div{margin:0;padding:0;border:0;}
+body{background:#fff;font-size:12px;font-family:Tahoma,"SimSun","Arial Narrow"; overflow:hidden;}
+
+ul,ol,dl,dt,dd{list-style-type:none;}
+select,input,img,select{vertical-align:middle; outline:none;}
+input[type="text"]{ line-height:24px\9;}
+a{text-decoration:none; outline:none;}
+.clearit{clear:both;}
+.none{ display:none;}
+
+
+.select_way{background:#f1f7fa; border-radius:2px;float:left; margin-top:13px;width:222px; padding:0 10px; height:28px; border:1px solid #85aabe; outline:none; position:relative;background:url(../img/the_clik.png) no-repeat center center; cursor:pointer;}
+.select_way input{border-radius:2px;width:200px; padding:0 21px; height:28px;line-height:28px\9; margin:0;  border:1px solid #85aabe; outline:none; position:absolute; left:-1px; top:-1px;cursor:pointer;overflow: hidden;}
+.select_way strong{display:block; width:30px; height:30px; background:url(../img/the_clik.png) no-repeat center center; position:absolute; top:0px;right:0px;}
+.select_way ul{border:1px solid #85aabe; background:#fff; position:absolute;top:28px;left:-1px; z-index:888;}
+.select_way li{ min-width:202px; width:60%;padding:0 20px;line-height:30px; background:#fff;white-space: nowrap;}
+
+
+
+select{border-radius:2px;float:left;background:#f1f7fa; margin-top:14px;width:244px; height:30px;line-height:30px\9; border:1px solid #85aabe; outline:none;cursor:pointer; opacity:0.1;position:relative;}
+/*列表页面的“隶属部门”下拉列表：select*/
+.select2{border-radius:2px;float:left;background:#f1f7fa; margin-top:10px;width:244px; height:30px;line-height:30px\9; border:1px solid #85aabe; outline:none;cursor:pointer; opacity:0.1;position:relative;}
+/*列表页面的“操作类型”下拉列表*/
+.select3{border-radius:2px;float:left;background:#f1f7fa; margin-top:10px;width:100px; height:30px;line-height:30px\9; border:1px solid #85aabe; outline:none;cursor:pointer; opacity:0.1;position:relative;}
+.select4{border-radius:2px;float:left;background:#f1f7fa; margin-top:10px;width:100px; height:30px;line-height:30px\9; border:1px solid #85aabe; outline:none;cursor:pointer; opacity:0.1;position:relative;}
+.select5{border-radius:2px;float:left;background:#f1f7fa; margin-top:14px;width:318px; height:30px;line-height:30px\9; border:1px solid #85aabe; outline:none;cursor:pointer; opacity:0.1;position:relative;}
+.select6{border-radius:2px;float:left;background:#f1f7fa; margin-top:14px;width:318px; height:30px;line-height:30px\9; border:1px solid #85aabe; outline:none;cursor:pointer; opacity:0.1;position:relative;}
+/*隶属部门*/
+/*.the_div_toa{ border-radius:2px;float:left;background:#f1f7fa url(../img/the_clik.png) no-repeat 220px center; margin-top:14px;width:222px;  padding:0 10px; height:28px;line-height:28px; border:1px solid #85aabe; outline:none;cursor:pointer; margin-left:-245px;}*/
+.the_div_toa{ border-radius:2px;float:left;background: url(../img/the_clik.png) no-repeat 220px center; margin-top:14px;width:202px;  padding:0 21px; height:28px;line-height:28px; border:1px solid #85aabe; outline:none;cursor:pointer; margin-left:-245px; overflow:hidden; }
+/*列表页面的“隶属部门”下拉列表：select*/
+.the_div_toa2{ border-radius:2px;float:left;background: url(../img/the_clik.png) no-repeat 220px center; margin-top:10px;width:222px; padding:0 10px; height:25px; line-height:25px; border:1px solid #85aabe; outline:none;cursor:pointer; margin-left:-245px; overflow:hidden; font-size:12px;}
+/*列表页面的“操作类型”下拉列表*/
+.the_div_toa3{ border-radius:2px;float:left;background: url(../img/the_clik.png) no-repeat 80px center; margin-top:10px;width:78px; padding:0 10px; height:25px; line-height:25px; border:1px solid #85aabe; outline:none;cursor:pointer; margin-left:-101px; overflow:hidden; font-size:12px;}
+.the_div_toa4{ border-radius:2px;float:left;background: url(../img/the_clik.png) no-repeat 80px center; margin-top:10px;width:78px; padding:0 10px; height:25px; line-height:25px; border:1px solid #85aabe; outline:none;cursor:pointer; margin-left:-101px; overflow:hidden; font-size:12px;}
+/*选择签章人列表页面中的部门下拉菜单*/
+.the_div_toa5{ border-radius:2px;float:left;background: url(../img/the_clik.png) no-repeat 292px center; margin-top:10px; width:294px; padding:0 10px; height:30px;line-height:30px; border:1px solid #85aabe; outline:none;cursor:pointer; margin-left:-319px; overflow:hidden; }
+/*选择证书列表页面中的USBKey序列号下拉菜单*/
+.the_div_toa6{ border-radius:2px;float:left;background: url(../img/the_clik.png) no-repeat 292px center; margin-top:10px; width:294px; padding:0 10px; height:30px;line-height:30px; border:1px solid #85aabe; outline:none;cursor:pointer; margin-left:-319px; overflow:hidden; }
+/*申请证书页面的省份*/
+.the_div_toa7{ border-radius:2px;float:left;background: url(../img/the_clik.png) no-repeat 220px center; margin-top:14px;width:202px;  padding:0 21px; height:28px;line-height:28px; border:1px solid #85aabe; outline:none;cursor:pointer; margin-left:-245px; overflow:hidden; }
+/*申请证书页面的城市*/
+.the_div_toa8{ border-radius:2px;float:left;background: url(../img/the_clik.png) no-repeat 220px center; margin-top:14px;width:202px;  padding:0 21px; height:28px;line-height:28px; border:1px solid #85aabe; outline:none;cursor:pointer; margin-left:-245px; overflow:hidden; }
+
+
+/*人员添加、修改页面的“用户角色”下拉菜单*/
+.selRole{ border-radius:2px;float:left;background: url(../img/the_clik.png) no-repeat 220px center; margin-top:14px;width:202px;  padding:0 21px; height:28px;line-height:28px; border:1px solid #85aabe; outline:none;cursor:pointer; margin-left:-245px; overflow:hidden; }
+/*float:left; outline:none; border:1px solid #85aabe; height:23px; width:80px; border-radius:2px; margin:10px 0; font-size:12px; */
+/*人员添加、修改页面的“认证类型”下拉菜单*/
+.selSignMethod{ border-radius:2px;float:left;background: url(../img/the_clik.png) no-repeat 220px center; margin-top:14px;width:202px;  padding:0 21px; height:28px;line-height:28px; border:1px solid #85aabe; outline:none;cursor:pointer; margin-left:-245px; overflow:hidden; }
+/*必填框的提示样式*/
+.label_point{background-image:url(../img/point.png);background-repeat:no-repeat;background-position:10% 50%;}
+.dept_label_point{background-image:url(../img/point.png);background-repeat:no-repeat;background-position:2% 50%;}
+
+.the_spacing_l{ letter-spacing:7px;}
+.the_spacing_2{ letter-spacing:12px;}
+.the_spacing_3{ letter-spacing:7px;}
+input[type="text"].the_bg_f1f7fa{ background:#f1f7fa; color:#85aabe; line-height:28px\9;}
+.the_bg_f1f7fa2{ background:#f1f7fa; color:#85aabe; line-height:28px\9;}
+
+
+/*多选框*/
+.the_input_div{ width:16px; height:16px; background:url(../img/checkbox_no.png) no-repeat center;}
+.the_input_div input[type="checkbox"]{ opacity:0; cursor:pointer; width:16px; height:16px; margin:0; padding:0;}
+
+
+
+input[type="radio"]{float:left; cursor:pointer;margin-top:22px; }
+input[type="radio"]{cursor:pointer;}
+
+
+/*input[type="radio"].the05_changc_01{ opacity:0; left:0px; margin-left:-16px; clear:right; top:22px; width:16px;  height:16px; padding:0;}
+input[type="radio"].the05_changc_02{ opacity:0; left:0px; top:22px; width:16px; height:16px; padding:0;}
+div.the05_div_changc_01{ float:left; right:0px; top:22px; width:16px;  height:16px; padding:0;background:red;position:relative;background:url(../img/radio_01.png) no-repeat center;}
+div.the05_div_changc_02{ float:left; right:-16px; top:22px; width:16px;  height:16px; padding:0; background:red;position:relative;background:url(../img/radio_01.png) no-repeat center;}
+*/
+input[type="radio"].the05_changc_01{ opacity:0; left:0px; margin-top:0px; margin-left:-16px;clear:right; top:18px; width:16px;  height:16px; padding:0; position:relative;}
+input[type="radio"].the05_changc_02{ opacity:0; left:-8px; margin-top:0px;top:18px; width:16px; height:16px; padding:0;position:relative;}
+div.the05_div_changc_01{ float:left; right:0px; top:18px; width:17px;  height:16px; padding:0;background:red;position:relative;background:url(../img/radio_01.png) no-repeat center;}
+div.the05_div_changc_02{ margin-left:-20px; float:left; right:-16px; top:18px; width:16px;  height:16px; padding:0; background:red;position:relative;background:url(../img/radio_01.png) no-repeat center;}
+
+
+
+input[type="radio"].the_changc_01{ opacity:0; left:0px; margin-top:0px; margin-left:-16px;clear:right; top:18px; width:16px;  height:16px; padding:0; position:relative;}
+input[type="radio"].the_changc_02{ opacity:0; left:-8px; margin-top:0px;top:18px; width:16px; height:16px; padding:0;position:relative;}
+input[type="radio"].the_changc_03{ opacity:0; left:-18px;margin-top:0px;top:18px; width:16px; height:16px; padding:0;position:relative;}
+div.the_div_changc_01{ float:left; right:0px; top:18px; width:17px;  height:16px; padding:0;background:red;position:relative;background:url(../img/radio_01.png) no-repeat center;}
+div.the_div_changc_02{ margin-left:-20px; float:left; right:-16px; top:18px; width:16px;  height:16px; padding:0; background:red;position:relative;background:url(../img/radio_01.png) no-repeat center;}
+div.the_div_changc_03{margin-left:-30px; float:left; right:-16px; top:18px; width:16px;  height:16px; padding:0; background:red;position:relative;background:url(../img/radio_01.png) no-repeat center;}
+
+
+/**/
+.the_select_b{ float:left; width:; height:; }
+
+/*===头部===*/
+#wrap{ width:100%;}
+/*#wrap h1{ padding-left:30px; font:bold 32px/70px "微软雅黑"; float:left; width:450px;height:70px; color:#fff; }*/
+#wrap h1{ padding-left:30px; font:bold 32px/70px "微软雅黑"; float:left; width:650px;height:70px; color:#fff; }
+#wrap h1 span{ margin-left:40px;font:18px/70px "微软雅黑"; }
+#wrap h1 strong{ cursor:pointer; font-weight:normal;color:#fff; padding-right:20px; background:url(../img/user_incon.png) no-repeat right center;position:relative;}
+#pop_the_to{ border-top:1px solid #2b384b; position:absolute; z-index:999; /*top:40px; left:0px;*/ top:0;left:74px; background:#373f4d; width:104px; height:80px; padding-top:10px; border-radius:4px;}
+#pop_the_to li{ font-family:"宋体"; line-height:35px; text-align:center; font-size:14px;}
+#pop_the_to li:hover{ background:#262e3c; }
+#pop_the_to li a{ color:#fff;}
+#pop_the_to li a img{ padding-right:5px;}
+#pop_the_to li .the_icon{ position:absolute; top:-9px; left:45px; padding:0;}
+
+
+
+#pop_the_to_top{ border-top:1px solid #2b384b; position:absolute;top:42px; left:0px; background:#373f4d; width:104px; height:80px; padding-top:10px; border-radius:4px;}
+#pop_the_to_top li{ font-family:"宋体"; line-height:35px; text-align:center; font-size:14px;}
+#pop_the_to_top li a{ color:#fff;}
+#pop_the_to_top li a img{ padding-right:5px;}
+#pop_the_to_top li .the_icon{ position:absolute; top:-9px; left:45px; padding:0;}
+
+.head{ height:70px; height:70px; min-width:1070px; background:url(../img/top_bg.jpg) left center; background-size:100% 100%;}
+.menu_head{ float:right;}
+.menu_head li{ float:left; height:16px; margin:27px 0; width:105px; color:#ffffff; font:16px/16px "微软雅黑"; text-align:center; border-right:1px solid #005c9c;}
+.menu_head li a{ color:#fff;}
+.menu_head li a.current_thea{ display:block; line-height:34px;margin:0 auto; margin-top:-8px; /* background:#15629f;*/ width:94px; height:34px; background:url(../img/the_bg_01.png) no-repeat center center; /*border:0;*//* border-radius:34px;*/}
+
+.menu_head li:last-child{ border:none;}
+.exit_the{ padding-left:38px; float:right;font:14px/32px "微软雅黑"; color:#fff; margin-right:22px; margin-left:20px; height:32px; width:74px; border:1px solid #4da2e6; border-radius:32px; margin-top:19px; /*background:#0a7dd1 url(../img/exit_the.png) no-repeat 15px center;*/ background:url(../img/hack_01.png) no-repeat center center; border:none;}
+.exit_the:hover{/* background-color:#086bb3;*/}
+
+/*左侧导航栏*/
+/*.sidebar_menu{ background:url(../img/side_bar_bg.jpg) center top; overflow:hidden; float:left; width:224px; }*/
+.sidebar_menu{ background:url(../img/side_bar_bg.jpg) center top; overflow:hidden; float:left; width:224px;  height:1150px;}
+.sidebar_menu li strong{ position:relative; background:#074678 url(../img/sidebar_icon_01.png) no-repeat 14px center; display:block; cursor:pointer; font:17px/44px "微软雅黑"; color:#ffffff; padding-left:48px; border-left:6px solid #00a4fd; width:170px;}
+
+.sidebar_menu li.li_bg_01 strong{background:#074678 url(../img/sidebar_icon_01.png) no-repeat 14px center;}
+.sidebar_menu li.li_bg_02 strong{background:#074678 url(../img/sidebar_icon_02.png) no-repeat 14px center;}
+.sidebar_menu li.li_bg_03 strong{background:#074678 url(../img/sidebar_icon_03.png) no-repeat 14px center;}
+.sidebar_menu li.li_bg_04 strong{background:#074678 url(../img/sidebar_icon_04.png) no-repeat 14px center;}
+.sidebar_menu li.li_bg_05 strong{background:#074678 url(../img/sidebar_icon_05.png) no-repeat 14px center;}
+.sidebar_menu li.li_bg_06 strong{background:#074678 url(../img/sidebar_icon_06.png) no-repeat 14px center;}
+
+.sidebar_menu li.current_li strong{ border-left:6px solid #22cbfa;background:#e8f2f7 url(../img/sidebar_icon_05_c.png) no-repeat 14px center; color:#00497c;}
+
+.sidebar_menu li.li_bg_01.current_li strong{background:#e8f2f7 url(../img/sidebar_icon_01_c.png) no-repeat 14px center;}
+.sidebar_menu li.li_bg_02.current_li strong{background:#e8f2f7 url(../img/sidebar_icon_02_c.png) no-repeat 14px center;}
+.sidebar_menu li.li_bg_03.current_li strong{background:#e8f2f7 url(../img/sidebar_icon_03_c.png) no-repeat 14px center;}
+.sidebar_menu li.li_bg_04.current_li strong{background:#e8f2f7 url(../img/sidebar_icon_04_c.png) no-repeat 14px center;}
+.sidebar_menu li.li_bg_05.current_li strong{background:#e8f2f7 url(../img/sidebar_icon_05_c.png) no-repeat 14px center;}
+.sidebar_menu li.li_bg_06.current_li strong{background:#e8f2f7 url(../img/sidebar_icon_06_c.png) no-repeat 14px center;}
+
+/*左侧导航条初始加载时的li样式*/
+.sidebar_menu .li_bg_01_current_li strong{background:#e8f2f7 url(../img/sidebar_icon_01_c.png) no-repeat 14px center;}
+.sidebar_menu .li_bg_02_current_li strong{background:#e8f2f7 url(../img/sidebar_icon_02_c.png) no-repeat 14px center;}
+
+.sidebar_menu li span img{ position:absolute; right:24px; top:19px; display:block;width:14px; height:9px;}
+.sidebar_menu ul{margin-bottom:30px; margin-top:12px; font:14px/30px "微软雅黑"; color:#c4def1;}
+.sidebar_menu ul li a{padding-left:54px;color:#c4def1; display:block;}
+.sidebar_menu li ul li a.current_a{color:#33b1ff; background:url(../img/dot_current_a.png) no-repeat 44px center;}
+
+
+.sidebar_menu li.last_li{ color:#93b6cf; font-family:"微软雅黑"; font-size:14px; padding-top:40px; line-height:30px; padding-left:24px;}
+.sidebar_menu li.last_li b{ font-size:16px; font-weight:normal;}
+.sidebar_menu li.last_li span{ float:left; padding-left:15px; background:url(../img/content_last_li_a.png) no-repeat 3px center;}
+
+/*内容*/
+#content{ float:right; width:1000px; overflow:hidden; background:#e8f2f7;}
+
+/*内容01----注册信息页面*/
+.content_li_01 div{ background:#fff; padding-left:93px;padding-right:93px; width:756px; margin:0 auto;  margin-top:149px; height:440px; padding-top:34px; position:relative;}
+#regDiv {background:#fff; padding-left:93px; padding-right:93px; padding-top:34px; width:1500px; margin-left:-830px; margin-top:-465px; height:860px; position:absolute; left: 50%; top: 50%;}
+#registerDiv {background:#fff; padding-left:93px; padding-right:93px; padding-top:34px; width:756px; margin-left:-478px; margin-top:-260px; height:500px; position:absolute; left: 50%; top: 50%;}
+#registerDiv p{color:#000000; line-height:26px; font-size:14px; font-family:"微软雅黑";}
+#registerDiv h5{ color:#0b89eb; font-family:"微软雅黑"; font-size:20px; line-height:100px;}
+#registerDiv img{ position:absolute; right:-49px; top:-43px;}
+#registerDiv p span{ color:#ff0000;}
+#registerDiv textarea{ width:740px; height:140px;}
+        	
+/*内容02----个人信息*/
+.content_li_02{}
+#content li.content_li_02 .c_li_02_wrap{ background:#ffffff;border:1px solid #bad4e8; width:99%; margin:12px auto; border-radius:4px;}
+#content li.content_li_02 .c_li_02_wrap h2{ padding-left:46px; font-weight:normal; background:#f7fbfd url(../img/change_pass_icon.png) no-repeat 13px center; height:37px; line-height:37px; font-size:18; font-family:"微软雅黑"; color:#7c8897; border-bottom:1px solid #dce6ee;}
+#content li.content_li_02 .c_li_02_wrap ol{ margin:0 auto; width:560px; padding-top:14px; padding-bottom:28px;}
+#content li.content_li_02 .c_li_02_wrap ol li{ overflow:hidden;}
+#content li.content_li_02 .c_li_02_wrap ol label{ color:#1e2a2f; font-size:14px; font-family:"微软雅黑"; line-height:55px; clear:left; width:70px; float:left; text-align:left; padding-left:85px;}
+#content li.content_li_02 .c_li_02_wrap ol input[type="password"]{ border-radius:2px;float:left; margin-top:13px;width:200px; padding:0 21px; height:28px; line-height:28px\9;  border:1px solid #85aabe; outline:none;}
+#content li.content_li_02 .c_li_02_wrap ol li span{ padding-left:20px; color:#fe0000; font-size:12px; font-family:"宋体"; line-height:55px; float:left;} 
+#content li.content_li_02 .c_li_02_wrap ol input[type="button"]{ border-radius:2px; background:#40a1f6; border:none; outline:none; color:#ffffff; font-size:16px; font-family:"微软雅黑"; width:90px; height:30px; margin-right:13px; margin-left:155px; cursor:pointer;}
+#content li.content_li_02 .c_li_02_wrap ol input[type="reset"]{ border-radius:2px; background:#94b7d4; border:none; outline:none; color:#ffffff; font-size:16px; font-family:"微软雅黑"; width:90px; height:30px; cursor:pointer;}
+/*个人信息页面，修改密码按钮 鼠标停靠时添加样式*/
+#content li.content_li_02 .c_li_02_wrap ol input[type="button"]:hover{background:#3992e0;}
+#content li.content_li_02 .c_li_02_wrap ol input[type="reset"]:hover{background:#83a3bd;}
+
+#content li.content_li_02 .c_li_02_wrap ol .the_strong_pass{ height:24px;line-height:24px;}
+#content li.content_li_02 .c_li_02_wrap ol .the_strong_pass span{ float:left; height:24px; width:60px; line-height:24px; color:#767676; padding:0;}
+#content li.content_li_02 .c_li_02_wrap ol .the_strong_pass div{ margin-top:6px; border:1px solid #d1d1d1; width:124px; height:10px; float:left; margin-right:10px;}
+
+#content li.content_li_02 .c_li_02_wrap ol .the_strong_pass div a{ width:38px; height:6px; float:left; background:#d1d1d1; margin-top:2px; margin-left:3px;}
+#content li.content_li_02 .c_li_02_wrap ol .the_strong_pass div a:first-child{ margin-left:2px;}
+#content li.content_li_02 .c_li_02_wrap ol .the_strong_pass div a.c_02_thea_01{background:#ec5959;}
+#content li.content_li_02 .c_li_02_wrap ol .the_strong_pass div a.c_02_thea_02{background:#ffaa15;}
+#content li.content_li_02 .c_li_02_wrap ol .the_strong_pass div a.c_02_thea_03{background:#76ce18;}
+
+/*修改登录名*/
+#content li.content_li_02 .c_li_02_wrap_second{background:#ffffff;border:1px solid #bad4e8; width:99%; margin:12px auto; border-radius:4px;}
+#content li.content_li_02 .c_li_02_wrap_second h2{ padding-left:46px; font-weight:normal; background:#f7fbfd url(../img/change_user_icon.png) no-repeat 13px center; height:37px; line-height:37px; font-size:18; font-family:"微软雅黑"; color:#7c8897; border-bottom:1px solid #dce6ee;}
+
+#content li.content_li_02 .c_li_02_wrap_second ol{ margin:0 auto; width:560px; padding-top:14px; padding-bottom:28px;}
+#content li.content_li_02 .c_li_02_wrap_second ol li{ overflow:hidden;}
+
+#content li.content_li_02 .c_li_02_wrap_second ol label{ color:#1e2a2f; font-size:14px; font-family:"微软雅黑"; line-height:55px; clear:left; width:140px; float:left; text-align:right; padding-right:15px;}
+#content li.content_li_02 .c_li_02_wrap_second ol input[type="text"]{ border-radius:2px;float:left; margin-top:13px; width:200px; padding:0 21px; height:28px; line-height:28px\9;  border:1px solid #85aabe; outline:none;}
+#content li.content_li_02 .c_li_02_wrap_second ol input[type="button"]{ border-radius:2px; background:#40a1f6; border:none; outline:none; color:#ffffff; font-size:16px; font-family:"微软雅黑"; width:90px; height:30px; margin-right:13px; margin-left:155px; cursor:pointer;}
+#content li.content_li_02 .c_li_02_wrap_second ol input[type="reset"]{ border-radius:2px; background:#94b7d4; border:none; outline:none; color:#ffffff; font-size:16px; font-family:"微软雅黑"; width:90px; height:30px; cursor:pointer;}
+/*个人信息页面，修改登录名按钮 鼠标停靠时添加样式*/
+#content li.content_li_02 .c_li_02_wrap_second ol input[type="button"]:hover{background:#3992e0;}
+#content li.content_li_02 .c_li_02_wrap_second ol input[type="reset"]:hover{background:#83a3bd;}
+
+/*修改根部门名称*/
+#content li.content_li_02 .c_li_02_wrap_third{background:#ffffff;border:1px solid #bad4e8; width:99%; margin:12px auto; border-radius:4px;}
+#content li.content_li_02 .c_li_02_wrap_third h2{ padding-left:46px; font-weight:normal; background:#f7fbfd url(../img/li_06_the_info_3.png) no-repeat 13px center; height:37px; line-height:37px; font-size:18; font-family:"微软雅黑"; color:#7c8897; border-bottom:1px solid #dce6ee;}
+/*设置CA证书服务器信息页面 h2样式*/
+#content li.content_li_02 .c_li_02_wrap_third h2.caInfoCss{ padding-left:46px; font-weight:normal; background:#f7fbfd url(../img/add_people_02.png) no-repeat 13px center; height:37px; line-height:37px; font-size:18; font-family:"微软雅黑"; color:#7c8897; border-bottom:1px solid #dce6ee;}
+
+#content li.content_li_02 .c_li_02_wrap_third ol{ margin:0 auto; width:560px; padding-top:14px; padding-bottom:28px;}
+#content li.content_li_02 .c_li_02_wrap_third ol li{ overflow:hidden;}
+
+#content li.content_li_02 .c_li_02_wrap_third ol label{ color:#1e2a2f; font-size:14px; font-family:"微软雅黑"; line-height:55px; clear:left; width:180px; float:left; text-align:right; padding-right:15px;}
+#content li.content_li_02 .c_li_02_wrap_third ol input[type="text"]{ border-radius:2px;float:left; margin-top:13px; width:200px; padding:0 21px; height:28px; line-height:28px\9;  border:1px solid #85aabe; outline:none;}
+#content li.content_li_02 .c_li_02_wrap_third ol input[type="checkbox"]{ border-radius:2px;float:left; margin-top:13px; width:15px; padding:13px 21px; height:15px; line-height:28px\9;  border:1px solid #85aabe; outline:none;}
+#content li.content_li_02 .c_li_02_wrap_third ol input[type="button"]{ border-radius:2px; background:#40a1f6; border:none; outline:none; color:#ffffff; font-size:16px; font-family:"微软雅黑"; width:90px; height:30px; margin-right:13px; margin-left:155px; cursor:pointer;}
+#content li.content_li_02 .c_li_02_wrap_third ol input[type="reset"]{ border-radius:2px; background:#94b7d4; border:none; outline:none; color:#ffffff; font-size:16px; font-family:"微软雅黑"; width:90px; height:30px; cursor:pointer;}
+/*个人信息页面，修改登录名按钮 鼠标停靠时添加样式*/
+#content li.content_li_02 .c_li_02_wrap_third ol input[type="button"]:hover{background:#3992e0;}
+#content li.content_li_02 .c_li_02_wrap_third ol input[type="reset"]:hover{background:#83a3bd;}
+
+
+/*内容03----角色管理*/
+#content li.content_li_03 .c_li_03_wrap{border:1px solid #bad4e8; width:99%; margin:12px auto; border-radius:4px;}
+#content li.content_li_03 .c_li_03_wrap li{border-radius:4px; color:#303030; font-size:14px; font-family:"微软雅黑"; overflow:hidden;line-height:36px; border-bottom:1px solid #cee0e8; background:#fff;}
+#content li.content_li_03 .c_li_03_wrap li:first-child{ background:#ecf4fa;}
+#content li.content_li_03 .c_li_03_wrap li:last-child{ border:none;}
+#content li.content_li_03 .c_li_03_wrap strong{ font-weight:normal; float:left; display:block; width:24%; text-align:center; border-right:1px solid #cfe0e9; }
+#content li.content_li_03 .c_li_03_wrap strong:last-child{ border:none;}
+
+#content li.content_li_03 .li_03_add_the{ text-align:center; border-radius:2px; display:block; margin:0 auto; background:#4cc2a5; width:76px; height:33px;line-height:33px;  color:#ffffff; font-size:16px; font-family:"微软雅黑"; margin-left:45%; margin-top:35px;}
+/*角色管理 “添加”按钮，鼠标停靠时变色*/
+#content li.content_li_03 .li_03_add_the:hover{background:#44ac92;}
+/*#content li.content_li_03 .c_li_03_wrap li strong a{ border-radius:3px; width:44px; height:20px; display:block; border:1px solid #409bcc; background:#0f9ae4; color:#ffffff; font-family:"微软雅黑"; font-size:14px; line-height:20px; margin:0 auto; margin-top:8px;}*/
+#content li.content_li_03 .c_li_03_wrap li strong a{ border-radius:3px; width:44px; height:20px; display:block; border:1px solid #409bcc; background:#40a1f6; color:#ffffff; font-family:"微软雅黑"; font-size:14px; line-height:20px; margin:0 auto; margin-top:8px;}
+/*角色管理 鼠标停靠时，“查看”按钮颜色改变*/
+#content li.content_li_03 .c_li_03_wrap li strong a:hover{background:#3992e0}
+#content li.content_li_03 .c_li_03_wrap li.the_add_change strong a{border:1px solid #61af72; background:#74cc9e;}
+#content li.content_li_03 .c_li_03_wrap li.the_add_change strong a.add_the_remove{ color:#7094a1; font-size:14px; font-family:"微软雅黑";background:#eef5f9; border:1px solid #c6d7e0;}
+/*角色管理 鼠标停靠时，“删除”按钮颜色改变*/
+#content li.content_li_03 .c_li_03_wrap li.the_add_change strong a.add_the_remove:hover{ background:#d9e6ed;}
+/*/*角色管理 鼠标停靠时，“编辑”按钮颜色改变*/
+#content li.content_li_03 .c_li_03_wrap li.the_add_change strong a.chang_li_03:hover{ background:#44ac92;}
+
+
+/*内容4  根证书管理*/
+#content li.content_li_04 .c_li_04_wrap{border:1px solid #bad4e8; width:99%; margin:12px auto; border-radius:4px; min-width:810px;}
+#content li.content_li_04 .c_li_04_wrap li{border-radius:4px; color:#303030; font-size:14px; font-family:"微软雅黑"; overflow:hidden;line-height:36px; border-bottom:1px solid #cee0e8; background:#fff;}
+#content li.content_li_04 .c_li_04_wrap li:first-child{ background:#ecf4fa;}
+#content li.content_li_04 .c_li_04_wrap li:last-child{ border:none;}
+
+/*设置列表页面，li组成的单元格内容换行时，表格线长度自动改变（设置的最高为200px,若高度不够可在自行更改） :padding-bottom:200px; margin-bottom:-200px; 
+word-break:break-all;是断开单词。在单词到边界时，下个字母自动到下一行。主要解决了长串英文的问题。*/
+#content li.content_li_04 .c_li_04_wrap strong{word-break:break-all; padding-bottom:200px; margin-bottom:-200px; font-weight:normal; float:left; display:block; width:18%; text-align:center; border-right:1px solid #cfe0e9; }
+#content li.content_li_04 .c_li_04_wrap li em{word-break:break-all; padding-bottom:200px; margin-bottom:-200px; text-align:center; float:left; font-style:normal; width:8%;}
+#content li.content_li_04 .c_li_04_wrap li em a{cursor:pointer; border-radius:3px; width:44px; height:20px; display:block; line-height:20px; margin:0 auto; margin-top:8px; color:#7094a1; font-size:14px; font-family:"微软雅黑";background:#eef5f9; border:1px solid #c6d7e0;}
+/*根证书管理 鼠标停靠时，“删除”按钮颜色改变*/
+#content li.content_li_04 .c_li_04_wrap li em a:hover{background:#d9e6ed;}
+/*根证书管理页面 添加证书信息div*/
+/*#content li.content_li_04 .c_li_04_wrap_second{background:#ffffff;border:1px solid #bad4e8; width:99%; margin:12px auto; border-radius:4px;}*/
+#content li.content_li_04 .c_li_04_wrap_second{background:#ffffff;border:1px solid #bad4e8; width:99%; margin:12px auto; border-radius:4px; min-width:810px;}
+#content li.content_li_04 .c_li_04_wrap_second h2{ padding-left:46px; font-weight:normal; background:#f7fbfd url(../img/add_people_02.png) no-repeat 13px center; height:37px; line-height:37px; font-size:18; font-family:"微软雅黑"; color:#7c8897; border-bottom:1px solid #dce6ee;}
+
+#content li.content_li_04 .c_li_04_wrap_second ol{ margin:0 auto; width:700px; padding-top:14px; padding-bottom:28px;}
+#content li.content_li_04 .c_li_04_wrap_second ol li{ overflow:hidden;}
+
+#content li.content_li_04 .c_li_04_wrap_second ol label{ color:#1e2a2f; font-size:14px; font-family:"微软雅黑"; line-height:55px; width:70px; float:left; text-align:left; padding-left:25px;}
+#content li.content_li_04 .c_li_04_wrap_second ol input[type="text"]{ border-radius:2px;float:left; margin-top:13px;width:200px; padding:0 21px; height:28px;  border:1px solid #85aabe; outline:none;}
+#content li.content_li_04 .c_li_04_wrap_second ol input[type="submit"]{ border-radius:2px; background:#94b7d4; border:none; outline:none; color:#ffffff; font-size:16px; font-family:"微软雅黑"; width:90px; height:30px; margin-right:13px; margin-left:155px; cursor:pointer;}
+#content li.content_li_04 .c_li_04_wrap_second ol input[type="reset"]{ border-radius:2px; background:#94b7d4; border:none; outline:none; color:#ffffff; font-size:16px; font-family:"微软雅黑"; width:90px; height:30px; cursor:pointer;}
+#content li.content_li_04 .c_li_04_wrap_second ol textarea{ margin-top:13px; padding:13px 21px; width:539px; height:95px;border-radius:2px;float:left; border:1px solid #85aabe; outline:none; overflow-y:scroll; resize:none; float:left;}
+
+#content li.content_li_04 .c_li_04_wrap_second ol li a{cursor:pointer; margin-bottom:0; margin-top:15px; border-radius:3px; display:block; float:left; width:152px; height:30px; line-height:30px; background:#dcecf5; border:1px solid #a1b8ca; text-align:center; color:#123b5d; font-size:14px; font-family:"微软雅黑";}
+/*根证书管理 鼠标停靠时，“导入证书”按钮颜色改变*/
+#content li.content_li_04 .c_li_04_wrap_second ol li a:hover{ background:#d9e6ed; }
+#content li.content_li_04 .c_li_04_wrap_second ol li a.last-child{cursor:pointer; margin-left:10px; width:84px; background:#40a1f6; color:#fff; border:1px solid #40a1f6; outline:none;}
+/*根证书管理 鼠标停靠时，“查看证书”按钮颜色改变*/
+#content li.content_li_04 .c_li_04_wrap_second ol li a.last-child:hover{ background:#3992e0; }
+
+#content li.content_li_04 .li_04_add_the{cursor:pointer; text-align:center; border-radius:2px; display:block; margin:0 auto; background:#4cc2a5; width:76px; height:33px;line-height:33px;  color:#ffffff; font-size:16px; font-family:"微软雅黑"; margin-left:45%; margin-top:35px;}
+/*根证书管理 鼠标停靠时，“添加证书”按钮颜色改变*/
+#content li.content_li_04 .li_04_add_the:hover{ background:#44ac92; }
+
+
+
+/*内容 待批印章05*/
+#content li.content_li_05 h3 div{ float:left;}
+
+/*待批印章 “批量删除”按钮*/
+/*#content li.content_li_05 h3 div span{ background:#dddddd url(../img/remove_icon.png) no-repeat 6px center; cursor:pointer; float:left; padding-left:15px; width:75px; height:28px; line-height:28px; text-align:center; border:1px solid #a2b1ba; border-radius:3px; color:#777777; font-size:14px; font-family:"微软雅黑";font-weight:normal; margin:15px 0 0 20px;}*/
+/*#content li.content_li_05 h3 div span{ background:#f8f8f9 url(../img/remove_icon2.png) no-repeat 6px center; cursor:pointer; float:left; padding-left:15px; width:75px; height:28px; line-height:28px; text-align:center; border:1px solid #99b4c8; border-radius:3px; color:#004b74; font-size:14px; font-family:"微软雅黑";font-weight:normal; margin:15px 0 0 20px;}
+/*批量删除按钮不可用时，显示的css样式*/
+/*#content li.content_li_05 h3 div span.remover_05_all_disabled{ background:#dddddd url(../img/remove_icon.png) no-repeat 6px center; cursor:pointer; float:left; padding-left:15px; width:75px; height:28px; line-height:28px; text-align:center; border:1px solid #a2b1ba; border-radius:3px; color:#777777; font-size:14px; font-family:"微软雅黑";font-weight:normal; margin:15px 0 0 20px; }
+/*待批印章列表  鼠标停靠时，“批量删除”按钮颜色改变*/
+/*#content li.content_li_05 h3 div span:hover{ background:#d9e6ed url(../img/remove_icon2.png) no-repeat 6px center; }
+/*待批印章 "新建"按钮*/
+/*#content li.content_li_05 h3 div strong{ background:#f8f8f9 url(../img/add_icon.png) no-repeat 14px center;cursor:pointer; float:left; padding-left:15px; width:75px; height:28px; line-height:28px; text-align:center; border:1px solid #99b4c8; border-radius:3px;color:#004b74;font-size:14px; font-family:"微软雅黑"; font-weight:normal;margin:15px 0px 0 8px;}
+/*待批印章列表  鼠标停靠时，“新建”按钮颜色改变*/
+/*#content li.content_li_05 h3 div strong:hover{ background:#d9e6ed url(../img/add_icon.png) no-repeat 14px center; }*/
+/*批量删除按钮*/
+#content li.content_li_05 h3 div .delBtnDisabled{ background:#dddddd url(../img/remove_icon.png) no-repeat 6px center; cursor:default; float:left; padding-left:22px; width:95px; height:30px; line-height:23px; text-align:center; border:1px solid #a2b1ba; border-radius:3px; color:#777777; font-size:14px; font-family:"微软雅黑";font-weight:normal; margin:15px 0 0 20px;}
+#content li.content_li_05 h3 div .delBtnAbled{ background:#f8f8f9 url(../img/remove_icon2.png) no-repeat 6px center; cursor:pointer; float:left; padding-left:22px; width:95px; height:30px; line-height:23px; text-align:center; border:1px solid #a2b1ba; border-radius:3px; color:#004b74; font-size:14px; font-family:"微软雅黑";font-weight:normal; margin:15px 0 0 20px;}
+#content li.content_li_05 h3 div .delBtnAbled:hover{background:#d9e6ed url(../img/remove_icon2.png) no-repeat 6px center;}
+
+/*添加按钮*/
+#content li.content_li_05 h3 div .addBtnAbled{ background:#f8f8f9 url(../img/add_icon.png) no-repeat 14px center;cursor:pointer; float:left; padding-left:22px; width:95px; height:30px; line-height:23px; text-align:center; border:1px solid #99b4c8; border-radius:3px;color:#004b74;font-size:14px; font-family:"微软雅黑"; font-weight:normal;margin:15px 0px 0 8px;}
+#content li.content_li_05 h3 div .addBtnAbled:hover{background:#d9e6ed url(../img/add_icon.png) no-repeat 14px center;}
+#content li.content_li_05 h3 div .addBtnDisabled{ background:#dddddd url(../img/change_icon.png) no-repeat 14px center;cursor: default; float:left; padding-left:22px; width:95px; height:30px; line-height:23px; text-align:center; border:1px solid #99b4c8; border-radius:3px;color:#777777;font-size:14px; font-family:"微软雅黑"; font-weight:normal;margin:15px 0px 0 8px;}
+
+
+/*待批印章列表，底部分页栏*/
+.content_li_05 h4{font:15px/40px "微软雅黑"; color:#033c5d; padding-left:1%;}
+.content_li_05 h4 span{ color:#979fa5; font-size:14px; padding-right:10px;}
+.content_li_05 h4 strong{}
+.content_li_05 h4 div{ float:right; padding-right:0.5%; color:#21709d; font-size:14px; font-family:"微软雅黑";}
+.content_li_05 h4 div a{ margin:0 0 0 5px; color:#21709d; padding:5px 10px; border:1px solid #a3c2ce; background:#f3f9fd;}
+.content_li_05 h4 div a.current_05_a{ background:#0f9de4; color:#ffffff;border:1px solid #0f9de4;}
+/*鼠标停靠时，按钮样式改变*/
+.content_li_05 h4 div a:hover{ background:#0f9de4; color:#ffffff;border:1px solid #0f9de4;}
+
+.content_li_05 h4 i{ font-style:normal; color:#ea3535;}
+#content li.content_li_05 .c_li_05_wrap{border:1px solid #bad4e8; width:99%; margin:12px auto; border-radius:4px;}
+#content li.content_li_05 .c_li_05_wrap li form{ margin:0 auto; width:1220px; overflow:hidden;}
+#content li.content_li_05 .c_li_05_wrap li form label{ width:70px; text-align:right; display:block; float:left; color:#1d4456; font:14px/45px "微软雅黑";/* margin:0 6px 0 15px;*/ margin-right:8px;}
+#content li.content_li_05 .c_li_05_wrap li form b{ float:left; color:#8ab5cc; font:12px/45px "微软雅黑"; margin:0 6px; border:none;}
+#content li.content_li_05 .c_li_05_wrap li form input[type="text"]{ float:left; outline:none; border:1px solid #85aabe; height:23px; width:100px; border-radius:2px; margin:10px 0; font-size:12px; }
+#content li.content_li_05 .c_li_05_wrap li form input.one_input05{ width:250px;}
+#content li.content_li_05 .c_li_05_wrap li form input.one_input05_1{ width:175px;}
+#content li.content_li_05 .c_li_05_wrap li form input[type="button"]{ height:27px; width:80px; border:none; background:#20aef6; border-radius:2px; outline:none; font:14px "微软雅黑"; color:#ffffff;cursor:pointer;margin:10px 2px 10px 12px;}
+#content li.content_li_05 .c_li_05_wrap li form input[name="cancelBtn"][type="button"]{ height:27px; width:80px;border:none; background:#4cc2a5; border-radius:3px; outline:none;font:14px "微软雅黑"; color:#ffffff; cursor:pointer;margin:10px 0;}
+
+#content li.content_li_05 .c_li_05_wrap li form input[type="button"]:hover{ background:#1d98d6;}
+#content li.content_li_05 .c_li_05_wrap li form input[name="cancelBtn"][type="button"]:hover{ background:#3c9a83;}
+
+
+#content li.content_li_05 .c_li_05_wrap li form .div_05_1{ float:left; width:338px;}
+#content li.content_li_05 .c_li_05_wrap li form .div_05_2{ float:left; width:192px;}
+#content li.content_li_05 .c_li_05_wrap li form .div_05_3{ float:left; width:190px;}
+#content li.content_li_05 .c_li_05_wrap li form .div_05_4{ float:left;width:500px;}
+
+
+
+
+#content li.content_li_05 .c_li_05_wrap li{ min-width:1200px; line-height:38px; border-bottom:1px solid #d4e4eb; overflow:hidden; background:#ffffff;}
+#content li.content_li_05 .c_li_05_wrap li:last-child{ border:none;}
+#content li.content_li_05 .c_li_05_wrap li.c_li_11_thehead{ line-height:35px; background:#ecf4fa;}
+
+/*设置列表页面，li组成的单元格内容换行时，表格线长度自动改变（设置的最高为200px,若高度不够可在自行更改） :padding-bottom:200px; margin-bottom:-200px; 
+word-break:break-all;是断开单词。在单词到边界时，下个字母自动到下一行。主要解决了长串英文的问题。*/
+#content li.content_li_05 .c_li_05_wrap li strong{word-break:break-all;padding-bottom:200px; margin-bottom:-200px; float:left; width:7%;font-family:"微软雅黑"; font-size:14px;font-weight:normal; text-align:center; border-right:1px solid #cee2ec;}
+#content li.content_li_05 .c_li_05_wrap li span{word-break:break-all;padding-bottom:200px; margin-bottom:-200px; border-right:1px solid #cee2ec;float:left;width:16%;font-family:"微软雅黑"; font-size:14px; color:#133954;text-align:center;}
+#content li.content_li_05 .c_li_05_wrap li cite{word-break:break-all;padding-bottom:200px; margin-bottom:-200px; border-right:1px solid #cee2ec;float:left;width:10%; font-style:normal;font-family:"微软雅黑"; font-size:14px; color:#133954;text-align:center; }
+#content li.content_li_05 .c_li_05_wrap li em{word-break:break-all;padding-bottom:200px; margin-bottom:-200px; border-right:1px solid #cee2ec;float:left;width:18%; font-style:normal;font-family:"微软雅黑"; font-size:14px; color:#303030; text-align:center; }
+#content li.content_li_05 .c_li_05_wrap li i{word-break:break-all;padding-bottom:200px; margin-bottom:-200px; line-height:38px; text-align:center;font-style:normal;font-family:"微软雅黑"; font-size:14px; color:#133954; display:block; float:left; width:13%;}
+#content li.content_li_05 .c_li_05_wrap li b{border-right:1px solid #cee2ec;float:left;width:4%; font-style:normal;font-family:"微软雅黑"; font-size:14px; color:#303030; text-align:center; height:38px; }
+#content li.content_li_05 .c_li_05_wrap li b.checkCss{ padding-bottom:200px; margin-bottom:-200px; }
+
+#content li.content_li_05 .c_li_05_wrap li b input{ width:16px; height:16px; margin-top:12px; cursor:pointer;}
+#content li.content_li_05 .c_li_05_wrap li:hover{ background:#f4f4f4;}
+#content li.content_li_05 .c_li_05_wrap li:first-child:hover{ background:#ffffff; }
+
+#content li.content_li_05 .c_li_05_wrap li span a{ color:#1682d6; text-decoration:underline;}
+#content li.content_li_05 .c_li_05_wrap li i a{ float:left; display:block; width:45px; height:22px; color:#ffffff; border:1px solid #61af72; background:#76cda0; line-height:22px; margin-top:9px; margin-left:26px;}
+#content li.content_li_05 .c_li_05_wrap li i a:hover{ background:#6cbc92;}
+/*待批印章，列表中的删除按钮*/
+#content li.content_li_05 .c_li_05_wrap li i a:last-child{color:#7094a1; border:1px solid #c6d7e0; background:#f4fafd; margin-left:6px;}
+#content li.content_li_05 .c_li_05_wrap li i a:last-child:hover{ background:#e6ecef; }
+
+#content li.content_li_05 .c_li_05_wrap li.c_li_05_thehead{ background:#ecf4fa;}
+#content li.content_li_05 .c_li_05_wrap li.c_li_05_thehead strong,
+#content li.content_li_05 .c_li_05_wrap li.c_li_05_thehead span,
+#content li.content_li_05 .c_li_05_wrap li.c_li_05_thehead cite,
+#content li.content_li_05 .c_li_05_wrap li.c_li_05_thehead em,
+#content li.content_li_05 .c_li_05_wrap li.c_li_05_thehead i,
+#content li.content_li_05 .c_li_05_wrap li b{ color:#303030; line-height:35px; height:35px;}
+
+
+
+#content li.content_li_05 .c_li_05_wrap_second_02 form ol li a{ margin-bottom:0; margin-top:15px; border-radius:3px; display:block; float:left; width:152px; height:30px; line-height:30px; background:#dcecf5; border:1px solid #a1b8ca; text-align:center; color:#123b5d; font-size:14px; font-family:"微软雅黑";}
+#content li.content_li_05 .c_li_05_wrap_second_02 form ol li a#the_a_05a{ margin-left:8px; width:80px; background:#40a1f6; color:#fff; border:1px solid #40a1f6; outline:none;}
+
+/*待批、已审批——05 修改印章*/
+.c_li_05_wrap_second{background:#ffffff;border:1px solid #bad4e8; width:99%;min-width:1100px; margin:12px auto; margin-top:68px; border-radius:4px;}
+.c_li_05_wrap_second h2{ padding-left:46px; font-weight:normal; background:#f7fbfd url(../img/li_06_the_info.png) no-repeat 13px center; height:37px; line-height:37px; font-size:18; font-family:"微软雅黑"; color:#7c8897; border-bottom:1px solid #dce6ee;}
+.c_li_05_wrap_second h2 a{ float:right; padding-left:15px; width:57px; text-align:center; font-family:"微软雅黑"; font-size:14px; color:#3e5e86; font-weight:bold; line-height:26px;height:26px; border-radius:26px; border:1px solid #a6bdce; background:#dfedf4; margin-top:4px; background:url(../img/backto_the.png) no-repeat 8px center; margin-right:16px;}
+/*“返回”按钮，鼠标停靠时改变样式*/
+.c_li_05_wrap_second h2 a:hover{ background:#d9e6ed url(../img/backto_the.png) no-repeat 8px center; }
+
+/*待批印章“印章信息”div*/
+/*.c_li_05_wrap_second from{ width:1000px; margin:0 auto;}*/
+.c_li_05_wrap_second .sealDiv{ width:1000px; margin:0 auto;}
+.c_li_05_wrap_second .main_the_con_05{ position:relative; border:3px dashed #dcdcdc; width:179px; height:179px; margin-top:25px; float:right; }
+/*.c_li_05_wrap_second .main_the_con_05 img{ width:179px; height:179px;}*/
+/*印章图片*/
+.imgCenterDiv{ width:179px; height:179px; text-align:center;vertical-align:middle;display:table-cell; }
+.imgCenterP{ position:static;+position:absolute;top:50%; }
+.c_li_05_wrap_second .main_the_con_05 img{position:static; +position:relative;top:-50%;left:-50%; }
+/*“上传”、“下载”按钮样式*/
+.the_goto_img{ position:absolute; bottom:-38px; height:28px; color:#ffffff; cursor:pointer; font-family:"微软雅黑"; font-size:14px; line-height:28px; width:88px; background:#94b7d4; text-align:center; border-radius:3px;}
+.the_goto_img2{ position:absolute; margin-left:92px; bottom:-38px; height:28px; color:#ffffff; cursor:pointer; font-family:"微软雅黑"; font-size:14px; line-height:28px; width:88px; background:#94b7d4; text-align:center; border-radius:3px;}
+/*“上传”按钮，鼠标停靠，改变样式*/
+.the_goto_img:hover{ background:#809db6; }
+.the_goto_img2:hover{ background:#809db6; }
+.c_li_05_wrap_second ol{ margin-left:10%; width:700px; padding-top:14px; padding-bottom:28px;}
+.c_li_05_wrap_second ol li{ display:inline-block; position:relative;}
+
+.c_li_05_wrap_second ol label{ color:#1e2a2f; font-size:14px; font-family:"微软雅黑"; line-height:55px; width:70px; float:left; text-align:left; padding-left:25px;}
+.c_li_05_wrap_second ol input[type="text"]{ border-radius:2px;float:left; margin-top:13px;width:200px; padding:0 21px; height:28px;  border:1px solid #85aabe; outline:none;}
+.c_li_05_wrap_second ol .select_way input{border-radius:2px;width:200px; padding:0 21px; height:28px; line-height:28px\9; margin:0;  border:1px solid #85aabe; outline:none; position:absolute; left:-1px; top:-1px;cursor:pointer;}
+.c_li_05_wrap_second ol label.left_margin{ line-height:58px; width:60px; margin-left:-20px; padding-right:15px; text-align:left}
+.c_li_05_wrap_second ol input[type="text"].color_85aabe{ color:#85aabe; line-height:28px\9}
+
+.c_li_05_wrap_second ol li .select_the_input_05{ width:115px;}
+.c_li_05_wrap_second ol li .select_the_area_05{ width:78px; padding:0; height:28px; background:url(../img/content_li_12_a_bg.jpg) repeat-x center center; border:1px solid #a1b8ca; float:left; margin-top:13px; margin-left:5px;}
+.c_li_05_wrap_second ol li .select_the_area_05:hover{ background:#d9e6ed; }
+
+.c_li_05_wrap_second ol input[type="submit"]{ border-radius:2px; background:#94b7d4; border:none; outline:none; color:#ffffff; font-size:16px; font-family:"微软雅黑"; width:90px; height:30px; margin-right:13px; margin-left:155px; cursor:pointer;}
+.c_li_05_wrap_second ol input[type="reset"]{ border-radius:2px; background:#94b7d4; border:none; outline:none; color:#ffffff; font-size:16px; font-family:"微软雅黑"; width:90px; height:30px; cursor:pointer;}
+.c_li_05_wrap_second ol textarea{background:#f1f7fa; margin-top:13px; padding:13px 21px; width:539px; height:95px;border-radius:2px;float:left; border:1px solid #85aabe; outline:none; overflow-y:scroll; resize:none; float:left;}
+
+.c_li_05_wrap_second ol li a{ margin-bottom:0; margin-top:15px; border-radius:3px; display:block; float:left; width:152px; height:30px; line-height:30px; background:#dcecf5; border:1px solid #a1b8ca; text-align:center; color:#123b5d; font-size:14px; font-family:"微软雅黑";}
+.c_li_05_wrap_second ol li a:last-child{ margin-left:10px; width:84px; background:#40a1f6; color:#fff; border:1px solid #40a1f6; outline:none;}
+
+
+.c_li_05_wrap_second_02{background:#ffffff;border:1px solid #bad4e8; width:99%; margin:12px auto; border-radius:4px;}
+.c_li_05_wrap_second_02 h2{ padding-left:46px; font-weight:normal; background:#f7fbfd url(../img/li_06_the_info_2.png) no-repeat 13px center; height:37px; line-height:37px; font-size:18; font-family:"微软雅黑"; color:#7c8897; border-bottom:1px solid #dce6ee;}
+
+/*待批印章“证书信息”div*/
+/*.c_li_05_wrap_second_02 from{ width:1000px; margin:0 auto;}*/
+.c_li_05_wrap_second_02 .certDiv{ width:1000px; margin:0 auto;}
+.c_li_05_wrap_second_02 ol{ margin-left:10%; width:700px; padding-top:14px; padding-bottom:28px;}
+.c_li_05_wrap_second_02 ol li{ overflow:hidden;}
+
+
+.c_li_05_wrap_second_02 ol li.the_06_the_r_li{ padding-left:337px;}
+.c_li_05_wrap_second_02 ol label{ color:#1e2a2f; font-size:14px; font-family:"微软雅黑"; line-height:55px; width:70px; float:left; text-align:left; padding-left:25px;}
+.c_li_05_wrap_second_02 ol input[type="text"]{background:#f1f7fa; border-radius:2px;float:left; margin-top:13px;width:200px; padding:0 21px; height:28px;  border:1px solid #85aabe; outline:none;}
+
+.c_li_05_wrap_second_02 ol input[type="submit"]{ border-radius:2px; background:#94b7d4; border:none; outline:none; color:#ffffff; font-size:16px; font-family:"微软雅黑"; width:90px; height:30px; margin-right:13px; margin-left:155px; cursor:pointer;}
+.c_li_05_wrap_second_02 ol input[type="reset"]{ border-radius:2px; background:#94b7d4; border:none; outline:none; color:#ffffff; font-size:16px; font-family:"微软雅黑"; width:90px; height:30px; cursor:pointer;}
+.c_li_05_wrap_second_02 ol textarea{background:#f1f7fa; margin-top:13px; padding:13px 21px; width:539px; height:95px;border-radius:2px;float:left; border:1px solid #85aabe; outline:none; overflow-y:scroll; resize:none; float:left;}
+
+.c_li_05_wrap_second_02 ol li a{ margin-bottom:0; margin-top:15px; border-radius:3px; display:block; float:left; width:152px; height:30px; line-height:30px; background:#dcecf5; border:1px solid #a1b8ca; text-align:center; color:#123b5d; font-size:14px; font-family:"微软雅黑";}
+.c_li_05_wrap_second_02 ol li a:last-child{ margin-left:10px; width:84px; background:#40a1f6; color:#fff; border:1px solid #40a1f6; outline:none;}
+
+/*待批印章 修改页面 备注div*/
+/*.c_li_05_wrap_second_03{background:#ffffff;border:1px solid #bad4e8; width:99%; margin:12px auto; border-radius:4px;}*/
+.c_li_05_wrap_second_03{background:#ffffff;border:1px solid #bad4e8; width:99%; margin:12px auto; border-radius:4px; min-width:1100px;}
+.c_li_05_wrap_second_03 h2{ padding-left:46px; font-weight:normal; background:#f7fbfd url(../img/li_06_the_info_3.png) no-repeat 13px center; height:37px; line-height:37px; font-size:18; font-family:"微软雅黑"; color:#7c8897; border-bottom:1px solid #dce6ee;}
+
+/*.c_li_05_wrap_second_03 from{ width:1000px; margin:0 auto;}*/
+.c_li_05_wrap_second_03 .descDiv{ width:1000px; margin:0 auto;}
+.c_li_05_wrap_second_03 ol{ margin-left:10%; width:700px; padding-top:14px; padding-bottom:28px;}
+.c_li_05_wrap_second_03 ol li{ overflow:hidden;}
+
+.c_li_05_wrap_second_03 ol label{ color:#1e2a2f; font-size:14px; font-family:"微软雅黑"; line-height:55px; width:80px; float:left; text-align:right; padding-right:15px;}
+.c_li_05_wrap_second_03 ol input[type="text"]{background:#f1f7fa; border-radius:2px;float:left; margin-top:13px;width:200px; padding:0 21px; height:28px;  border:1px solid #85aabe; outline:none;}
+.c_li_05_wrap_second_03 ol input[type="submit"]{ border-radius:2px; background:#94b7d4; border:none; outline:none; color:#ffffff; font-size:16px; font-family:"微软雅黑"; width:90px; height:30px; margin-right:13px; margin-left:155px; cursor:pointer;}
+.c_li_05_wrap_second_03 ol input[type="reset"]{ border-radius:2px; background:#94b7d4; border:none; outline:none; color:#ffffff; font-size:16px; font-family:"微软雅黑"; width:90px; height:30px; cursor:pointer;}
+/*印章修改页面 备注信息*/
+/*.c_li_05_wrap_second_03 ol textarea{background:#f1f7fa; margin-top:13px; padding:13px 21px; width:539px; height:70px;border-radius:2px;float:left; border:1px solid #85aabe; outline:none; overflow-y:scroll; resize:none; float:left;}*/
+.c_li_05_wrap_second_03 ol textarea{margin-top:13px; padding:13px 21px; width:539px; height:70px;border-radius:2px;float:left; border:1px solid #85aabe; outline:none; overflow-y:scroll; resize:none; float:left;}
+
+.c_li_05_wrap_second_03 ol li a{ margin-bottom:0; margin-top:15px; border-radius:3px; display:block; float:left; width:152px; height:30px; line-height:30px; background:#dcecf5; border:1px solid #a1b8ca; text-align:center; color:#123b5d; font-size:14px; font-family:"微软雅黑";}
+.c_li_05_wrap_second_03 ol li a:last-child{ margin-left:10px; width:84px; background:#40a1f6; color:#fff; border:1px solid #40a1f6; outline:none;}
+
+/*底部按键，05*/
+.li_05_add_the_2{ margin-left:30%; margin-bottom:50px; text-align:center; border-radius:2px; display:block; background:#40a1f6; width:130px; height:33px;line-height:33px;  color:#ffffff; font-size:16px; font-family:"微软雅黑"; margin-top:15px;float:left;  }
+.li_05_add_the_2:hover{ background:#3a92e0;}
+.li_05_add_the_3{ text-align:center; border-radius:2px; display:block;background:#4cc2a5; width:100px; height:33px;line-height:33px;  color:#ffffff; font-size:16px; font-family:"微软雅黑"; margin-left:2%; margin-top:15px;float:left; }
+.li_05_add_the_3:hover{ background:#41a88f;}
+.li_05_add_the_4{ text-align:center; border-radius:2px; display:block; background:#94b7d4; width:76px; height:33px;line-height:33px;  color:#ffffff; font-size:16px; font-family:"微软雅黑"; margin-left:2%; margin-top:15px;float:left; }
+.li_05_add_the_4:hover{ background:#809db6;}
+
+
+
+
+
+/*内容 印章列表06*/
+#content li.content_li_06 h3 div{ float:left;}
+/*印章列表 “批量删除”按钮*/
+/*#content li.content_li_06 h3 div span{ background:#dddddd url(../img/remove_icon.png) no-repeat 6px center; cursor:pointer; float:left; padding-left:15px; width:75px; height:28px; line-height:28px; text-align:center; border:1px solid #a2b1ba; border-radius:3px; color:#777777; font-size:14px; font-family:"微软雅黑";font-weight:normal; margin:15px 0 0 20px;}*/
+/*#content li.content_li_06 h3 div span{ background:#f8f8f9 url(../img/remove_icon2.png) no-repeat 6px center; cursor:pointer; float:left; padding-left:15px; width:75px; height:28px; line-height:28px; text-align:center; border:1px solid #99b4c8; border-radius:3px; color:#004b74; font-size:14px; font-family:"微软雅黑";font-weight:normal; margin:15px 0 0 20px;}
+#content li.content_li_06 h3 div span:hover{ background:#d9e6ed url(../img/remove_icon2.png) no-repeat 6px center; }*/
+/*印章列表 “新建”按钮*/
+/*#content li.content_li_06 h3 div strong{ background:#f8f8f9 url(../img/add_icon.png) no-repeat 14px center;cursor:pointer; float:left; padding-left:15px; width:75px; height:28px; line-height:28px; text-align:center; border:1px solid #99b4c8; border-radius:3px;color:#004b74;font-size:14px; font-family:"微软雅黑"; font-weight:normal;margin:15px 0px 0 8px;}
+#content li.content_li_06 h3 div strong:hover{ background:#d9e6ed url(../img/add_icon.png) no-repeat 14px center; }*/
+/*批量删除按钮*/
+#content li.content_li_06 h3 div .delBtnDisabled{ background:#dddddd url(../img/remove_icon.png) no-repeat 6px center; cursor:default; float:left; padding-left:22px; width:95px; height:30px; line-height:23px; text-align:center; border:1px solid #a2b1ba; border-radius:3px; color:#777777; font-size:14px; font-family:"微软雅黑";font-weight:normal; margin:15px 0 0 20px;}
+#content li.content_li_06 h3 div .delBtnAbled{ background:#f8f8f9 url(../img/remove_icon2.png) no-repeat 6px center; cursor:pointer; float:left; padding-left:22px; width:95px; height:30px; line-height:23px; text-align:center; border:1px solid #a2b1ba; border-radius:3px; color:#004b74; font-size:14px; font-family:"微软雅黑";font-weight:normal; margin:15px 0 0 20px;}
+#content li.content_li_06 h3 div .delBtnAbled:hover{background:#d9e6ed url(../img/remove_icon2.png) no-repeat 6px center;}
+
+/*添加按钮*/
+#content li.content_li_06 h3 div .addBtnAbled{ background:#f8f8f9 url(../img/add_icon.png) no-repeat 14px center; cursor:pointer; float:left; padding-left:22px; width:95px; height:30px; line-height:23px; text-align:center; border:1px solid #99b4c8; border-radius:3px;color:#004b74;font-size:14px; font-family:"微软雅黑"; font-weight:normal;margin:15px 0px 0 8px;}
+#content li.content_li_06 h3 div .addBtnAbled:hover{background:#d9e6ed url(../img/add_icon.png) no-repeat 14px center;}
+#content li.content_li_06 h3 div .addBtnDisabled{ background:#dddddd url(../img/change_icon.png) no-repeat 14px center; cursor:default; float:left; padding-left:22px; width:95px; height:30px; line-height:23px; text-align:center; border:1px solid #99b4c8; border-radius:3px;color:#777777;font-size:14px; font-family:"微软雅黑"; font-weight:normal;margin:15px 0px 0 8px;}
+
+
+/*印章列表 底部分页导航栏*/
+.content_li_06 h4{font:15px/40px "微软雅黑"; color:#033c5d; padding-left:1%;}
+.content_li_06 h4 span{ color:#979fa5; font-size:14px; padding-right:10px;}
+.content_li_06 h4 strong{}
+.content_li_06 h4 div{ float:right; padding-right:0.5%; color:#21709d; font-size:14px; font-family:"微软雅黑";}
+.content_li_06 h4 div a{ margin:0 0 0 5px; color:#21709d; padding:5px 10px; border:1px solid #a3c2ce; background:#f3f9fd;}
+.content_li_06 h4 div a.current_06_a{ background:#0f9de4; color:#ffffff;border:1px solid #0f9de4;}
+.content_li_06 h4 div a:hover{ background:#0f9de4; color:#ffffff;border:1px solid #0f9de4; }
+
+.content_li_06 h4 i{ font-style:normal; color:#ea3535;}
+#content li.content_li_06 .c_li_06_wrap{border:1px solid #bad4e8; width:99%; margin:12px auto; border-radius:4px;}
+#content li.content_li_06 .c_li_06_wrap li form{ margin:0 auto; width:1220px; overflow:hidden;}
+#content li.content_li_06 .c_li_06_wrap li form label{ width:70px; text-align:right; display:block; float:left; color:#1d4456; font:14px/45px "微软雅黑";/* margin:0 6px 0 15px;*/ margin-right:8px;}
+#content li.content_li_06 .c_li_06_wrap li form b { float:left; color:#8ab5cc; font:12px/45px "微软雅黑"; margin:0 6px; border:none;}
+#content li.content_li_06 .c_li_06_wrap li form input[type="text"]{ float:left; outline:none; border:1px solid #85aabe; height:23px; width:100px; border-radius:2px; margin:10px 0; font-size:12px;  }
+#content li.content_li_06 .c_li_06_wrap li form input.one_input06{ width:250px;}
+#content li.content_li_06 .c_li_06_wrap li form input.one_input06_1{ width:175px;}
+#content li.content_li_06 .c_li_06_wrap li form input[type="button"]{ height:27px; width:80px; border:none; background:#20aef6; border-radius:2px; outline:none; font:14px "微软雅黑"; color:#ffffff;cursor:pointer;margin:10px 2px 10px 12px;}
+#content li.content_li_06 .c_li_06_wrap li form input[name="cancelBtn"][type="button"]{ height:27px; width:80px;border:none; background:#4cc2a5; border-radius:3px; outline:none;font:14px "微软雅黑"; color:#ffffff; cursor:pointer;margin:10px 0;}
+
+#content li.content_li_06 .c_li_06_wrap li form input[type="button"]:hover{ background:#1d98d6;}
+#content li.content_li_06 .c_li_06_wrap li form input[name="cancelBtn"][type="button"]:hover{ background:#3c9a83;}
+
+
+#content li.content_li_06 .c_li_06_wrap li form .div_06_1{ float:left; width:338px;}
+#content li.content_li_06 .c_li_06_wrap li form .div_06_2{ float:left; width:178px;}
+#content li.content_li_06 .c_li_06_wrap li form .div_06_3{ float:left; width:190px;}
+#content li.content_li_06 .c_li_06_wrap li form .div_06_4{ float:left;width:500px;}
+
+
+
+
+#content li.content_li_06 .c_li_06_wrap li{ min-width:1200px; line-height:38px; border-bottom:1px solid #d4e4eb; overflow:hidden; background:#ffffff;}
+#content li.content_li_06 .c_li_06_wrap li:last-child{ border:none;}
+#content li.content_li_06 .c_li_06_wrap li.c_li_11_thehead{ line-height:35px; background:#ecf4fa;}
+
+/*设置列表页面，li组成的单元格内容换行时，表格线长度自动改变（设置的最高为200px,若高度不够可在自行更改） :padding-bottom:200px; margin-bottom:-200px; 
+word-break:break-all;是断开单词。在单词到边界时，下个字母自动到下一行。主要解决了长串英文的问题。*/
+#content li.content_li_06 .c_li_06_wrap li strong{word-break:break-all; padding-bottom:200px; margin-bottom:-200px; float:left; width:7%;font-family:"微软雅黑"; font-size:14px;font-weight:normal; text-align:center; border-right:1px solid #cee2ec;}
+#content li.content_li_06 .c_li_06_wrap li span{word-break:break-all; padding-bottom:200px; margin-bottom:-200px; border-right:1px solid #cee2ec;float:left;width:16%;font-family:"微软雅黑"; font-size:14px; color:#133954;text-align:center;}
+#content li.content_li_06 .c_li_06_wrap li cite{word-break:break-all; padding-bottom:200px; margin-bottom:-200px; border-right:1px solid #cee2ec;float:left;width:10%; font-style:normal;font-family:"微软雅黑"; font-size:14px; color:#133954;text-align:center; }
+#content li.content_li_06 .c_li_06_wrap li em{word-break:break-all; padding-bottom:200px; margin-bottom:-200px; border-right:1px solid #cee2ec;float:left;width:17%; font-style:normal;font-family:"微软雅黑"; font-size:14px; color:#303030; text-align:center; }
+#content li.content_li_06 .c_li_06_wrap li i{word-break:break-all; padding-bottom:200px; margin-bottom:-200px; line-height:38px; text-align:center;font-style:normal;font-family:"微软雅黑"; font-size:14px; color:#133954; display:block; float:left; width:15%;}
+#content li.content_li_06 .c_li_06_wrap li b{border-right:1px solid #cee2ec;float:left;width:4%; font-style:normal;font-family:"微软雅黑"; font-size:14px; color:#303030; text-align:center; height:38px; }
+/*列表页面的checkbox所在列<b>标签样式*/
+#content li.content_li_06 .c_li_06_wrap li b.checkCss{ padding-bottom:200px; margin-bottom:-200px; }
+
+#content li.content_li_06 .c_li_06_wrap li b input{ width:16px; height:16px; margin-top:12px; cursor:pointer;}
+#content li.content_li_06 .c_li_06_wrap li:hover{ background:#f4f4f4;}
+#content li.content_li_06 .c_li_06_wrap li:first-child:hover{ background:#ffffff; }
+
+#content li.content_li_06 .c_li_06_wrap li span a{ color:#1682d6; text-decoration:underline;}
+/*印章列表中的“编辑”按钮*/
+#content li.content_li_06 .c_li_06_wrap li i a{ float:left; display:block; width:45px; height:22px; color:#ffffff; border:1px solid #61af72; background:#76cda0; line-height:22px; margin-top:9px;margin-left:6px;}
+#content li.content_li_06 .c_li_06_wrap li i a:hover{ background:#66b58c;}
+/*印章列表中的“颁发管理”按钮*/
+#content li.content_li_06 .c_li_06_wrap li i a:first-child{ margin-left:10px;width:62px; background:#0e9be8; border:1px solid #409bcc; color:#f5fafe;}
+#content li.content_li_06 .c_li_06_wrap li i a:first-child:hover{ background:#0e8bcf;}
+/*印章列表中的“删除”按钮*/
+#content li.content_li_06 .c_li_06_wrap li i a:last-child{color:#7094a1; border:1px solid #c6d7e0; background:#f4fafd; margin-left:6px;}
+#content li.content_li_06 .c_li_06_wrap li i a:last-child:hover{background:#e6ecef;}
+
+#content li.content_li_06 .c_li_06_wrap li.c_li_06_thehead{ background:#ecf4fa;}
+#content li.content_li_06 .c_li_06_wrap li.c_li_06_thehead strong,
+#content li.content_li_06 .c_li_06_wrap li.c_li_06_thehead span,
+#content li.content_li_06 .c_li_06_wrap li.c_li_06_thehead cite,
+#content li.content_li_06 .c_li_06_wrap li.c_li_06_thehead em,
+#content li.content_li_06 .c_li_06_wrap li.c_li_06_thehead i,
+#content li.content_li_06 .c_li_06_wrap li b{ color:#303030; line-height:35px; height:35px;}
+
+/*颁发管理*/
+.c_li_06_wrap_second{background:#ffffff;border:1px solid #bad4e8; width:99%;min-width:1100px; margin:12px auto; margin-top:68px; border-radius:4px;}
+.c_li_06_wrap_second h2{ padding-left:46px; font-weight:normal; background:#f7fbfd url(../img/li_06_the_info.png) no-repeat 13px center; height:37px; line-height:37px; font-size:18; font-family:"微软雅黑"; color:#7c8897; border-bottom:1px solid #dce6ee;}
+.c_li_06_wrap_second h2 a{ float:right; padding-left:15px; width:57px; text-align:center; font-family:"微软雅黑"; font-size:14px; color:#3e5e86; font-weight:bold; line-height:26px;height:26px; border-radius:26px; border:1px solid #a6bdce; background:#dfedf4; margin-top:4px; background:url(../img/backto_the.png) no-repeat 8px center; margin-right:16px;}
+/*“返回”按钮，鼠标停靠时，改变按钮样式*/
+.c_li_06_wrap_second h2 a:hover{ background:#d9e6ed url(../img/backto_the.png) no-repeat 8px center; }
+
+.c_li_06_wrap_second form{ width:1000px; margin:0 auto;}
+.c_li_06_wrap_second .main_the_con{ border:3px dashed #dcdcdc; width:179px; height:179px; margin-top:25px; float:right; overflow:hidden;}
+.c_li_06_wrap_second ol{ margin-left:10%; width:700px; padding-top:14px; padding-bottom:28px;}
+.c_li_06_wrap_second ol li{ overflow:hidden;}
+
+.c_li_06_wrap_second ol label{ color:#1e2a2f; font-size:14px; font-family:"微软雅黑"; line-height:55px; width:70px; float:left; text-align:left; padding-left:25px;}
+.c_li_06_wrap_second ol input[type="text"]{background:#f1f7fa; border-radius:2px;float:left; margin-top:13px;width:200px; padding:0 21px; height:28px;  border:1px solid #85aabe; outline:none;}
+.c_li_06_wrap_second ol input[type="submit"]{ border-radius:2px; background:#94b7d4; border:none; outline:none; color:#ffffff; font-size:16px; font-family:"微软雅黑"; width:90px; height:30px; margin-right:13px; margin-left:155px; cursor:pointer;}
+.c_li_06_wrap_second ol input[type="reset"]{ border-radius:2px; background:#94b7d4; border:none; outline:none; color:#ffffff; font-size:16px; font-family:"微软雅黑"; width:90px; height:30px; cursor:pointer;}
+.c_li_06_wrap_second ol textarea{background:#f1f7fa; margin-top:13px; padding:13px 21px; width:539px; height:95px;border-radius:2px;float:left; border:1px solid #85aabe; outline:none; overflow-y:scroll; resize:none; float:left;}
+
+.c_li_06_wrap_second ol li a{ margin-bottom:0; margin-top:15px; border-radius:3px; display:block; float:left; width:152px; height:30px; line-height:30px; background:#dcecf5; border:1px solid #a1b8ca; text-align:center; color:#123b5d; font-size:14px; font-family:"微软雅黑";}
+.c_li_06_wrap_second ol li a:last-child{ margin-left:10px; width:84px; background:#40a1f6; color:#fff; border:1px solid #40a1f6; outline:none;}
+
+
+/*颁发管理页面 备注div*/
+/*.c_li_06_wrap_second_02{background:#ffffff;border:1px solid #bad4e8; width:99%; margin:12px auto; border-radius:4px;}*/
+.c_li_06_wrap_second_02{background:#ffffff;border:1px solid #bad4e8; width:99%; margin:12px auto; border-radius:4px;  min-width:1100px;}
+.c_li_06_wrap_second_02 h2{ padding-left:46px; font-weight:normal; background:#f7fbfd url(../img/li_06_the_info_2.png) no-repeat 13px center; height:37px; line-height:37px; font-size:18; font-family:"微软雅黑"; color:#7c8897; border-bottom:1px solid #dce6ee;}
+
+.c_li_06_wrap_second_02 form{ width:1000px; margin:0 auto;}
+.c_li_06_wrap_second_02 ol{ margin-left:10%; width:700px; padding-top:14px; padding-bottom:28px;}
+.c_li_06_wrap_second_02 ol li{ overflow:hidden;}
+
+
+.c_li_06_wrap_second_02 ol li.the_06_the_r_li{ padding-left:337px;}
+.c_li_06_wrap_second_02 ol label{ color:#1e2a2f; font-size:14px; font-family:"微软雅黑"; line-height:55px; width:70px; float:left; text-align:left; padding-left:25px;}
+.c_li_06_wrap_second_02 ol input[type="text"]{background:#f1f7fa; border-radius:2px;float:left; margin-top:13px;width:200px; padding:0 21px; height:28px;  border:1px solid #85aabe; outline:none;}
+.c_li_06_wrap_second_02 ol input[type="submit"]{ border-radius:2px; background:#94b7d4; border:none; outline:none; color:#ffffff; font-size:16px; font-family:"微软雅黑"; width:90px; height:30px; margin-right:13px; margin-left:155px; cursor:pointer;}
+.c_li_06_wrap_second_02 ol input[type="reset"]{ border-radius:2px; background:#94b7d4; border:none; outline:none; color:#ffffff; font-size:16px; font-family:"微软雅黑"; width:90px; height:30px; cursor:pointer;}
+.c_li_06_wrap_second_02 ol textarea{background:#f1f7fa; margin-top:13px; padding:13px 21px; width:539px; height:95px;border-radius:2px;float:left; border:1px solid #85aabe; outline:none; overflow-y:scroll; resize:none; float:left;}
+
+.c_li_06_wrap_second_02 ol li a{ margin-bottom:0; margin-top:15px; border-radius:3px; display:block; float:left; width:152px; height:30px; line-height:30px; background:#dcecf5; border:1px solid #a1b8ca; text-align:center; color:#123b5d; font-size:14px; font-family:"微软雅黑";}
+.c_li_06_wrap_second_02 ol li a:last-child{ margin-left:10px; width:84px; background:#40a1f6; color:#fff; border:1px solid #40a1f6; outline:none;}
+
+
+/*颁发管理印章页面 备注div*/
+/*.c_li_06_wrap_second_03{background:#ffffff;border:1px solid #bad4e8; width:99%; margin:12px auto; border-radius:4px;}*/
+.c_li_06_wrap_second_03{background:#ffffff;border:1px solid #bad4e8; width:99%; margin:12px auto; border-radius:4px; min-width:1100px;}
+.c_li_06_wrap_second_03 h2{ padding-left:46px; font-weight:normal; background:#f7fbfd url(../img/li_06_the_info_3.png) no-repeat 13px center; height:37px; line-height:37px; font-size:18; font-family:"微软雅黑"; color:#7c8897; border-bottom:1px solid #dce6ee;}
+
+.c_li_06_wrap_second_03 form{ width:1000px; margin:0 auto;}
+.c_li_06_wrap_second_03 ol{ margin-left:10%; width:700px; padding-top:14px; padding-bottom:28px;}
+.c_li_06_wrap_second_03 ol li{ overflow:hidden;}
+
+.c_li_06_wrap_second_03 ol label{ color:#1e2a2f; font-size:14px; font-family:"微软雅黑"; line-height:55px; width:70px; float:left; text-align:left; padding-left:25px;}
+.c_li_06_wrap_second_03 ol input[type="text"]{background:#f1f7fa; border-radius:2px;float:left; margin-top:13px;width:200px; padding:0 21px; height:28px;  border:1px solid #85aabe; outline:none;}
+.c_li_06_wrap_second_03 ol input[type="submit"]{ border-radius:2px; background:#94b7d4; border:none; outline:none; color:#ffffff; font-size:16px; font-family:"微软雅黑"; width:90px; height:30px; margin-right:13px; margin-left:155px; cursor:pointer;}
+.c_li_06_wrap_second_03 ol input[type="reset"]{ border-radius:2px; background:#94b7d4; border:none; outline:none; color:#ffffff; font-size:16px; font-family:"微软雅黑"; width:90px; height:30px; cursor:pointer;}
+.c_li_06_wrap_second_03 ol textarea{background:#f1f7fa; margin-top:13px; padding:13px 21px; width:539px; height:70px;border-radius:2px;float:left; border:1px solid #85aabe; outline:none; overflow-y:scroll; resize:none; float:left;}
+
+.c_li_06_wrap_second_03 ol li a{ margin-bottom:0; margin-top:15px; border-radius:3px; display:block; float:left; width:152px; height:30px; line-height:30px; background:#dcecf5; border:1px solid #a1b8ca; text-align:center; color:#123b5d; font-size:14px; font-family:"微软雅黑";}
+.c_li_06_wrap_second_03 ol li a:last-child{ margin-left:10px; width:84px; background:#40a1f6; color:#fff; border:1px solid #40a1f6; outline:none;}
+
+/*底部按键，06*/
+.li_06_add_the{ text-align:center; border-radius:2px; display:block; background:#0761c0; width:76px; height:33px;line-height:33px;  color:#ffffff; font-size:16px; font-family:"微软雅黑"; margin-left:30%; margin-top:15px; float:left; margin-bottom:60px; }
+.li_06_add_the:hover{ background:#0756aa;}
+.li_06_add_theDisabled{cursor:default; text-align:center; border-radius:2px; display:block; background:#bbbbbb; width:76px; height:33px;line-height:33px;  color:#777777; font-size:16px; font-family:"微软雅黑"; margin-left:30%; margin-top:15px; float:left; margin-bottom:60px; }
+.li_06_add_the_2{ text-align:center; border-radius:2px; display:block; margin:0 auto; background:#40a1f6; width:76px; height:33px;line-height:33px;  color:#ffffff; font-size:16px; font-family:"微软雅黑"; margin-left:2%;margin-top:15px;float:left;  }
+.li_06_add_the_2:hover{ background:#3a92e0;}
+.li_06_add_the_2Disabled{cursor:default; text-align:center; border-radius:2px; display:block; margin:0 auto; background:#bbbbbb; width:76px; height:33px;line-height:33px;  color:#777777; font-size:16px; font-family:"微软雅黑"; margin-left:2%;margin-top:15px;float:left;  }
+.li_06_add_the_3{ text-align:center; border-radius:2px; display:block;background:#4cc2a5; width:76px; height:33px;line-height:33px;  color:#ffffff; font-size:16px; font-family:"微软雅黑"; margin-left:2%; margin-top:15px;float:left; }
+.li_06_add_the_3:hover{ background:#41a88f;}
+.li_06_add_the_3Disabled{cursor:default; text-align:center; border-radius:2px; display:block;background:#bbbbbb; width:76px; height:33px;line-height:33px;  color:#777777; font-size:16px; font-family:"微软雅黑"; margin-left:2%; margin-top:15px;float:left; }
+.li_06_add_the_4{ text-align:center; border-radius:2px; display:block; background:#94b7d4; width:76px; height:33px;line-height:33px;  color:#ffffff; font-size:16px; font-family:"微软雅黑"; margin-left:2%; margin-top:15px;float:left; }
+.li_06_add_the_4:hover{ background:#809db6;}
+
+
+/*底部按键，06——2*/
+.li_06_add_the_6{  text-align:center; border-radius:2px; display:block; margin:0 auto; background:#40a1f6; width:76px; height:33px;line-height:33px;  color:#ffffff; font-size:16px; font-family:"微软雅黑"; margin-left:40%;margin-top:15px;float:left;margin-bottom:50px;  }
+.li_06_add_the_6:hover{ background:#3a92e0;}
+.li_06_add_the_7{ text-align:center; border-radius:2px; display:block;background:#4cc2a5; width:76px; height:33px;line-height:33px;  color:#ffffff; font-size:16px; font-family:"微软雅黑"; margin-left:2%; margin-top:15px;float:left; }
+.li_06_add_the_7:hover{ background:#41a88f;}
+.li_06_add_the_8{ text-align:center; border-radius:2px; display:block; background:#94b7d4; width:76px; height:33px;line-height:33px;  color:#ffffff; font-size:16px; font-family:"微软雅黑"; margin-left:2%; margin-top:15px;float:left; }
+.li_06_add_the_8:hover{ background:#809db6;}
+
+/*印章添加、修改页面的 导入证书：选择证书、查看证书*/
+/*导入证书*/
+.c_li_06_wrap_second_05 div ol li .impCertCssDisabled{ margin-bottom:0; margin-top:15px; border-radius:3px; display:block; float:left; width:243px; height:30px; line-height:30px; background:#dddddd; cursor:default; border:1px solid #a1b8ca; text-align:center; color:#777777; font-size:14px; font-family:"微软雅黑";}
+.c_li_06_wrap_second_05 div ol li .impCertCssDisabled:hover{ background:#dddddd; }
+
+.c_li_06_wrap_second_05 div ol li .impCertCss{cursor:pointer; margin-bottom:0; margin-top:15px; border-radius:3px; display:block; float:left; width:243px; height:30px; line-height:30px; background:#dcecf5; border:1px solid #a1b8ca; text-align:center; color:#123b5d; font-size:14px; font-family:"微软雅黑";}
+.c_li_06_wrap_second_05 div ol li .impCertCss:hover{ background:#d9e6ed; }
+/*查看证书*/
+.c_li_06_wrap_second_05 div ol li .viewCertCssDisabled{ margin-left:8px; width:80px; background:#dddddd; color:#777777; border:1px solid #a1b8ca; outline:none; cursor:default;}
+.c_li_06_wrap_second_05 div ol li .viewCertCssDisabled:hover{ background:#dddddd; }
+.c_li_06_wrap_second_05 div ol li .viewCertCss{cursor:pointer; margin-left:8px; width:80px; background:#40a1f6; color:#fff; border:1px solid #40a1f6; outline:none;}
+.c_li_06_wrap_second_05 div ol li .viewCertCss:hover{ background:#3992e0; }
+
+/*添加—06*/
+.c_li_06_wrap_second_04{background:#ffffff;border:1px solid #bad4e8; width:99%; margin:12px auto; border-radius:4px; min-width:1100px; margin-top:68px; }
+.c_li_06_wrap_second_04 h2{ padding-left:46px; font-weight:normal; background:#f7fbfd url(../img/li_06_the_info.png) no-repeat 13px center; height:37px; line-height:37px; font-size:18; font-family:"微软雅黑"; color:#7c8897; border-bottom:1px solid #dce6ee;}
+.c_li_06_wrap_second_04 h2 a{ float:right; padding-left:15px; width:57px; text-align:center; font-family:"微软雅黑"; font-size:14px; color:#3e5e86; font-weight:bold; line-height:26px;height:26px; border-radius:26px; border:1px solid #a6bdce; background:#dfedf4; margin-top:4px; background:url(../img/backto_the.png) no-repeat 8px center; margin-right:16px;}
+/*"返回"按钮*/
+.c_li_06_wrap_second_04 h2 a:hover{ background:#d9e6ed url(../img/backto_the.png) no-repeat 8px center; }
+
+.c_li_06_wrap_second_04 .sealDiv{ width:1000px; margin:0 auto;}
+/*印章图片*/
+.c_li_06_wrap_second_04 .main_the_con_06{line-height:179px; position:relative; border:3px dashed #dcdcdc; width:179px; height:179px; margin-top:25px; float:right;}
+.c_li_06_wrap_second_04 .main_the_con_06 .imgCenterDiv{ width:179px; height:179px; text-align:center;vertical-align:middle;display:table-cell; }
+.c_li_06_wrap_second_04 .main_the_con_06 .imgCenterP{ position:static;+position:absolute;top:50%; }
+.c_li_06_wrap_second_04 .main_the_con_06 img{position:static; +position:relative;top:-50%;left:-50%; }
+
+.c_li_06_wrap_second_04 .main_the_con_06 .the_goto_img{ position:absolute; bottom:-38px; height:28px; color:#ffffff; cursor:pointer; font-family:"微软雅黑"; font-size:14px; line-height:28px; width:180px; background:#94b7d4; text-align:center; border-radius:3px;}
+/*添加印章页面，“上传”按钮，鼠标停靠时改变样式*/
+.c_li_06_wrap_second_04 .main_the_con_06 .the_goto_img:hover{ background:#809db6; }
+.c_li_06_wrap_second_04 ol{ margin-left:10%; width:700px; padding-top:14px; padding-bottom:28px;}
+.c_li_06_wrap_second_04 ol li{ display:inline-block;}
+
+.c_li_06_wrap_second_04 ol label{ color:#1e2a2f; font-size:14px; font-family:"微软雅黑"; line-height:55px; width:70px; float:left; text-align:left; padding-left:25px;}
+/*.c_li_06_wrap_second_04 ol input[type="text"]{background:#f1f7fa; border-radius:2px;float:left; margin-top:13px;width:200px; padding:0 21px; height:28px;  border:1px solid #85aabe; outline:none;}*/
+.c_li_06_wrap_second_04 ol input[type="text"]{border-radius:2px;float:left; margin-top:13px;width:200px; padding:0 21px; height:28px;  border:1px solid #85aabe; outline:none;}
+.c_li_06_wrap_second_04 ol .select_way input{border-radius:2px;width:200px; padding:0 21px; height:28px\9; margin:0;  border:1px solid #85aabe; outline:none; position:absolute; left:-1px; top:-1px;cursor:pointer;}
+.c_li_06_wrap_second_04 ol label.left_margin{line-height:58px; width:60px; margin-left:-20px; padding-right:15px; text-align:left}
+.c_li_06_wrap_second_04 ol input[type="text"].color_85aabe{ color:#85aabe;}
+/*印章页面的“签章人”样式*/
+.c_li_06_wrap_second_04 ol li #signerName{ width:115px;}
+/*添加印章中的“请选择”按钮*/
+.c_li_06_wrap_second_04 ol li .select_the_area_05{ width:78px; padding:0; height:28px; background:url(../img/content_li_12_a_bg.jpg) repeat-x center center; border:1px solid #a1b8ca; float:left; margin-top:13px; margin-left:5px;}
+.c_li_06_wrap_second_04 ol li .select_the_area_05:hover{background:#d9e6ed;}
+
+c_li_06_wrap_second_04 ol input[type="submit"]{ border-radius:2px; background:#94b7d4; border:none; outline:none; color:#ffffff; font-size:16px; font-family:"微软雅黑"; width:90px; height:30px; margin-right:13px; margin-left:155px; cursor:pointer;}
+.c_li_06_wrap_second_04 ol input[type="reset"]{ border-radius:2px; background:#94b7d4; border:none; outline:none; color:#ffffff; font-size:16px; font-family:"微软雅黑"; width:90px; height:30px; cursor:pointer;}
+.c_li_06_wrap_second_04 ol textarea{background:#f1f7fa; margin-top:13px; padding:13px 21px; width:539px; height:95px;border-radius:2px;float:left; border:1px solid #85aabe; outline:none; overflow-y:scroll; resize:none; float:left;}
+
+.c_li_06_wrap_second_04 ol li a{ margin-bottom:0; margin-top:15px; border-radius:3px; display:block; float:left; width:152px; height:30px; line-height:30px; background:#dcecf5; border:1px solid #a1b8ca; text-align:center; color:#123b5d; font-size:14px; font-family:"微软雅黑";}
+.c_li_06_wrap_second_04 ol li a:last-child{ margin-left:10px; width:84px; background:#40a1f6; color:#fff; border:1px solid #40a1f6; outline:none;}
+
+/*印章添加、修改页面选择证书div*/
+/*.c_li_06_wrap_second_05{background:#ffffff;border:1px solid #bad4e8; width:99%; margin:12px auto; border-radius:4px;}*/
+.c_li_06_wrap_second_05{background:#ffffff;border:1px solid #bad4e8; width:99%; margin:12px auto; border-radius:4px; min-width:1100px;}
+.c_li_06_wrap_second_05 h2{ padding-left:46px; font-weight:normal; background:#f7fbfd url(../img/li_06_the_info_2.png) no-repeat 13px center; height:37px; line-height:37px; font-size:18; font-family:"微软雅黑"; color:#7c8897; border-bottom:1px solid #dce6ee;}
+
+.c_li_06_wrap_second_05 .certDiv{ width:1000px; margin:0 auto;}
+.c_li_06_wrap_second_05 ol{ margin-left:10%; width:700px; padding-top:14px; padding-bottom:28px;}
+.c_li_06_wrap_second_05 ol li{ overflow:hidden;}
+
+
+.c_li_06_wrap_second_05 ol li.the_06_the_r_li{ padding-left:337px;}
+.c_li_06_wrap_second_05 ol label{ color:#1e2a2f; font-size:14px; font-family:"微软雅黑"; line-height:55px; width:70px; float:left; text-align:left; padding-left:25px;}
+/*.c_li_06_wrap_second_05 ol input[type="text"]{background:#f1f7fa; border-radius:2px;float:left; margin-top:13px;width:200px; padding:0 21px; height:28px;  border:1px solid #85aabe; outline:none;}*/
+.c_li_06_wrap_second_05 ol input[type="text"]{border-radius:2px;float:left; margin-top:13px;width:200px; padding:0 21px; height:28px;  border:1px solid #85aabe; outline:none;}
+
+.c_li_06_wrap_second_05 ol input[type="submit"]{ border-radius:2px; background:#94b7d4; border:none; outline:none; color:#ffffff; font-size:16px; font-family:"微软雅黑"; width:90px; height:30px; margin-right:13px; margin-left:155px; cursor:pointer;}
+.c_li_06_wrap_second_05 ol input[type="reset"]{ border-radius:2px; background:#94b7d4; border:none; outline:none; color:#ffffff; font-size:16px; font-family:"微软雅黑"; width:90px; height:30px; cursor:pointer;}
+.c_li_06_wrap_second_05 ol textarea{background:#f1f7fa; margin-top:13px; padding:13px 21px; width:539px; height:95px;border-radius:2px;float:left; border:1px solid #85aabe; outline:none; overflow-y:scroll; resize:none; float:left;}
+
+.c_li_06_wrap_second_05 ol li a{ margin-bottom:0; margin-top:15px; border-radius:3px; display:block; float:left; width:152px; height:30px; line-height:30px; background:#dcecf5; border:1px solid #a1b8ca; text-align:center; color:#123b5d; font-size:14px; font-family:"微软雅黑";}
+.c_li_06_wrap_second_05 ol li a:last-child{ margin-left:10px; width:84px; background:#40a1f6; color:#fff; border:1px solid #40a1f6; outline:none;}
+
+/*备注信息div*/
+/*.c_li_06_wrap_second_06{background:#ffffff;border:1px solid #bad4e8; width:99%; margin:12px auto; border-radius:4px;}*/
+.c_li_06_wrap_second_06{background:#ffffff;border:1px solid #bad4e8; width:99%; margin:12px auto; border-radius:4px;  min-width:1100px;}
+.c_li_06_wrap_second_06 h2{ padding-left:46px; font-weight:normal; background:#f7fbfd url(../img/li_06_the_info_3.png) no-repeat 13px center; height:37px; line-height:37px; font-size:18; font-family:"微软雅黑"; color:#7c8897; border-bottom:1px solid #dce6ee;}
+
+.c_li_06_wrap_second_06 .descDiv{ width:1000px; margin:0 auto;}
+.c_li_06_wrap_second_06 ol{ margin-left:10%; width:700px; padding-top:14px; padding-bottom:28px;}
+.c_li_06_wrap_second_06 ol li{ overflow:hidden;}
+
+.c_li_06_wrap_second_06 ol label{ color:#1e2a2f; font-size:14px; font-family:"微软雅黑"; line-height:55px; width:80px; float:left; text-align:right; padding-right:15px;}
+.c_li_06_wrap_second_06 ol input[type="text"]{background:#f1f7fa; border-radius:2px;float:left; margin-top:13px;width:200px; padding:0 21px; height:28px;  border:1px solid #85aabe; outline:none;}
+.c_li_06_wrap_second_06 ol input[type="submit"]{ border-radius:2px; background:#94b7d4; border:none; outline:none; color:#ffffff; font-size:16px; font-family:"微软雅黑"; width:90px; height:30px; margin-right:13px; margin-left:155px; cursor:pointer;}
+.c_li_06_wrap_second_06 ol input[type="reset"]{ border-radius:2px; background:#94b7d4; border:none; outline:none; color:#ffffff; font-size:16px; font-family:"微软雅黑"; width:90px; height:30px; cursor:pointer;}
+/*.c_li_06_wrap_second_06 ol textarea{background:#f1f7fa; margin-top:13px; padding:13px 21px; width:539px; height:70px;border-radius:2px;float:left; border:1px solid #85aabe; outline:none; overflow-y:scroll; resize:none; float:left;}*/
+.c_li_06_wrap_second_06 ol textarea{margin-top:13px; padding:13px 21px; width:539px; height:70px;border-radius:2px;float:left; border:1px solid #85aabe; outline:none; overflow-y:scroll; resize:none; float:left;}
+
+.c_li_06_wrap_second_06 ol li a{ margin-bottom:0; margin-top:15px; border-radius:3px; display:block; float:left; width:152px; height:30px; line-height:30px; background:#dcecf5; border:1px solid #a1b8ca; text-align:center; color:#123b5d; font-size:14px; font-family:"微软雅黑";}
+.c_li_06_wrap_second_06 ol li a:last-child{ margin-left:10px; width:84px; background:#40a1f6; color:#fff; border:1px solid #40a1f6; outline:none;}
+
+/*USBKey信息*/
+.c_li_06_wrap_second_07{background:#ffffff;border:1px solid #bad4e8; width:99%; margin:12px auto; border-radius:4px;  min-width:1100px;}
+.c_li_06_wrap_second_07 h2{ padding-left:46px; font-weight:normal; background:#f7fbfd url(../img/li_06_the_info_4.png) no-repeat 13px center; height:37px; line-height:37px; font-size:18; font-family:"微软雅黑"; color:#7c8897; border-bottom:1px solid #dce6ee;}
+
+.c_li_06_wrap_second_07 .keyDiv{ width:1000px; margin:0 auto;}
+.c_li_06_wrap_second_07 ol{ margin-left:10%; width:700px; padding-top:14px; padding-bottom:28px;}
+.c_li_06_wrap_second_07 ol li{ overflow:hidden;}
+
+.c_li_06_wrap_second_07 ol label{ color:#1e2a2f; font-size:14px; font-family:"微软雅黑"; line-height:55px; width:80px; float:left; text-align:right; padding-right:15px;}
+.c_li_06_wrap_second_07 ol input[type="text"]{background:#f1f7fa; border-radius:2px;float:left; margin-top:13px;width:200px; padding:0 21px; height:28px;  border:1px solid #85aabe; outline:none;}
+
+
+
+/*07*/
+/*解决部门管理，排序换行的问题*/
+/*#content li.content_li_07{ min-width:924px;}*/
+#content li.content_li_07{ min-width:980px;}
+#content li.content_li_07 h3 div{ margin-left:30%; float:left; width:430px; display:block;}
+#content li.content_li_07 h3 div input[type="text"]{ font-size:14px; font-family:"微软雅黑"; margin-top:13px; border-radius:3px; padding-left:10px; width:366px; height:28px; color:#7094a1; float:left; border:1px solid #85aabe; outline:none;}
+#content li.content_li_07 h3 div input[type="submit"]{ border-radius:3px; background:#94b7d4 url(../img/serch_icon.png) no-repeat center center;margin-top:13px; width:35px; height:32px; border:none; outline:none; color:#7094a1; float:left; cursor:pointer; margin-left:8px; }
+#content li.content_li_07 h3 div input[type="submit"]:hover{ background:#8aa9c3 url(../img/serch_icon.png) no-repeat center center; }
+
+
+#content li.content_li_07 .c_li_07_wrap_left{ white-space:nowrap; overflow:auto; position:relative; float:left;border:1px solid #bad4e8;height:864px; width:25%; margin:12px 0 12px 0.5%; border-radius:4px; background:#fff;}
+#content li.content_li_07 .c_li_07_wrap_right{ overflow:auto; background:#ffffff; float:right;border:1px solid #bad4e8; height:864px; width:73%; min-width:660px; margin:12px 0.5% 12px 0; border-radius:4px;}
+
+#content li.content_li_07 .c_li_07_wrap_right li{ border-radius:3px;width:100%;}
+
+/*内容07左边部分*/
+#content li.content_li_07 .c_li_07_wrap_left li{ border-radius:3px;}
+#content li.content_li_07 .c_li_07_wrap_left li.c_li_07_first{ background:#f7fbfd; padding-left:23px; padding-top:9px; padding-bottom:9px; height:28px; border-bottom:1px solid #dce6ee;}
+#content li.content_li_07 .c_li_07_wrap_left li.c_li_07_first input{ margin-right:18px;}
+
+
+
+#content li.content_li_07 .c_li_07_wrap_left li{ line-height:28px; padding-left:20px; }
+#content li.content_li_07 .c_li_07_wrap_left li a{ color:#303030; font-family:"微软雅黑"; font-size:14px; cursor:pointer;}
+#content li.content_li_07 .c_li_07_wrap_left li .strong_a{white-space:nowrap; line-height:44px; font-weight:normal; padding-left:23px; /*color:#006400;*/ font-size:16px; font-family:"微软雅黑"; cursor:pointer;}
+#content li.content_li_07 .c_li_07_wrap_left li label{white-space:nowrap; line-height:44px; font-weight:normal; padding-left:23px; color:#ff0000; font-size:16px; font-family:"微软雅黑"; cursor:pointer; background:url(../img/lileft_07_strong_01.png) no-repeat 6px center; }
+
+
+
+#content li.content_li_07 .c_li_07_wrap_left li dl{ line-height:28px; width:0px;}
+#content li.content_li_07 .c_li_07_wrap_left li dl dt{ position:relative; line-height:44px; font-weight:normal; left:0px; color:#ff0000; font-size:16px; font-family:"微软雅黑"; cursor:pointer; }
+#content li.content_li_07 .c_li_07_wrap_left li dl dt label{background:url(../img/lileft_07_strong_01.png) no-repeat 30px center; padding-left:50px; color:#303030; font-family:"微软雅黑"; font-size:14px; padding-right:18px;cursor:pointer;}
+#content li.content_li_07 .c_li_07_wrap_left li dl dd{position:relative; left:22px;}
+#content li.content_li_07 .c_li_07_wrap_left li dl dd label{background:url(../img/lileft_07_list_02.png) no-repeat 15px center; padding-left:28px; color:#303030; font-family:"微软雅黑"; font-size:14px; padding-right:18px; cursor:pointer;}
+#content li.content_li_07 .c_li_07_wrap_left li dl dd dt label{background:url(../img/lileft_07_strong_01.png) no-repeat 30px center; padding-left:50px; color:#303030; font-family:"微软雅黑"; font-size:14px; padding-right:18px; cursor:pointer;}
+#content li.content_li_07 .c_li_07_wrap_left li .setUrlCss{ background:url(../img/lileft_07_strong_01.png) no-repeat 33px center; cursor:pointer;}
+#content li.content_li_07 .c_li_07_wrap_left li .setUrlCss2{ background:url(../img/lileft_07_strong_02.png) no-repeat 33px center; cursor:pointer;}
+
+
+
+/*部门列表右边部分*/
+#content li.content_li_07 .c_li_07_wrap_right li ol li{border-radius:0; overflow:hidden; border-bottom:1px solid #cee0e8; }
+/*设置列表页面，li组成的单元格内容换行时，表格线长度自动改变（设置的最高为200px,若高度不够可在自行更改） :padding-bottom:200px; margin-bottom:-200px; 
+word-break:break-all;是断开单词。在单词到边界时，下个字母自动到下一行。主要解决了长串英文的问题。*/
+#content li.content_li_07 .c_li_07_wrap_right ol li strong{ word-break:break-all; padding-bottom:200px; margin-bottom:-200px; font-weight:normal;line-height:38px; /*height:38px;*/ text-align:center; font-family:"微软雅黑"; font-size:14px; color:#303030; display:block; float:left; width:20%; border-right:1px solid #cee0e8; }
+/*解决部门管理，排序换行的问题*/
+/*#content li.content_li_07 .c_li_07_wrap_right ol li span{line-height:38px; text-align:center; font-family:"微软雅黑"; font-size:14px; color:#303030;display:block; float:left; width:18%;}
+#content li.content_li_07 .c_li_07_wrap_right ol li i{ font-style:normal;line-height:38px; text-align:center; font-family:"微软雅黑"; font-size:14px; color:#303030;display:block; float:left; width:40%; border-right:1px solid #cee0e8;}*/
+#content li.content_li_07 .c_li_07_wrap_right ol li span{word-break:break-all; padding-bottom:200px; margin-bottom:-200px; line-height:38px; text-align:center; font-family:"微软雅黑"; font-size:14px; color:#303030;display:block; float:left; width:23%; }
+#content li.content_li_07 .c_li_07_wrap_right ol li i{ word-break:break-all; padding-bottom:200px; margin-bottom:-200px; font-style:normal;line-height:38px; text-align:center; font-family:"微软雅黑"; font-size:14px; color:#303030;display:block; float:left; width:35%; border-right:1px solid #cee0e8;}
+
+#content li.content_li_07 .c_li_07_wrap_right li ol li.li_07_right_first{ color:#fff;border-radius:0; background:#40a1f6; overflow:hidden; border:none; }
+#content li.content_li_07 .c_li_07_wrap_right li ol li.li_07_right_first strong{color:#fff;}
+#content li.content_li_07 .c_li_07_wrap_right li ol li.li_07_right_first i{color:#fff;}
+#content li.content_li_07 .c_li_07_wrap_right ol li span{color:#fff;}
+
+#content li.content_li_07 .c_li_07_wrap_right ol li strong a{ float:left; display:block; width:45px; height:22px; color:#ffffff; border:1px solid #61af72; background:#76cda0; line-height:22px; margin-top:7px; margin-left:20%;}
+#content li.content_li_07 .c_li_07_wrap_right ol li strong a:hover{ background:#6cbc92;}
+#content li.content_li_07 .c_li_07_wrap_right ol li strong a:last-child{color:#7094a1; border:1px solid #c6d7e0; background:#f4fafd; margin-left:6px;}
+#content li.content_li_07 .c_li_07_wrap_right ol li strong a:last-child:hover{ background:#e6ecef;}
+
+/*解决部门管理，排序换行的问题*/
+/*#content li.content_li_07 .c_li_07_wrap_right ol li span a{ border-radius:2px; background:#eef5f9; width:70px; height:20px; color:#7094a1; font-family:"微软雅黑"; font-size:12px; border:1px solid #c6d7e0; float:left; display:block; text-align:center; line-height:20px;  margin:8px auto; float:none;}
+#content li.content_li_07 .c_li_07_wrap_right ol li span a:hover{ background:#d9e6ed;}*/
+#content li.content_li_07 .c_li_07_wrap_right ol li span a{ float:left; display:block; width:70px; height:22px; color:#7094a1; border-radius:2px;  background:#eef5f9; border:1px solid #c6d7e0; line-height:22px; margin-top:7px; margin-left:5%;}
+#content li.content_li_07 .c_li_07_wrap_right ol li span a:hover{ background:#d9e6ed;}
+
+
+#content li.content_li_07 .c_li_07_wrap_right li.add_li_07 ol li:first-child{ background:#f7fbfd} 
+#content li.content_li_07 .c_li_07_wrap_right li.add_li_07 ol li strong{ float:left; width:; height:37px; color:#7c8897; font-size:16px; font-family:"微软雅黑"; line-height:37px; border:none; padding-left:50px; text-align:left; background:url(../img/li_07_top_list_icon.png) no-repeat 17px center;}
+#content li.content_li_07 .c_li_07_wrap_right li.add_li_07 ol li span { float:left; width:; height:37px; color:#7c8897; font-size:16px; font-family:"微软雅黑"; line-height:37px; border:none; padding-left:50px; text-align:left; }
+
+#content li.content_li_07 .c_li_07_wrap_right li.add_li_07 ol li label{ height:35px; float:left; width:189px; line-height:35px; padding:0 18px; border-right:1px solid #cee0e8; font-size:14px; font-family:"微软雅黑"; color:#303030;}
+#content li.content_li_07 .c_li_07_wrap_right li.add_li_07 ol li input[type="text"]{ float:left; width:243px; height:26px; border:1px solid #85aabe; margin-top:3px; margin-left:20px; outline:none;}
+/*添加部门时，“保存”按钮，鼠标停靠时按钮样式改变*/
+#content li.content_li_07 .c_li_07_wrap_right li.add_li_07 ol li input[type="submit"]{ float:left; width:85px; height:30px; border:none; margin-top:22px; margin-left:40%; margin-bottom:1000px;outline:none; background:#4cc2a5; cursor:pointer; color:#ffffff; font-family:"微软雅黑"; font-size:14px;}
+#content li.content_li_07 .c_li_07_wrap_right li.add_li_07 ol li input[type="submit"]:hover{ background:#41a88f;}
+/*编辑部门时，“保存”按钮，鼠标停靠时按钮样式改变*/
+#content li.content_li_07 .c_li_07_wrap_right li.add_li_07 ol li input[type="button"]{ float:left; width:85px; height:30px; border:none; margin-top:22px; margin-left:40%; margin-bottom:1000px;outline:none; background:#4cc2a5; cursor:pointer; color:#ffffff; font-family:"微软雅黑"; font-size:14px;}
+#content li.content_li_07 .c_li_07_wrap_right li.add_li_07 ol li input[type="button"]:hover{ background:#41a88f;}
+/*#content li.content_li_07 .c_li_07_wrap_right li.add_li_07 ol li input[type="submit"]:last-child{ margin-left:10px; background:#94b7d4;}*/
+/*添加、编辑部门时，“重置”按钮，鼠标停靠时按钮颜色样式改变*/
+#content li.content_li_07 .c_li_07_wrap_right li.add_li_07 ol li input[type="reset"]{ float:left; width:85px; height:30px; border:none; margin-top:22px; margin-left:40%; margin-bottom:1000px;outline:none; background:#94b7d4; cursor:pointer; color:#ffffff; font-family:"微软雅黑"; font-size:14px; margin-left:10px; }
+#content li.content_li_07 .c_li_07_wrap_right li.add_li_07 ol li input[type="reset"]:hover{ background:#809db6; }
+
+#content li.content_li_07 .c_li_07_wrap_right li.add_li_07_2 ol li:first-child{ background:#f7fbfd} 
+#content li.content_li_07 .c_li_07_wrap_right li.add_li_07_2 ol li strong{ float:left; width:; height:37px; color:#7c8897; font-size:16px; font-family:"微软雅黑"; line-height:37px; border:none; padding-left:50px; text-align:left; background:url(../img/li_07_top_list_icon.png) no-repeat 17px center;}
+
+#content li.content_li_07 .c_li_07_wrap_right li.add_li_07_2 ol li label{ height:35px; float:left; width:189px; line-height:35px; padding:0 18px; border-right:1px solid #cee0e8; font-size:14px; font-family:"微软雅黑"; color:#303030;}
+#content li.content_li_07 .c_li_07_wrap_right li.add_li_07_2 ol li input[type="text"]{ float:left; width:243px; height:26px; border:1px solid #85aabe; margin-top:3px; margin-left:20px; outline:none;}
+#content li.content_li_07 .c_li_07_wrap_right li.add_li_07_2 ol li input[type="submit"]{ float:left; width:85px; height:30px; border:none; margin-top:22px; margin-left:40%; margin-bottom:1000px;outline:none; background:#4cc2a5; cursor:pointer; color:#ffffff; font-family:"微软雅黑"; font-size:14px;}
+#content li.content_li_07 .c_li_07_wrap_right li.add_li_07_2 ol li input[type="submit"]:last-child{ margin-left:10px; background:#94b7d4;}
+
+
+/*搜索框*/
+/*设置列表页面，li组成的单元格内容换行时，表格线长度自动改变（设置的最高为200px,若高度不够可在自行更改） :padding-bottom:200px; margin-bottom:-200px; 
+word-break:break-all;是断开单词。在单词到边界时，下个字母自动到下一行。主要解决了长串英文的问题。*/
+/*#content li.content_li_07 .c_li_07_wrap_right li.seach_li_07 ol li{  border-radius:0; overflow:hidden; border-bottom:1px solid #cee0e8; }
+#content li.content_li_07 .c_li_07_wrap_right li.seach_li_07 ol li strong{ text-align:left; font-weight:normal;line-height:38px; /*height:38px;*/ /*font-family:"微软雅黑"; font-size:14px; color:#303030; display:block; float:left; padding:0 2%; width:26%; border-right:1px solid #cee0e8; }
+/*#content li.content_li_07 .c_li_07_wrap_right li.seach_li_07 ol li i{text-align:left; padding:0 2%; font-style:normal;line-height:38px; font-family:"微软雅黑"; font-size:14px; border:none; color:#303030;display:block; float:left; width:64%;}
+#content li.content_li_07 .c_li_07_wrap_right li.seach_li_07 ol li strong a{float:none; color:#1682d6; font-family:"微软雅黑"; font-size:14px; border:none; text-decoration:underline;}
+#content li.content_li_07 .c_li_07_wrap_right li.seach_li_07 ol li.seach_li_07_right_first{ color:#fff;border-radius:0; background:#40a1f6; overflow:hidden; border:none; }
+#content li.content_li_07 .c_li_07_wrap_right li.seach_li_07 ol li.seach_li_07_right_first strong{ text-align:center;color:#fff;}
+#content li.content_li_07 .c_li_07_wrap_right li.seach_li_07 ol li.seach_li_07_right_first i{ text-align:center;color:#fff;}*/
+
+#content li.content_li_07 .c_li_07_wrap_right li.seach_li_07 ol li{ border-radius:0; overflow:hidden; border-bottom:1px solid #cee0e8; }
+#content li.content_li_07 .c_li_07_wrap_right li.seach_li_07 ol li strong{word-break:break-all;padding-bottom:200px; margin-bottom:-200px; text-align:left; font-weight:normal;line-height:38px; /*height:38px;*/ font-family:"微软雅黑"; font-size:14px; color:#303030; display:block; float:left; /*padding:0 2%;*/ width:26%; border-right:1px solid #cee0e8; }
+#content li.content_li_07 .c_li_07_wrap_right li.seach_li_07 ol li strong a{display :inline-block; width:90%; color:#1682d6; font-family:"微软雅黑"; font-size:14px; border:none; text-decoration:underline;}
+#content li.content_li_07 .c_li_07_wrap_right li.seach_li_07 ol li i{word-break:break-all; padding-bottom:200px; margin-bottom:-200px; text-align:left; /*padding:0 2%;*/ font-style:normal; line-height:38px; font-family:"微软雅黑"; font-size:14px; border:none; color:#303030;display:block; float:left; width:70%;}
+
+#content li.content_li_07 .c_li_07_wrap_right li.seach_li_07 ol li.seach_li_07_right_first{ color:#fff;border-radius:0; background:#40a1f6; overflow:hidden; border:none; }
+#content li.content_li_07 .c_li_07_wrap_right li.seach_li_07 ol li.seach_li_07_right_first strong{ text-align:center;color:#fff;}
+#content li.content_li_07 .c_li_07_wrap_right li.seach_li_07 ol li.seach_li_07_right_first i{ text-align:center;color:#fff;}
+
+
+/*内容08 - 人员列表页面*/
+#content li.content_li_08 h3 div{ float:left;}
+/*#content li.content_li_08 h3 div span{ background:#dddddd url(../img/change_icon.png) no-repeat 6px center; cursor:pointer; float:left; padding-left:15px; width:75px; height:28px; line-height:28px; text-align:center; border:1px solid #a2b1ba; border-radius:3px; color:#777777; font-size:14px; font-family:"微软雅黑";font-weight:normal; margin:15px 0 0 20px;}
+#content li.content_li_08 h3 div span:hover{background:#ccc url(../img/change_icon.png) no-repeat 6px center;}*/
+/*批量删除按钮*/
+#content li.content_li_08 h3 div .delBtnDisabled{ background:#dddddd url(../img/remove_icon.png) no-repeat 6px center; cursor:default; float:left; padding-left:22px; width:95px; height:30px; line-height:23px; text-align:center; border:1px solid #a2b1ba; border-radius:3px; color:#777777; font-size:14px; font-family:"微软雅黑";font-weight:normal; margin:15px 0 0 20px;}
+
+#content li.content_li_08 h3 div .delBtnAbled{ background:#f8f8f9 url(../img/remove_icon2.png) no-repeat 6px center; cursor:pointer; float:left; padding-left:22px; width:95px; height:30px; line-height:23px; text-align:center; border:1px solid #a2b1ba; border-radius:3px; color:#004b74; font-size:14px; font-family:"微软雅黑";font-weight:normal; margin:15px 0 0 20px;}
+#content li.content_li_08 h3 div .delBtnAbled:hover{background:#d9e6ed url(../img/remove_icon2.png) no-repeat 6px center;}
+
+/*添加按钮*/
+/*#content li.content_li_08 h3 div strong{ background:#f8f8f9 url(../img/add_the_img.png) no-repeat 14px center;cursor:pointer; float:left; padding-left:15px; width:75px; height:28px; line-height:28px; text-align:center; border:1px solid #99b4c8; border-radius:3px;color:#004b74;font-size:14px; font-family:"微软雅黑"; font-weight:normal;margin:15px 0px 0 8px;}
+#content li.content_li_08 h3 div strong:hover{background:#d9e6ed url(../img/add_the_img.png) no-repeat 14px center;}*/
+#content li.content_li_08 h3 div .addBtnAbled{ background:#f8f8f9 url(../img/add_the_img.png) no-repeat 14px center;cursor:pointer; float:left; padding-left:22px; width:95px; height:30px; line-height:23px; text-align:center; border:1px solid #99b4c8; border-radius:3px;color:#004b74;font-size:14px; font-family:"微软雅黑"; font-weight:normal;margin:15px 0px 0 8px;}
+#content li.content_li_08 h3 div .addBtnAbled:hover{background:#d9e6ed url(../img/add_the_img.png) no-repeat 14px center;}
+#content li.content_li_08 h3 div .addBtnDisabled{ background:#dddddd url(../img/add_the_img.png) no-repeat 14px center;cursor:pointer; float:left; padding-left:22px; width:95px; height:30px; line-height:23px; text-align:center; border:1px solid #99b4c8; border-radius:3px;color:#777777;font-size:14px; font-family:"微软雅黑"; font-weight:normal;margin:15px 0px 0 8px;}
+
+
+/*人员列表页面 底部分页导航栏*/
+.content_li_08 h4{font:15px/40px "微软雅黑"; color:#033c5d; padding-left:1%;}
+.content_li_08 h4 span{ color:#979fa5; font-size:14px; padding-right:10px;}
+.content_li_08 h4 div{ float:right; padding-right:0.5%; color:#21709d; font-size:14px; font-family:"微软雅黑";}
+.content_li_08 h4 div a{ margin:0 0 0 5px; color:#21709d; padding:5px 10px; border:1px solid #a3c2ce; background:#f3f9fd;}
+.content_li_08 h4 div a.current_08_a{ background:#0f9de4; color:#ffffff;border:1px solid #0f9de4;}
+.content_li_08 h4 div a:hover{ background:#0f9de4; color:#ffffff;border:1px solid #0f9de4; }
+
+.content_li_08 h4 i{ font-style:normal; color:#ea3535;}
+#content li.content_li_08 .c_li_08_wrap{border:1px solid #bad4e8; width:99%; margin:12px auto; border-radius:4px;}
+#content li.content_li_08 .c_li_08_wrap li form{ margin:0 auto; width:1220px; overflow:hidden;}
+#content li.content_li_08 .c_li_08_wrap li form label{ width:70px; text-align:right; display:block; float:left; color:#1d4456; font:14px/45px "微软雅黑";/* margin:0 6px 0 15px;*/ margin-right:8px;}
+#content li.content_li_08 .c_li_08_wrap li form b{ float:left; color:#8ab5cc; font:12px/45px "微软雅黑"; margin:0 6px;}
+#content li.content_li_08 .c_li_08_wrap li form input[type="text"]{ float:left; outline:none; border:1px solid #85aabe; height:23px; width:100px; border-radius:2px; margin:10px 0; font-size:12px; }
+#content li.content_li_08 .c_li_08_wrap li form input.one_input08{ width:250px;}
+#content li.content_li_08 .c_li_08_wrap li form input.one_input08_1{ width:140px;}
+#content li.content_li_08 .c_li_08_wrap li form input[type="button"]{ height:27px; width:80px; border:none; background:#20aef6; border-radius:2px; outline:none; font:14px "微软雅黑"; color:#ffffff;cursor:pointer;margin:10px 2px 10px 12px;}
+#content li.content_li_08 .c_li_08_wrap li form input[name="cancelBtn"][type="button"]{ height:27px; width:80px;border:none; background:#4cc2a5; border-radius:3px; outline:none;font:14px "微软雅黑"; color:#ffffff; cursor:pointer;margin:10px 0;}
+
+#content li.content_li_08 .c_li_08_wrap li form input[type="button"]:hover{ background:#1d98d6;}
+#content li.content_li_08 .c_li_08_wrap li form input[name="cancelBtn"][type="button"]:hover{ background:#3c9a83;}
+
+
+#content li.content_li_08 .c_li_08_wrap li form .div_08_1{ float:left; width:338px;}
+#content li.content_li_08 .c_li_08_wrap li form .div_08_2{ float:left; width:230px;}
+#content li.content_li_08 .c_li_08_wrap li form .div_08_3{ float:left; width:190px;}
+#content li.content_li_08 .c_li_08_wrap li form .div_08_4{ float:left;width:440px;}
+
+
+
+
+#content li.content_li_08 .c_li_08_wrap li{ min-width:1200px; line-height:38px; border-bottom:1px solid #d4e4eb; overflow:hidden; background:#ffffff;}
+#content li.content_li_08 .c_li_08_wrap li:last-child{ border:none;}
+#content li.content_li_08 .c_li_08_wrap li.c_li_08_thehead{ line-height:35px; background:#ecf4fa;}
+
+/*设置列表页面，li组成的单元格内容换行时，表格线长度自动改变（设置的最高为200px,若高度不够可在自行更改） :padding-bottom:200px; margin-bottom:-200px; 
+word-break:break-all;是断开单词。在单词到边界时，下个字母自动到下一行。主要解决了长串英文的问题。*/
+#content li.content_li_08 .c_li_08_wrap li strong{word-break:break-all; padding-bottom:200px; margin-bottom:-200px; float:left; width:6%;font-family:"微软雅黑"; font-size:14px;font-weight:normal; text-align:center; border-right:1px solid #cee2ec;}
+#content li.content_li_08 .c_li_08_wrap li strong.the_08_strong{ width:3%;}
+#content li.content_li_08 .c_li_08_wrap li span{word-break:break-all; padding-bottom:200px; margin-bottom:-200px; float:left;width:13%;font-family:"微软雅黑"; font-size:14px; color:#133954;text-align:center;}
+#content li.content_li_08 .c_li_08_wrap li cite{word-break:break-all; padding-bottom:200px; margin-bottom:-200px; display:block; border-right:1px solid #cee2ec;float:left;width:11%; font-style:normal;font-family:"微软雅黑"; font-size:14px; color:#133954;text-align:center; }
+#content li.content_li_08 .c_li_08_wrap li em{word-break:break-all; padding-bottom:200px; margin-bottom:-200px; border-right:1px solid #cee2ec;float:left;width:18%; font-style:normal;font-family:"微软雅黑"; font-size:14px; color:#303030; text-align:center; }
+#content li.content_li_08 .c_li_08_wrap li i{word-break:break-all; padding-bottom:200px; margin-bottom:-200px; line-height:38px; text-align:center;font-style:normal;font-family:"微软雅黑"; font-size:14px; color:#133954; display:block; float:left; width:9%;border-right:1px solid #cee2ec;}
+#content li.content_li_08 .c_li_08_wrap li b{border-right:1px solid #cee2ec;float:left;width:4%; font-style:normal;font-family:"微软雅黑"; font-size:14px; color:#303030; text-align:center; height:38px; }
+/*列表页面的checkbox所在列<b>标签样式*/
+#content li.content_li_08 .c_li_08_wrap li b.checkCss{ padding-bottom:200px; margin-bottom:-200px; }
+
+#content li.content_li_08 .c_li_08_wrap li b input{ width:16px; height:16px; margin-top:12px; cursor:pointer;}
+#content li.content_li_08 .c_li_08_wrap li:hover{ background:#f4f4f4;}
+#content li.content_li_08 .c_li_08_wrap li:first-child:hover{background:#ffffff;}
+
+#content li.content_li_08 .c_li_08_wrap li strong a{ color:#1682d6; text-decoration:underline;}
+/*人员列表中的“审批”按钮*/
+#content li.content_li_08 .c_li_08_wrap li i a{ float:left; display:block; width:45px; height:22px; color:#ffffff; border:1px solid #61af72; background:#76cda0; line-height:22px; margin-top:9px; margin-left:8px;}
+#content li.content_li_08 .c_li_08_wrap li i a:hover{ background:#6cbc92;}
+/*人员列表中的“审批”按钮*/
+#content li.content_li_08 .c_li_08_wrap li i a:last-child{color:#7094a1; border:1px solid #c6d7e0; background:#f4fafd; margin-left:6px;}
+#content li.content_li_08 .c_li_08_wrap li i a:last-child:hover{ background:#e6ecef;}
+#content li.content_li_08 .c_li_08_wrap li span a{ border-radius:2px; background:#eef5f9; width:70px; height:20px; color:#7094a1; font-family:"微软雅黑"; font-size:12px; border:1px solid #c6d7e0; float:left; display:block; text-align:center; line-height:20px; margin-top:8px; margin-left:5px;}
+#content li.content_li_08 .c_li_08_wrap li span a.center_08_a{ margin:8px auto; float:none;}
+#content li.content_li_08 .c_li_08_wrap li span a:hover{ background:#d9e6ed;}
+
+#content li.content_li_08 .c_li_08_wrap li.c_li_08_thehead{ background:#ecf4fa;}
+#content li.content_li_08 .c_li_08_wrap li.c_li_08_thehead strong,
+#content li.content_li_08 .c_li_08_wrap li.c_li_08_thehead span,
+#content li.content_li_08 .c_li_08_wrap li.c_li_08_thehead cite,
+#content li.content_li_08 .c_li_08_wrap li.c_li_08_thehead em,
+#content li.content_li_08 .c_li_08_wrap li.c_li_08_thehead i,
+#content li.content_li_08 .c_li_08_wrap li b{ color:#303030; line-height:35px; height:35px;}
+
+
+
+
+
+/*添加、修改人员_08*/
+.c_li_08_wrap_second{background:#ffffff;border:1px solid #bad4e8; width:99%;min-width:1100px; margin:12px auto; margin-top:68px; border-radius:4px;}
+.c_li_08_wrap_second h2{ padding-left:46px; font-weight:normal; background:#f7fbfd url(../img/add_people_01.png) no-repeat 13px center; height:37px; line-height:37px; font-size:18; font-family:"微软雅黑"; color:#7c8897; border-bottom:1px solid #dce6ee;}
+.c_li_08_wrap_second h2 a{ float:right; padding-left:15px; width:57px; text-align:center; font-family:"微软雅黑"; font-size:14px; color:#3e5e86; font-weight:bold; line-height:26px;height:26px; border-radius:26px; border:1px solid #a6bdce; background:#dfedf4; margin-top:4px; background:url(../img/backto_the.png) no-repeat 8px center; margin-right:16px;}
+/*“返回”按钮，鼠标停靠时按钮样式改变样式*/
+.c_li_08_wrap_second h2 a:hover{ background:#d9e6ed url(../img/backto_the.png) no-repeat 8px center; }
+
+.c_li_08_wrap_second .peopleDiv{ width:1000px; margin:0 auto;}
+.c_li_08_wrap_second ol{ margin-left:10%; width:700px; padding-top:14px; padding-bottom:28px;}
+.c_li_08_wrap_second ol li{ display:inline-block;}
+
+.c_li_08_wrap_second ol label{ color:#1e2a2f; font-size:14px; font-family:"微软雅黑"; line-height:55px; width:70px; float:left; text-align:left; padding-left:25px;}
+.c_li_08_wrap_second ol li a#add_08_change_password{ background:none; color:#019ee8; line-height:55px; border:none; padding:0;text-decoration:underline; margin:0;}
+.c_li_08_wrap_second ol li a#add_08_change_password:hover{ color:#028dcf;}
+.c_li_08_wrap_second ol input[type="text"]{ border-radius:2px;float:left; margin-top:13px;width:200px; padding:0 21px; height:28px;  border:1px solid #85aabe; outline:none;}
+.c_li_08_wrap_second ol .select_way input{border-radius:2px;width:200px; padding:0 21px; height:28px; line-height:28px\9; margin:0;  border:1px solid #85aabe; outline:none; position:absolute; left:-1px; top:-1px;cursor:pointer;}
+
+.c_li_08_wrap_second ol select{background:#f1f7fa; border-radius:2px;float:left; margin-top:13px;width:245px; padding:0 10px; height:28px;  border:1px solid #85aabe; outline:none;}
+
+.c_li_08_wrap_second ol input[type="submit"]{ border-radius:2px; background:#94b7d4; border:none; outline:none; color:#ffffff; font-size:16px; font-family:"微软雅黑"; width:90px; height:30px; margin-right:13px; margin-left:155px; cursor:pointer;}
+.c_li_08_wrap_second ol input[type="button"]{ border-radius:2px; background:#40a1f6; border:none; outline:none; color:#ffffff; font-size:16px; font-family:"微软雅黑"; width:90px; height:30px; margin-right:13px; margin-left:155px; cursor:pointer;}
+.c_li_08_wrap_second ol input[type="button"]:hover{ background:#3a92e0;}
+.c_li_08_wrap_second ol input[type="reset"]{ border-radius:2px; background:#94b7d4; border:none; outline:none; color:#ffffff; font-size:16px; font-family:"微软雅黑"; width:90px; height:30px; cursor:pointer;}
+.c_li_08_wrap_second ol input[type="reset"]:hover{ background:#809db6;}
+.c_li_08_wrap_second ol textarea{ margin-top:13px; padding:13px 21px; width:539px; height:95px;border-radius:2px;float:left; border:1px solid #85aabe; outline:none; overflow-y:scroll; resize:none; float:left;}
+
+.c_li_08_wrap_second ol li a{ margin-bottom:0; margin-top:15px; border-radius:3px; display:block; float:left; width:152px; height:30px; line-height:30px; background:#dcecf5; border:1px solid #a1b8ca; text-align:center; color:#123b5d; font-size:14px; font-family:"微软雅黑";}
+.c_li_08_wrap_second ol li a:last-child{ margin-left:10px; width:84px; background:#40a1f6; color:#fff; border:1px solid #40a1f6; outline:none;}
+
+/*人员添加、修改、查看页面中：其他信息 div*/
+/*.c_li_08_wrap_second_02{background:#ffffff;border:1px solid #bad4e8; width:99%; margin:12px auto; border-radius:4px;}*/
+.c_li_08_wrap_second_02{background:#ffffff;border:1px solid #bad4e8; width:99%; margin:12px auto; border-radius:4px; min-width:1100px; }
+.c_li_08_wrap_second_02 h2{ padding-left:46px; font-weight:normal; background:#f7fbfd url(../img/add_people_02.png) no-repeat 13px center; height:37px; line-height:37px; font-size:18; font-family:"微软雅黑"; color:#7c8897; border-bottom:1px solid #dce6ee;}
+
+.c_li_08_wrap_second_02 .otherDiv{ width:1000px; margin:0 auto;}
+.c_li_08_wrap_second_02 ol{ margin-left:10%; width:700px; padding-top:14px; padding-bottom:28px;}
+.c_li_08_wrap_second_02 ol li{ overflow:hidden;}
+
+/*管辖部门input、按钮*/
+.c_li_08_wrap_second_02 ol li #premission{ width:115px;}
+.c_li_08_wrap_second_02 ol li #selPrem{ width:78px; padding:0; height:28px; background:url(../img/content_li_12_a_bg.jpg) repeat-x center center; border:1px solid #a1b8ca; float:left; margin-top:13px; margin-left:5px;}
+
+/*管辖部门input、按钮*/
+.c_li_08_wrap_second_02 ol li #deptNameList{ width:115px;}
+.c_li_08_wrap_second_02 ol li #selDept{ width:78px; padding:0; height:28px; background:url(../img/content_li_12_a_bg.jpg) repeat-x center center; border:1px solid #a1b8ca; float:left; margin-top:13px; margin-left:5px;}
+/*“请选择部门”按钮，鼠标停靠时样式改变*/
+.c_li_08_wrap_second_02 ol li #select_the_area:hover{ background:#d9e6ed; }
+
+.c_li_08_wrap_second_02 ol li.the_08_the_r_li{ padding-left:337px;}
+.c_li_08_wrap_second_02 ol label{ color:#1e2a2f; font-size:14px; font-family:"微软雅黑"; line-height:55px; width:70px; float:left; text-align:left; padding-left:25px;}
+.c_li_08_wrap_second_02 ol input[type="text"]{ border-radius:2px;float:left; margin-top:13px;width:200px; padding:0 21px; height:28px;  border:1px solid #85aabe; outline:none;}
+.c_li_08_wrap_second_02 ol input[type="submit"]{ border-radius:2px; background:#94b7d4; border:none; outline:none; color:#ffffff; font-size:16px; font-family:"微软雅黑"; width:90px; height:30px; margin-right:13px; margin-left:155px; cursor:pointer;}
+.c_li_08_wrap_second_02 ol input[type="reset"]{ border-radius:2px; background:#94b7d4; border:none; outline:none; color:#ffffff; font-size:16px; font-family:"微软雅黑"; width:90px; height:30px; cursor:pointer;}
+.c_li_08_wrap_second_02 ol textarea{ margin-top:13px; padding:13px 21px; width:539px; height:95px;border-radius:2px;float:left; border:1px solid #85aabe; outline:none; overflow-y:scroll; resize:none; float:left;}
+
+.c_li_08_wrap_second_02 ol li a{ margin-bottom:0; margin-top:15px; border-radius:3px; display:block; float:left; width:152px; height:30px; line-height:30px; background:#dcecf5; border:1px solid #a1b8ca; text-align:center; color:#123b5d; font-size:14px; font-family:"微软雅黑";}
+.c_li_08_wrap_second_02 ol li a:last-child{ margin-left:10px; width:84px; background:#40a1f6; color:#fff; border:1px solid #40a1f6; outline:none;}
+
+/*人员添加、修改、查看页面中：备注信息 div*/
+/*.c_li_08_wrap_second_03{background:#ffffff;border:1px solid #bad4e8; width:99%; margin:12px auto; border-radius:4px;}*/
+.c_li_08_wrap_second_03{background:#ffffff;border:1px solid #bad4e8; width:99%; margin:12px auto; border-radius:4px; min-width:1100px;s}
+.c_li_08_wrap_second_03 h2{ padding-left:46px; font-weight:normal; background:#f7fbfd url(../img/add_people_03.png) no-repeat 13px center; height:37px; line-height:37px; font-size:18; font-family:"微软雅黑"; color:#7c8897; border-bottom:1px solid #dce6ee;}
+
+.c_li_08_wrap_second_03 .descDiv{ width:1000px; margin:0 auto;}
+.c_li_08_wrap_second_03 ol{ margin-left:10%; width:700px; padding-top:14px; padding-bottom:28px;}
+.c_li_08_wrap_second_03 ol li{ overflow:hidden;}
+
+.c_li_08_wrap_second_03 ol label{ color:#1e2a2f; font-size:14px; font-family:"微软雅黑"; line-height:55px; width:80px; float:left; text-align:right; padding-right:15px;}
+
+.c_li_08_wrap_second_03 ol input[type="text"]{background:#f1f7fa; border-radius:2px;float:left; margin-top:13px;width:200px; padding:0 21px; height:28px;  border:1px solid #85aabe; outline:none;}
+.c_li_08_wrap_second_03 ol input[type="submit"]{ border-radius:2px; background:#94b7d4; border:none; outline:none; color:#ffffff; font-size:16px; font-family:"微软雅黑"; width:90px; height:30px; margin-right:13px; margin-left:155px; cursor:pointer;}
+.c_li_08_wrap_second_03 ol input[type="reset"]{ border-radius:2px; background:#94b7d4; border:none; outline:none; color:#ffffff; font-size:16px; font-family:"微软雅黑"; width:90px; height:30px; cursor:pointer;}
+.c_li_08_wrap_second_03 ol textarea{ margin-top:13px; padding:13px 21px; width:539px; height:70px;border-radius:2px;float:left; border:1px solid #85aabe; outline:none; overflow-y:scroll; resize:none; float:left;}
+
+.c_li_08_wrap_second_03 ol li a{ margin-bottom:0; margin-top:15px; border-radius:3px; display:block; float:left; width:152px; height:30px; line-height:30px; background:#dcecf5; border:1px solid #a1b8ca; text-align:center; color:#123b5d; font-size:14px; font-family:"微软雅黑";}
+.c_li_08_wrap_second_03 ol li a:last-child{ margin-left:10px; width:84px; background:#40a1f6; color:#fff; border:1px solid #40a1f6; outline:none;}
+
+/*底部按键，08*/
+
+.li_08_add_the_2{ text-align:center; border-radius:2px; display:block; margin:0 auto; background:#40a1f6; width:76px; height:33px;line-height:33px;  color:#ffffff; font-size:16px; font-family:"微软雅黑"; margin-left:30%;margin-top:15px;float:left; margin-bottom:60px;  }
+.li_08_add_the_2:hover{ background:#3a92e0;}
+.li_08_add_the_3{ text-align:center; border-radius:2px; display:block;background:#4cc2a5; width:76px; height:33px;line-height:33px;  color:#ffffff; font-size:16px; font-family:"微软雅黑"; margin-left:2%; margin-top:15px;float:left; }
+.li_08_add_the_3:hover{ background:#41a88f;}
+.li_08_add_the_4{ text-align:center; border-radius:2px; display:block; background:#94b7d4; width:76px; height:33px;line-height:33px;  color:#ffffff; font-size:16px; font-family:"微软雅黑"; margin-left:2%; margin-top:15px;float:left; }
+.li_08_add_the_4:hover{ background:#809db6;}
+/*修改用户页面“解除无效状态”按钮*/
+.li_08_add_the_5{ text-align:center; border-radius:2px; display:block;background:#4cc2a5; width:130px; height:33px;line-height:33px;  color:#ffffff; font-size:16px; font-family:"微软雅黑"; margin-left:2%; margin-top:15px;float:left; }
+.li_08_add_the_5:hover{ background:#41a88f;}
+
+
+
+
+
+
+/*内容9*/
+#content li h3{ height:56px; text-align:right; border-bottom:1px solid #bed8ea; background:#ecf4fa;color:#174261; padding-right:15px;}
+#content li h3 a{ color:#174261; font:14px/56px "微软雅黑";}
+
+/*印章使用日志 底部分页导航栏*/
+.content_li_09 h4{font:15px/40px "微软雅黑"; color:#033c5d; padding-left:1%;}
+.content_li_09 h4 span{ color:#979fa5; font-size:14px; padding-right:10px;}
+.content_li_09 h4 strong{}
+.content_li_09 h4 div{ float:right; padding-right:0.5%; color:#21709d; font-size:14px; font-family:"微软雅黑";}
+.content_li_09 h4 div a{ margin:0 0 0 5px; color:#21709d; padding:5px 10px; border:1px solid #a3c2ce; background:#f3f9fd;}
+.content_li_09 h4 div a.current_09_a{ background:#0f9de4; color:#ffffff;border:1px solid #0f9de4;}
+.content_li_09 h4 div a:hover{ background:#0f9de4; color:#ffffff;border:1px solid #0f9de4; }
+
+.content_li_09 h4 i{ font-style:normal; color:#ea3535;}
+
+#content li.content_li_09 .c_li_09_wrap{border:1px solid #bad4e8; width:99%; margin:12px auto; border-radius:4px; overflow:auto;}
+/*查询条件*/
+#content li.content_li_09 .c_li_09_wrap li form{margin:0 auto;width:1220px; overflow:hidden;}
+#content li.content_li_09 .c_li_09_wrap li form label{ width:70px; text-align:right; display:block; float:left; color:#1d4456; font:14px/45px "微软雅黑";/* margin:0 6px 0 15px;*/ margin-right:8px;}
+#content li.content_li_09 .c_li_09_wrap li form b{ float:left; color:#8ab5cc; font:12px/45px "微软雅黑"; margin:0 6px;}
+#content li.content_li_09 .c_li_09_wrap li form input[type="text"]{ float:left; outline:none; border:1px solid #85aabe; height:23px; width:100px; border-radius:2px; margin:10px 0; font-size:12px; }
+#content li.content_li_09 .c_li_09_wrap li form input.one_input09{ width:250px;}
+#content li.content_li_09 .c_li_9_wrap li form input.one_input09_1{ width:175px;}
+#content li.content_li_09 .c_li_09_wrap li form input[type="button"]{ height:27px; width:80px; border:none; background:#20aef6; border-radius:2px; outline:none; font:14px "微软雅黑"; color:#ffffff;cursor:pointer;margin:10px 2px 10px 12px;}
+#content li.content_li_09 .c_li_09_wrap li form input[name="cancelBtn"][type="button"]{ height:27px; width:80px;border:none; background:#4cc2a5; border-radius:3px; outline:none;font:14px "微软雅黑"; color:#ffffff; cursor:pointer;margin:10px 0;}
+
+#content li.content_li_09 .c_li_09_wrap li form input[type="button"]:hover{ background:#1d98d6;}
+#content li.content_li_09 .c_li_09_wrap li form input[name="cancelBtn"][type="button"]:hover{ background:#3c9a83;}
+
+
+#content li.content_li_09 .c_li_09_wrap li form .div_09_1{ float:left; width:338px;}
+#content li.content_li_09 .c_li_09_wrap li form .div_09_2{ float:left; width:192px;}
+/*#content li.content_li_09 .c_li_09_wrap li form .div_09_3{ float:left; width:190px;}*/
+#content li.content_li_09 .c_li_09_wrap li form .div_09_3{ float:left; width:190px;}
+#content li.content_li_09 .c_li_09_wrap li form .div_09_4{ float:left;width:500px;}
+
+
+
+#content li.content_li_09 .c_li_09_wrap li{ min-width:1200px; line-height:38px; border-bottom:1px solid #d4e4eb; overflow:hidden; background:#ffffff;}
+#content li.content_li_09 .c_li_09_wrap li:hover{ background:#f4f4f4;}
+#content li.content_li_09 .c_li_09_wrap li:first-child:hover{ background:#ffffff;}
+
+#content li.content_li_09 .c_li_09_wrap li:last-child{ border:none;}
+#content li.content_li_09 .c_li_09_wrap li.c_li_09_thehead{ line-height:35px; background:#ecf4fa;}
+
+/*设置列表页面，li组成的单元格内容换行时，表格线长度自动改变（设置的最高为200px,若高度不够可在自行更改） :padding-bottom:200px; margin-bottom:-200px; */
+/*word-break:break-all;是断开单词。在单词到边界时，下个字母自动到下一行。主要解决了长串英文的问题。*/
+/*#content li.content_li_09 .c_li_09_wrap li strong{padding-bottom:200px; margin-bottom:-200px;  float:left; width:4%;font-family:"微软雅黑"; font-size:14px;font-weight:normal; text-align:center; border-right:1px solid #cee2ec;}*/
+#content li.content_li_09 .c_li_09_wrap li strong{word-break:break-all; padding-bottom:200px; margin-bottom:-200px; float:left; width:4%;font-family:"微软雅黑"; font-size:14px;font-weight:normal; text-align:center; border-right:1px solid #cee2ec;}
+#content li.content_li_09 .c_li_09_wrap li strong.the_09_strong{ width:5%;}
+#content li.content_li_09 .c_li_09_wrap li span{word-break:break-all; padding-bottom:200px; margin-bottom:-200px; border-right:1px solid #cee2ec;float:left;width:13%;font-family:"微软雅黑"; font-size:14px; color:#133954;text-align:center;}
+#content li.content_li_09 .c_li_09_wrap li cite{word-break:break-all; padding-bottom:200px; margin-bottom:-200px;  border-right:1px solid #cee2ec;float:left;width:7%; font-style:normal;font-family:"微软雅黑"; font-size:14px; color:#133954;text-align:center; }
+#content li.content_li_09 .c_li_09_wrap li em{word-break:break-all; padding-bottom:200px; margin-bottom:-200px; border-right:1px solid #cee2ec;float:left;width:16.5%; font-style:normal;font-family:"微软雅黑"; font-size:14px; color:#303030; text-align:center; }
+#content li.content_li_09 .c_li_09_wrap li em:last-child{ border:none;}
+#content li.content_li_09 .c_li_09_wrap li i{word-break:break-all; padding-bottom:200px; margin-bottom:-200px; line-height:38px; text-align:center;font-style:normal;font-family:"微软雅黑"; font-size:14px; color:#133954; display:block; float:left; width:10%;border-right:1px solid #cee2ec;}
+#content li.content_li_09 .c_li_09_wrap li span.the_09_span{ float:left; width:6%;font-family:"微软雅黑"; font-size:14px;font-weight:normal; text-align:center; border-right:1px solid #cee2ec; }
+
+#content li.content_li_09 .c_li_09_wrap li.c_li_09_thehead strong,#content li.content_li_09 .c_li_09_wrap li.c_li_09_thehead span,#content li.content_li_09 .c_li_09_wrap li.c_li_09_thehead cite,#content li.content_li_09 .c_li_09_wrap li.c_li_109_thehead em,#content li.content_li_09 .c_li_09_wrap li.c_li_09_thehead i{ color:#303030; line-height:34px;}
+
+
+
+ 
+
+
+
+
+/*内容11*/
+#content li h3{ height:56px; text-align:right; border-bottom:1px solid #bed8ea; background:#ecf4fa;color:#174261; padding-right:15px;}
+#content li h3 a{ color:#174261; font:14px/56px "微软雅黑";}
+
+/*登录日志 底部分页导航栏*/
+.content_li_11 h4{font:15px/40px "微软雅黑"; color:#033c5d; padding-left:1%;}
+.content_li_11 h4 span{ color:#979fa5; font-size:14px; padding-right:10px;}
+.content_li_11 h4 strong{}
+.content_li_11 h4 div{ float:right; padding-right:0.5%; color:#21709d; font-size:14px; font-family:"微软雅黑";}
+.content_li_11 h4 div a{ margin:0 0 0 5px; color:#21709d; padding:5px 10px; border:1px solid #a3c2ce; background:#f3f9fd;}
+.content_li_11 h4 div a.current_11_a{ background:#0f9de4; color:#ffffff;border:1px solid #0f9de4;}
+.content_li_11 h4 div a:hover{ background:#0f9de4; color:#ffffff;border:1px solid #0f9de4; }
+
+
+.content_li_11 h4 i{ font-style:normal; color:#ea3535;}
+#content li.content_li_11 .c_li_11_wrap{border:1px solid #bad4e8; width:99%; margin:12px auto; border-radius:4px;}
+#content li.content_li_11 .c_li_11_wrap li form{ margin:0 auto; width:1200px; overflow:hidden;}
+#content li.content_li_11 .c_li_11_wrap li form label{float:left; color:#1d4456; font:14px/45px "微软雅黑"; margin:0 6px 0 15px;}
+#content li.content_li_11 .c_li_11_wrap li form b{float:left; color:#8ab5cc; font:12px/45px "微软雅黑"; margin:0 6px;}
+#content li.content_li_11 .c_li_11_wrap li form input[type="text"]{float:left; outline:none; border:1px solid #85aabe; height:23px; width:80px; border-radius:2px; margin:10px 0; font-size:12px; }
+#content li.content_li_11 .c_li_11_wrap li form input.one_input11{ width:200px;}
+/*改样式，暂时没有使用*/
+#content li.content_li_11 .c_li_11_wrap li form .the_click_select{ float:left; display:block; width:30px; height:30px; background:url(../img/the_clik.png) no-repeat center center; margin-left:-30px; margin-top:8px; }
+
+/*登录日志列表页面的“查询”、“清空条件”按钮*/
+#content li.content_li_11 .c_li_11_wrap li form input[type="button"]{ height:27px; width:80px; border:none; background:#20aef6; border-radius:2px; outline:none; font:14px "微软雅黑"; color:#ffffff;cursor:pointer;margin:10px 2px 10px 12px;}
+#content li.content_li_11 .c_li_11_wrap li form input[name="cancelBtn"][type="button"]{ height:27px; width:80px;border:none; background:#4cc2a5; border-radius:3px; outline:none;font:14px "微软雅黑"; color:#ffffff; cursor:pointer;margin:10px 0;}
+
+#content li.content_li_11 .c_li_11_wrap li form input[type="button"]:hover{ background:#1d98d6;}
+#content li.content_li_11 .c_li_11_wrap li form input[name="cancelBtn"][type="button"]:hover{ background:#3c9a83;}
+/*登录日志列表样式*/
+#content li.content_li_11 .c_li_11_wrap li{ min-width:1200px; line-height:38px; border-bottom:1px solid #d4e4eb; overflow:hidden; background:#ffffff;}
+/*鼠标停靠时，整行变色*/
+#content li.content_li_11 .c_li_11_wrap li:hover{ background:#f4f4f4;}
+#content li.content_li_11 .c_li_11_wrap li:first-child:hover{ background:#ffffff;}
+
+#content li.content_li_11 .c_li_11_wrap li:last-child{ border:none;}
+#content li.content_li_11 .c_li_11_wrap li.c_li_11_thehead{ line-height:35px; background:#ecf4fa;}
+
+/*设置列表页面，li组成的单元格内容换行时，表格线长度自动改变（设置的最高为200px,若高度不够可在自行更改） :padding-bottom:200px; margin-bottom:-200px; */
+/*word-break:break-all;是断开单词。在单词到边界时，下个字母自动到下一行。主要解决了长串英文的问题。*/
+/*#content li.content_li_11 .c_li_11_wrap li strong{ float:left; width:7%;font-family:"微软雅黑"; font-size:14px;font-weight:normal; text-align:center; border-right:1px solid #cee2ec;}*/
+#content li.content_li_11 .c_li_11_wrap li strong{word-break:break-all; padding-bottom:200px; margin-bottom:-200px; float:left; width:7%;font-family:"微软雅黑"; font-size:14px;font-weight:normal; text-align:center; border-right:1px solid #cee2ec;}
+#content li.content_li_11 .c_li_11_wrap li span{word-break:break-all; padding-bottom:200px; margin-bottom:-200px; border-right:1px solid #cee2ec;float:left;width:16%;font-family:"微软雅黑"; font-size:14px; color:#133954;text-align:center;}
+#content li.content_li_11 .c_li_11_wrap li cite{word-break:break-all; padding-bottom:200px; margin-bottom:-200px; border-right:1px solid #cee2ec;float:left;width:10%; font-style:normal;font-family:"微软雅黑"; font-size:14px; color:#133954;text-align:center; }
+#content li.content_li_11 .c_li_11_wrap li em{word-break:break-all; padding-bottom:200px; margin-bottom:-200px; border-right:1px solid #cee2ec;float:left;width:17%; font-style:normal;font-family:"微软雅黑"; font-size:14px; color:#303030; text-align:center; }
+#content li.content_li_11 .c_li_11_wrap li i{word-break:break-all; padding-bottom:200px; margin-bottom:-200px; line-height:38px; text-align:center;font-style:normal;font-family:"微软雅黑"; font-size:14px; color:#133954; display:block; float:left; width:16%;}
+
+#content li.content_li_11 .c_li_11_wrap li.c_li_11_thehead strong,#content li.content_li_11 .c_li_11_wrap li.c_li_11_thehead span,#content li.content_li_11 .c_li_11_wrap li.c_li_11_thehead cite,#content li.content_li_11 .c_li_11_wrap li.c_li_11_thehead em,#content li.content_li_11 .c_li_11_wrap li.c_li_11_thehead i{ color:#303030; line-height:35px;}
+
+
+/*内容12 安装印章客户端*/
+#content li.content_li_12 div{ padding:20px; width:600px; height:400px; margin:0 auto; border:1px solid #bad4e8; background:#fff; color:#01559f; font:bold 16px/100px "微软雅黑"; text-align:center;border-radius:5px;}
+#content li.content_li_12 div a{ display:block; width:83px; height:30px; font:14px/30px "微软雅黑"; color:#123b5d; border:1px solid #a1b8ca; background:url(../img/content_li_12_a_bg.jpg) repeat-x center center; border-radius:3px; margin:0px auto;}
+#content li.content_li_12 div a:hover{ background:url(../img/content_li_12_a_bg4.jpg) repeat-x center center; }
+#content #sealSetupDiv a{ display:block; width:83px; height:30px; font:14px/30px "微软雅黑"; color:#123b5d; border:1px solid #a1b8ca; background:url(../img/content_li_12_a_bg.jpg) repeat-x center center; border-radius:3px; margin:0px auto;}
+#content #sealSetupDiv a:hover{ background:url(../img/content_li_12_a_bg4.jpg) repeat-x center center; }
+
+/*内容10 管理操作日志*/
+/*管理操作日志 底部分页导航栏*/
+.content_li_10 h4{font:15px/40px "微软雅黑"; color:#033c5d; padding-left:1%;}
+.content_li_10 h4 span{ color:#979fa5; font-size:14px; padding-right:10px;}
+.content_li_10 h4 strong{}
+.content_li_10 h4 div{ float:right; padding-right:0.5%; color:#21709d; font-size:14px; font-family:"微软雅黑";}
+.content_li_10 h4 div a{ margin:0 0 0 5px; color:#21709d; padding:5px 10px; border:1px solid #a3c2ce; background:#f3f9fd;}
+.content_li_10 h4 div a.current_10_a{ background:#0f9de4; color:#ffffff;border:1px solid #0f9de4;}
+.content_li_10 h4 div a:hover{ background:#0f9de4; color:#ffffff;border:1px solid #0f9de4; }
+
+.content_li_10 h4 i{ font-style:normal; color:#ea3535;}
+
+#content li.content_li_10 .c_li_10_wrap{border:1px solid #bad4e8; width:99%; margin:12px auto; border-radius:4px; overflow:auto;}
+#content li.content_li_10 .c_li_10_wrap li form{margin:0 auto;width:1220px; overflow:hidden;}
+#content li.content_li_10 .c_li_10_wrap li form label{ width:85px; text-align:right; display:block; float:left; color:#1d4456; font:14px/45px "微软雅黑";/* margin:0 6px 0 15px;*/ margin-right:10px;}
+#content li.content_li_10 .c_li_10_wrap li form b{ float:left; color:#8ab5cc; font:12px/45px "微软雅黑"; margin:0 6px;}
+#content li.content_li_10 .c_li_10_wrap li form input[type="text"]{ float:left; outline:none; border:1px solid #85aabe; height:23px; width:100px; border-radius:2px; margin:10px 0; font-size:12px; }
+#content li.content_li_10 .c_li_10_wrap li form input.one_input10{ width:250px;}
+#content li.content_li_10 .c_li_10_wrap li form input.one_input10_1{ width:175px;}
+/*管理操作日志中的“查询”、“清空条件”按钮*/
+#content li.content_li_10 .c_li_10_wrap li form input[type="button"]{ height:27px; width:80px; border:none; background:#20aef6; border-radius:2px; outline:none; font:14px "微软雅黑"; color:#ffffff;cursor:pointer;margin:10px 2px 10px 12px;}
+#content li.content_li_10 .c_li_10_wrap li form input[name="cancelBtn"][type="button"]{ height:27px; width:80px;border:none; background:#4cc2a5; border-radius:3px; outline:none;font:14px "微软雅黑"; color:#ffffff; cursor:pointer;margin:10px 0;}
+
+#content li.content_li_10 .c_li_10_wrap li form input[type="button"]:hover{ background:#1d98d6;}
+#content li.content_li_10 .c_li_10_wrap li form input[name="cancelBtn"][type="button"]:hover{ background:#3c9a83;}
+
+
+#content li.content_li_10 .c_li_10_wrap li form .div_10_1{ float:left; width:338px;}
+#content li.content_li_10 .c_li_10_wrap li form .div_10_2{ float:left; width:200px;}
+#content li.content_li_10 .c_li_10_wrap li form .div_10_3{ float:left; width:190px;}
+#content li.content_li_10 .c_li_10_wrap li form .div_10_4{ float:left;width:500px;}
+
+
+
+#content li.content_li_10 .c_li_10_wrap li{ min-width:1200px; line-height:38px; border-bottom:1px solid #d4e4eb; overflow:hidden; background:#ffffff;}
+/*鼠标停靠时，整行变色*/
+#content li.content_li_10 .c_li_10_wrap li:hover{ background:#f4f4f4;}
+#content li.content_li_10 .c_li_10_wrap li:first-child:hover{ background:#ffffff;}
+
+#content li.content_li_10 .c_li_10_wrap li:last-child{ border:none;}
+#content li.content_li_10 .c_li_10_wrap li.c_li_10_thehead{ line-height:35px; background:#ecf4fa;}
+
+#content li.content_li_10 .c_li_10_wrap li strong{padding-bottom:200px; margin-bottom:-200px; float:left; width:6%;font-family:"微软雅黑"; font-size:14px;font-weight:normal; text-align:center; border-right:1px solid #cee2ec;}
+#content li.content_li_10 .c_li_10_wrap li strong.the_10_strong{padding-bottom:200px; margin-bottom:-200px; width:10%;}
+#content li.content_li_10 .c_li_10_wrap li span{padding-bottom:200px; margin-bottom:-200px; border-right:1px solid #cee2ec;float:left;width:15%;font-family:"微软雅黑"; font-size:14px; color:#133954;text-align:center;}
+#content li.content_li_10 .c_li_10_wrap li cite{padding-bottom:200px; margin-bottom:-200px; border-right:1px solid #cee2ec;float:left;width:43.6%; font-style:normal;font-family:"微软雅黑"; font-size:14px; color:#133954;text-align:left; padding-left:10px; }
+#content li.content_li_10 .c_li_10_wrap li i{padding-bottom:200px; margin-bottom:-200px;line-height:38px; text-align:center;font-style:normal;font-family:"微软雅黑"; font-size:14px; color:#133954; display:block; float:left; width:12%;border-right:1px solid #cee2ec;}
+#content li.content_li_10 .c_li_10_wrap li span.the_10_span{padding-bottom:200px; margin-bottom:-200px; float:left; width:12%;font-family:"微软雅黑"; font-size:14px;font-weight:normal; text-align:center; border-right:1px solid #cee2ec; }
+#content li.content_li_10 .c_li_10_wrap li.c_li_10_thehead strong,#content li.content_li_10 .c_li_10_wrap li.c_li_10_thehead span,#content li.content_li_10 .c_li_10_wrap li.c_li_10_thehead cite,#content li.content_li_10 .c_li_10_wrap li.c_li_109_thehead em,#content li.content_li_10 .c_li_10_wrap li.c_li_10_thehead i{ color:#303030; line-height:34px;}
+
+#content li.content_li_10 .c_li_10_wrap li em{border-right:1px solid #cee2ec;float:left;width:16.5%; font-style:normal;font-family:"微软雅黑"; font-size:14px; color:#303030; text-align:center; }
+#content li.content_li_10 .c_li_10_wrap li em:last-child{ border:none;}
+
+
+/*USBKEY列表页面*/
+/*内容 待批USBKEY12*/
+/*批量删除按钮*/
+#content li.content_li_15 h3 div{ float:left;}
+#content li.content_li_15 h3 div .delBtnDisabled{ background:#dddddd url(../img/remove_icon.png) no-repeat 6px center; cursor:default; float:left; padding-left:22px; width:95px; height:30px; line-height:23px; text-align:center; border:1px solid #a2b1ba; border-radius:3px; color:#777777; font-size:14px; font-family:"微软雅黑";font-weight:normal; margin:15px 0 0 20px;}
+#content li.content_li_15 h3 div .delBtnAbled{ background:#f8f8f9 url(../img/remove_icon2.png) no-repeat 6px center; cursor:pointer; float:left; padding-left:22px; width:95px; height:30px; line-height:23px; text-align:center; border:1px solid #a2b1ba; border-radius:3px; color:#004b74; font-size:14px; font-family:"微软雅黑";font-weight:normal; margin:15px 0 0 20px;}
+#content li.content_li_15 h3 div .delBtnAbled:hover{background:#d9e6ed url(../img/remove_icon2.png) no-repeat 6px center;}
+/*添加按钮*/
+#content li.content_li_15 h3 div .addBtnAbled{ background:#f8f8f9 url(../img/add_icon.png) no-repeat 14px center;cursor:pointer; float:left; padding-left:22px; width:95px; height:30px; line-height:23px; text-align:center; border:1px solid #99b4c8; border-radius:3px;color:#004b74;font-size:14px; font-family:"微软雅黑"; font-weight:normal;margin:15px 0px 0 8px;}
+#content li.content_li_15 h3 div .addBtnAbled:hover{background:#d9e6ed url(../img/add_icon.png) no-repeat 14px center;}
+#content li.content_li_15 h3 div .addBtnDisabled{ background:#dddddd url(../img/change_icon.png) no-repeat 14px center;cursor: default; float:left; padding-left:22px; width:95px; height:30px; line-height:23px; text-align:center; border:1px solid #99b4c8; border-radius:3px;color:#777777;font-size:14px; font-family:"微软雅黑"; font-weight:normal;margin:15px 0px 0 8px;}
+
+
+/*待批USBKEY列表，底部分页栏*/
+.content_li_15 h4{font:15px/40px "微软雅黑"; color:#033c5d; padding-left:1%;}
+.content_li_15 h4 span{ color:#979fa5; font-size:14px; padding-right:10px;}
+.content_li_15 h4 strong{}
+.content_li_15 h4 div{ float:right; padding-right:0.5%; color:#21709d; font-size:14px; font-family:"微软雅黑";}
+.content_li_15 h4 div a{ margin:0 0 0 5px; color:#21709d; padding:5px 10px; border:1px solid #a3c2ce; background:#f3f9fd;}
+.content_li_15 h4 div a.current_15_a{ background:#0f9de4; color:#ffffff;border:1px solid #0f9de4;}
+/*鼠标停靠时，按钮样式改变*/
+.content_li_15 h4 div a:hover{ background:#0f9de4; color:#ffffff;border:1px solid #0f9de4;}
+
+.content_li_15 h4 i{ font-style:normal; color:#ea3535;}
+#content li.content_li_15 .c_li_15_wrap{border:1px solid #bad4e8; width:99%; margin:12px auto; border-radius:4px;}
+#content li.content_li_15 .c_li_15_wrap li form{ margin:0 auto; width:1280px; overflow:hidden;}
+#content li.content_li_15 .c_li_15_wrap li form label{ width:70px; text-align:right; display:block; float:left; color:#1d4456; font:14px/45px "微软雅黑";/* margin:0 6px 0 15px;*/ margin-right:8px;}
+#content li.content_li_15 .c_li_15_wrap li form label.longlabCess{ width:85px; text-align:right; display:block; float:left; color:#1d4456; font:14px/45px "微软雅黑";/* margin:0 6px 0 15px;*/ margin-right:8px;}
+#content li.content_li_15 .c_li_15_wrap li form b{ float:left; color:#8ab5cc; font:12px/45px "微软雅黑"; margin:0 6px; border:none;}
+#content li.content_li_15 .c_li_15_wrap li form input[type="text"]{ float:left; outline:none; border:1px solid #85aabe; height:23px; width:100px; border-radius:2px; margin:10px 0; font-size:12px; }
+#content li.content_li_15 .c_li_15_wrap li form input.one_input05{ width:250px;}
+#content li.content_li_15 .c_li_15_wrap li form input.one_input05_1{ width:175px;}
+#content li.content_li_15 .c_li_15_wrap li form input[type="button"]{ height:27px; width:80px; border:none; background:#20aef6; border-radius:2px; outline:none; font:14px "微软雅黑"; color:#ffffff;cursor:pointer;margin:10px 2px 10px 12px;}
+#content li.content_li_15 .c_li_15_wrap li form input[name="cancelBtn"][type="button"]{ height:27px; width:80px;border:none; background:#4cc2a5; border-radius:3px; outline:none;font:14px "微软雅黑"; color:#ffffff; cursor:pointer;margin:10px 0;}
+
+#content li.content_li_15 .c_li_15_wrap li form input[type="button"]:hover{ background:#1d98d6;}
+#content li.content_li_15 .c_li_15_wrap li form input[name="cancelBtn"][type="button"]:hover{ background:#3c9a83;}
+
+
+#content li.content_li_15 .c_li_15_wrap li form .div_15_1{ float:left; width:338px;}
+#content li.content_li_15 .c_li_15_wrap li form .div_15_2{ float:left; width:195px;}
+#content li.content_li_15 .c_li_15_wrap li form .div_15_3{ float:left; width:190px;}
+#content li.content_li_15 .c_li_15_wrap li form .div_15_4{ float:left;width:500px;}
+
+
+
+
+#content li.content_li_15 .c_li_15_wrap li{ min-width:1200px; line-height:38px; border-bottom:1px solid #d4e4eb; overflow:hidden; background:#ffffff;}
+#content li.content_li_15 .c_li_15_wrap li:last-child{ border:none;}
+#content li.content_li_15 .c_li_15_wrap li.c_li_11_thehead{ line-height:35px; background:#ecf4fa;}
+
+/*设置列表页面，li组成的单元格内容换行时，表格线长度自动改变（设置的最高为200px,若高度不够可在自行更改） :padding-bottom:200px; margin-bottom:-200px; 
+word-break:break-all;是断开单词。在单词到边界时，下个字母自动到下一行。主要解决了长串英文的问题。*/
+#content li.content_li_15 .c_li_15_wrap li strong{word-break:break-all;padding-bottom:200px; margin-bottom:-200px; float:left; width:7%;font-family:"微软雅黑"; font-size:14px;font-weight:normal; text-align:center; border-right:1px solid #cee2ec;}
+#content li.content_li_15 .c_li_15_wrap li span{word-break:break-all;padding-bottom:200px; margin-bottom:-200px; border-right:1px solid #cee2ec;float:left;width:12%;font-family:"微软雅黑"; font-size:14px; color:#133954;text-align:center;}
+#content li.content_li_15 .c_li_15_wrap li cite{word-break:break-all;padding-bottom:200px; margin-bottom:-200px; border-right:1px solid #cee2ec;float:left;width:12%; font-style:normal;font-family:"微软雅黑"; font-size:14px; color:#133954;text-align:center; }
+#content li.content_li_15 .c_li_15_wrap li em{word-break:break-all;padding-bottom:200px; margin-bottom:-200px; border-right:1px solid #cee2ec;float:left;width:12%; font-style:normal;font-family:"微软雅黑"; font-size:14px; color:#303030; text-align:center; }
+#content li.content_li_15 .c_li_15_wrap li i{word-break:break-all;padding-bottom:200px; margin-bottom:-200px; line-height:38px; text-align:center;font-style:normal;font-family:"微软雅黑"; font-size:14px; color:#133954; display:block; float:left; width:14%;}
+#content li.content_li_15 .c_li_15_wrap li b{border-right:1px solid #cee2ec;float:left;width:4%; font-style:normal;font-family:"微软雅黑"; font-size:14px; color:#303030; text-align:center; height:38px; }
+#content li.content_li_15 .c_li_15_wrap li b.checkCss{ padding-bottom:200px; margin-bottom:-200px; }
+
+#content li.content_li_15 .c_li_15_wrap li b input{ width:16px; height:16px; margin-top:12px; cursor:pointer;}
+#content li.content_li_15 .c_li_15_wrap li:hover{ background:#f4f4f4;}
+#content li.content_li_15 .c_li_15_wrap li:first-child:hover{ background:#ffffff; }
+
+#content li.content_li_15 .c_li_15_wrap li span a{ color:#1682d6; text-decoration:underline;}
+#content li.content_li_15 .c_li_15_wrap li i a{ float:left; display:block; width:45px; height:22px; color:#ffffff; border:1px solid #61af72; background:#76cda0; line-height:22px; margin-top:9px; margin-left:26px;}
+#content li.content_li_15 .c_li_15_wrap li i a:hover{ background:#6cbc92;}
+
+/*USBKEY列表中的“颁发管理”按钮*/
+#content li.content_li_15 .c_li_15_wrap li i a:first-child{ margin-left:10px;width:62px; background:#0e9be8; border:1px solid #409bcc; color:#f5fafe;}
+#content li.content_li_15 .c_li_15_wrap li i a:first-child:hover{ background:#0e8bcf;}
+/*待批、USBKEY列表中的“编辑”、"待批"按钮*/
+#content li.content_li_15 .c_li_15_wrap li i a.second-child{ float:left; display:block; width:45px; height:22px; color:#ffffff; border:1px solid #61af72; background:#76cda0; line-height:22px; margin-top:9px;margin-left:6px;}
+#content li.content_li_15 .c_li_15_wrap li i a.second-child:hover{ background:#66b58c;}
+/*USBKEY列表中的“删除”按钮*/
+#content li.content_li_15 .c_li_15_wrap li i a:last-child{color:#7094a1; border:1px solid #c6d7e0; background:#f4fafd; margin-left:6px;}
+#content li.content_li_15 .c_li_15_wrap li i a:last-child:hover{background:#e6ecef;}
+
+/*待批列表表头*/
+#content li.content_li_15 .c_li_15_wrap li.c_li_15_thehead{ background:#ecf4fa;}
+#content li.content_li_15 .c_li_15_wrap li.c_li_15_thehead strong,
+#content li.content_li_15 .c_li_15_wrap li.c_li_15_thehead span,
+#content li.content_li_15 .c_li_15_wrap li.c_li_15_thehead cite,
+#content li.content_li_15 .c_li_15_wrap li.c_li_15_thehead em,
+#content li.content_li_15 .c_li_15_wrap li.c_li_15_thehead i,
+#content li.content_li_15 .c_li_15_wrap li b{ color:#303030; line-height:35px; height:35px;}
+
+#content li.content_li_15 .c_li_15_wrap_second_02 form ol li a{ margin-bottom:0; margin-top:15px; border-radius:3px; display:block; float:left; width:152px; height:30px; line-height:30px; background:#dcecf5; border:1px solid #a1b8ca; text-align:center; color:#123b5d; font-size:14px; font-family:"微软雅黑";}
+#content li.content_li_15 .c_li_15_wrap_second_02 form ol li a#the_a_05a{ margin-left:8px; width:80px; background:#40a1f6; color:#fff; border:1px solid #40a1f6; outline:none;}
+
+/*待批、已审批——15 修改USBKEY*/
+.c_li_15_wrap_second{background:#ffffff;border:1px solid #bad4e8; width:99%;min-width:1100px; margin:12px auto; margin-top:68px; border-radius:4px;}
+.c_li_15_wrap_second h2{ padding-left:46px; font-weight:normal; background:#f7fbfd url(../img/li_06_the_info.png) no-repeat 13px center; height:37px; line-height:37px; font-size:18; font-family:"微软雅黑"; color:#7c8897; border-bottom:1px solid #dce6ee;}
+.c_li_15_wrap_second h2 a{ float:right; padding-left:15px; width:57px; text-align:center; font-family:"微软雅黑"; font-size:14px; color:#3e5e86; font-weight:bold; line-height:26px;height:26px; border-radius:26px; border:1px solid #a6bdce; background:#dfedf4; margin-top:4px; background:url(../img/backto_the.png) no-repeat 8px center; margin-right:16px;}
+/*“返回”按钮，鼠标停靠时改变样式*/
+.c_li_15_wrap_second h2 a:hover{ background:#d9e6ed url(../img/backto_the.png) no-repeat 8px center; }
+
+/*待批USBKEY“USBKEY信息”div*/
+/*.c_li_15_wrap_second from{ width:1000px; margin:0 auto;}*/
+.c_li_15_wrap_second .sealDiv{ width:1000px; margin:0 auto;}
+.c_li_15_wrap_second .main_the_con_05{ position:relative; border:3px dashed #dcdcdc; width:179px; height:179px; margin-top:25px; float:right; }
+/*.c_li_15_wrap_second .main_the_con_05 img{ width:179px; height:179px;}*/
+
+
+.c_li_15_wrap_second ol{ margin-left:10%; width:700px; padding-top:14px; padding-bottom:28px;}
+.c_li_15_wrap_second ol li{ display:inline-block; position:relative;}
+
+.c_li_15_wrap_second ol label{ color:#1e2a2f; font-size:14px; font-family:"微软雅黑"; line-height:55px; width:70px; float:left; text-align:left; padding-left:25px;}
+.c_li_15_wrap_second ol input[type="text"]{ border-radius:2px;float:left; margin-top:13px;width:200px; padding:0 21px; height:28px;  border:1px solid #85aabe; outline:none;}
+.c_li_15_wrap_second ol .select_way input{border-radius:2px;width:200px; padding:0 21px; height:28px; line-height:28px\9; margin:0;  border:1px solid #85aabe; outline:none; position:absolute; left:-1px; top:-1px;cursor:pointer;}
+.c_li_15_wrap_second ol label.left_margin{ line-height:58px; width:60px; margin-left:-20px; padding-right:15px; text-align:left}
+.c_li_15_wrap_second ol input[type="text"].color_85aabe{ color:#85aabe; line-height:28px\9}
+
+.c_li_15_wrap_second ol li .select_the_input_05{ width:115px;}
+.c_li_15_wrap_second ol li .select_the_area_05{ width:78px; padding:0; height:28px; background:url(../img/content_li_12_a_bg.jpg) repeat-x center center; border:1px solid #a1b8ca; float:left; margin-top:13px; margin-left:5px;}
+.c_li_15_wrap_second ol li .select_the_area_05:hover{ background:#d9e6ed; }
+
+.c_li_15_wrap_second ol input[type="submit"]{ border-radius:2px; background:#94b7d4; border:none; outline:none; color:#ffffff; font-size:16px; font-family:"微软雅黑"; width:90px; height:30px; margin-right:13px; margin-left:155px; cursor:pointer;}
+.c_li_15_wrap_second ol input[type="reset"]{ border-radius:2px; background:#94b7d4; border:none; outline:none; color:#ffffff; font-size:16px; font-family:"微软雅黑"; width:90px; height:30px; cursor:pointer;}
+.c_li_15_wrap_second ol textarea{background:#f1f7fa; margin-top:13px; padding:13px 21px; width:539px; height:95px;border-radius:2px;float:left; border:1px solid #85aabe; outline:none; overflow-y:scroll; resize:none; float:left;}
+
+.c_li_15_wrap_second ol li a{ margin-bottom:0; margin-top:15px; border-radius:3px; display:block; float:left; width:152px; height:30px; line-height:30px; background:#dcecf5; border:1px solid #a1b8ca; text-align:center; color:#123b5d; font-size:14px; font-family:"微软雅黑";}
+.c_li_15_wrap_second ol li a:last-child{ margin-left:10px; width:84px; background:#40a1f6; color:#fff; border:1px solid #40a1f6; outline:none;}
+
+
+.c_li_15_wrap_second_02{background:#ffffff;border:1px solid #bad4e8; width:99%; margin:12px auto; border-radius:4px;}
+.c_li_15_wrap_second_02 h2{ padding-left:46px; font-weight:normal; background:#f7fbfd url(../img/li_06_the_info_2.png) no-repeat 13px center; height:37px; line-height:37px; font-size:18; font-family:"微软雅黑"; color:#7c8897; border-bottom:1px solid #dce6ee;}
+
+/*待批USBKEY“证书信息”div*/
+/*.c_li_15_wrap_second_02 from{ width:1000px; margin:0 auto;}*/
+.c_li_15_wrap_second_02 .certDiv{ width:1000px; margin:0 auto;}
+.c_li_15_wrap_second_02 ol{ margin-left:10%; width:700px; padding-top:14px; padding-bottom:28px;}
+.c_li_15_wrap_second_02 ol li{ overflow:hidden;}
+
+
+.c_li_15_wrap_second_02 ol li.the_06_the_r_li{ padding-left:337px;}
+.c_li_15_wrap_second_02 ol label{ color:#1e2a2f; font-size:14px; font-family:"微软雅黑"; line-height:55px; width:70px; float:left; text-align:left; padding-left:25px;}
+.c_li_15_wrap_second_02 ol input[type="text"]{background:#f1f7fa; border-radius:2px;float:left; margin-top:13px;width:200px; padding:0 21px; height:28px;  border:1px solid #85aabe; outline:none;}
+
+.c_li_15_wrap_second_02 ol input[type="submit"]{ border-radius:2px; background:#94b7d4; border:none; outline:none; color:#ffffff; font-size:16px; font-family:"微软雅黑"; width:90px; height:30px; margin-right:13px; margin-left:155px; cursor:pointer;}
+.c_li_15_wrap_second_02 ol input[type="reset"]{ border-radius:2px; background:#94b7d4; border:none; outline:none; color:#ffffff; font-size:16px; font-family:"微软雅黑"; width:90px; height:30px; cursor:pointer;}
+.c_li_15_wrap_second_02 ol textarea{background:#f1f7fa; margin-top:13px; padding:13px 21px; width:539px; height:95px;border-radius:2px;float:left; border:1px solid #85aabe; outline:none; overflow-y:scroll; resize:none; float:left;}
+
+.c_li_15_wrap_second_02 ol li a{ margin-bottom:0; margin-top:15px; border-radius:3px; display:block; float:left; width:152px; height:30px; line-height:30px; background:#dcecf5; border:1px solid #a1b8ca; text-align:center; color:#123b5d; font-size:14px; font-family:"微软雅黑";}
+.c_li_15_wrap_second_02 ol li a:last-child{ margin-left:10px; width:84px; background:#40a1f6; color:#fff; border:1px solid #40a1f6; outline:none;}
+
+/*待批USBKEY 修改页面 备注div*/
+/*.c_li_15_wrap_second_03{background:#ffffff;border:1px solid #bad4e8; width:99%; margin:12px auto; border-radius:4px;}*/
+.c_li_15_wrap_second_03{background:#ffffff;border:1px solid #bad4e8; width:99%; margin:12px auto; border-radius:4px; min-width:1100px;}
+.c_li_15_wrap_second_03 h2{ padding-left:46px; font-weight:normal; background:#f7fbfd url(../img/li_06_the_info_3.png) no-repeat 13px center; height:37px; line-height:37px; font-size:18; font-family:"微软雅黑"; color:#7c8897; border-bottom:1px solid #dce6ee;}
+
+/*.c_li_15_wrap_second_03 from{ width:1000px; margin:0 auto;}*/
+.c_li_15_wrap_second_03 .descDiv{ width:1000px; margin:0 auto;}
+.c_li_15_wrap_second_03 ol{ margin-left:10%; width:700px; padding-top:14px; padding-bottom:28px;}
+.c_li_15_wrap_second_03 ol li{ overflow:hidden;}
+
+.c_li_15_wrap_second_03 ol label{ color:#1e2a2f; font-size:14px; font-family:"微软雅黑"; line-height:55px; width:80px; float:left; text-align:right; padding-right:15px;}
+.c_li_15_wrap_second_03 ol input[type="text"]{background:#f1f7fa; border-radius:2px;float:left; margin-top:13px;width:200px; padding:0 21px; height:28px;  border:1px solid #85aabe; outline:none;}
+.c_li_15_wrap_second_03 ol input[type="submit"]{ border-radius:2px; background:#94b7d4; border:none; outline:none; color:#ffffff; font-size:16px; font-family:"微软雅黑"; width:90px; height:30px; margin-right:13px; margin-left:155px; cursor:pointer;}
+.c_li_15_wrap_second_03 ol input[type="reset"]{ border-radius:2px; background:#94b7d4; border:none; outline:none; color:#ffffff; font-size:16px; font-family:"微软雅黑"; width:90px; height:30px; cursor:pointer;}
+/*USBKEY修改页面 备注信息*/
+/*.c_li_15_wrap_second_03 ol textarea{background:#f1f7fa; margin-top:13px; padding:13px 21px; width:539px; height:70px;border-radius:2px;float:left; border:1px solid #85aabe; outline:none; overflow-y:scroll; resize:none; float:left;}*/
+.c_li_15_wrap_second_03 ol textarea{margin-top:13px; padding:13px 21px; width:539px; height:70px;border-radius:2px;float:left; border:1px solid #85aabe; outline:none; overflow-y:scroll; resize:none; float:left;}
+
+.c_li_15_wrap_second_03 ol li a{ margin-bottom:0; margin-top:15px; border-radius:3px; display:block; float:left; width:152px; height:30px; line-height:30px; background:#dcecf5; border:1px solid #a1b8ca; text-align:center; color:#123b5d; font-size:14px; font-family:"微软雅黑";}
+.c_li_15_wrap_second_03 ol li a:last-child{ margin-left:10px; width:84px; background:#40a1f6; color:#fff; border:1px solid #40a1f6; outline:none;}
+
+
+/*底部按键，USBkey审批页面15*/
+.li_15_add_the_2_2{ margin-left:30%; margin-bottom:50px; text-align:center; border-radius:2px; display:block; background:#40a1f6; width:130px; height:33px;line-height:33px;  color:#ffffff; font-size:16px; font-family:"微软雅黑"; margin-top:15px;float:left;  }
+.li_15_add_the_2_2:hover{ background:#3a92e0;}
+.li_15_add_the_3_2{ text-align:center; border-radius:2px; display:block;background:#4cc2a5; width:100px; height:33px;line-height:33px;  color:#ffffff; font-size:16px; font-family:"微软雅黑"; margin-left:2%; margin-top:15px;float:left; }
+.li_15_add_the_3_2:hover{ background:#41a88f;}
+.li_15_add_the_4_2{ text-align:center; border-radius:2px; display:block; background:#94b7d4; width:76px; height:33px;line-height:33px;  color:#ffffff; font-size:16px; font-family:"微软雅黑"; margin-left:2%; margin-top:15px;float:left; }
+.li_15_add_the_4_2:hover{ background:#809db6;}
+
+/*底部按键，USBKey颁发管理15*/
+.li_15_add_the{ text-align:center; border-radius:2px; display:block; background:#0761c0; width:76px; height:33px;line-height:33px;  color:#ffffff; font-size:16px; font-family:"微软雅黑"; margin-left:30%; margin-top:15px; float:left; margin-bottom:60px; }
+.li_15_add_the:hover{ background:#0756aa;}
+.li_15_add_theDisabled{cursor:default; text-align:center; border-radius:2px; display:block; background:#bbbbbb; width:76px; height:33px;line-height:33px;  color:#777777; font-size:16px; font-family:"微软雅黑"; margin-left:30%; margin-top:15px; float:left; margin-bottom:60px; }
+.li_15_add_the_2{ text-align:center; border-radius:2px; display:block; margin:0 auto; background:#40a1f6; width:76px; height:33px;line-height:33px;  color:#ffffff; font-size:16px; font-family:"微软雅黑"; margin-left:2%;margin-top:15px;float:left;  }
+.li_15_add_the_2:hover{ background:#3a92e0;}
+.li_15_add_the_2Disabled{cursor:default; text-align:center; border-radius:2px; display:block; margin:0 auto; background:#bbbbbb; width:76px; height:33px;line-height:33px;  color:#777777; font-size:16px; font-family:"微软雅黑"; margin-left:2%;margin-top:15px;float:left;  }
+.li_15_add_the_3{ text-align:center; border-radius:2px; display:block;background:#4cc2a5; width:76px; height:33px;line-height:33px;  color:#ffffff; font-size:16px; font-family:"微软雅黑"; margin-left:2%; margin-top:15px;float:left; }
+.li_15_add_the_3:hover{ background:#41a88f;}
+.li_15_add_the_3Disabled{cursor:default; text-align:center; border-radius:2px; display:block;background:#bbbbbb; width:76px; height:33px;line-height:33px;  color:#777777; font-size:16px; font-family:"微软雅黑"; margin-left:2%; margin-top:15px;float:left; }
+.li_15_add_the_4{ text-align:center; border-radius:2px; display:block; background:#94b7d4; width:76px; height:33px;line-height:33px;  color:#ffffff; font-size:16px; font-family:"微软雅黑"; margin-left:2%; margin-top:15px;float:left; }
+.li_15_add_the_4:hover{ background:#809db6;}
+
+/*添加UsbKey —06*/
+.c_li_15_wrap_second_04{background:#ffffff;border:1px solid #bad4e8; width:99%; margin:12px auto; border-radius:4px; min-width:1100px; margin-top:68px; }
+.c_li_15_wrap_second_04 h2{ padding-left:46px; font-weight:normal; background:#f7fbfd url(../img/li_06_the_info_4.png) no-repeat 13px center; height:37px; line-height:37px; font-size:18; font-family:"微软雅黑"; color:#7c8897; border-bottom:1px solid #dce6ee;}
+.c_li_15_wrap_second_04 h2 a{ float:right; padding-left:15px; width:57px; text-align:center; font-family:"微软雅黑"; font-size:14px; color:#3e5e86; font-weight:bold; line-height:26px;height:26px; border-radius:26px; border:1px solid #a6bdce; background:#dfedf4; margin-top:4px; background:url(../img/backto_the.png) no-repeat 8px center; margin-right:16px;}
+/*"返回"按钮*/
+.c_li_15_wrap_second_04 h2 a:hover{ background:#d9e6ed url(../img/backto_the.png) no-repeat 8px center; }
+
+.c_li_15_wrap_second_04 .sealDiv{ width:1000px; margin:0 auto;}
+
+
+.c_li_15_wrap_second_04 .main_the_con_06 .the_goto_img{ position:absolute; bottom:-38px; height:28px; color:#ffffff; cursor:pointer; font-family:"微软雅黑"; font-size:14px; line-height:28px; width:180px; background:#94b7d4; text-align:center; border-radius:3px;}
+/*添加印章页面，“上传”按钮，鼠标停靠时改变样式*/
+.c_li_15_wrap_second_04 .main_the_con_06 .the_goto_img:hover{ background:#809db6; }
+.c_li_15_wrap_second_04 ol{ margin-left:10%; width:700px; padding-top:14px; padding-bottom:28px;}
+.c_li_15_wrap_second_04 ol li{ display:inline-block;}
+
+.c_li_15_wrap_second_04 ol label{ color:#1e2a2f; font-size:14px; font-family:"微软雅黑"; line-height:55px; width:70px; float:left; text-align:left; padding-left:25px;}
+/*.c_li_15_wrap_second_04 ol input[type="text"]{background:#f1f7fa; border-radius:2px;float:left; margin-top:13px;width:200px; padding:0 21px; height:28px;  border:1px solid #85aabe; outline:none;}*/
+.c_li_15_wrap_second_04 ol input[type="text"]{border-radius:2px;float:left; margin-top:13px;width:200px; padding:0 21px; height:28px;  border:1px solid #85aabe; outline:none;}
+.c_li_15_wrap_second_04 ol .select_way input{border-radius:2px;width:200px; padding:0 21px; height:28px\9; margin:0;  border:1px solid #85aabe; outline:none; position:absolute; left:-1px; top:-1px;cursor:pointer;}
+.c_li_15_wrap_second_04 ol label.left_margin{line-height:58px; width:60px; margin-left:-20px; padding-right:15px; text-align:left}
+.c_li_15_wrap_second_04 ol input[type="text"].color_85aabe{ color:#85aabe;}
+/*UsbKey页面的“持有人”样式*/
+.c_li_15_wrap_second_04 ol li .nameClass{ width:115px; background:#f1f7fa; color:#85aabe; line-height:28px\9;}
+/*添加UsbKey页面中的“请选择”按钮*/
+.c_li_15_wrap_second_04 ol li .select_the_area_05{ width:78px; padding:0; height:28px; background:url(../img/content_li_12_a_bg.jpg) repeat-x center center; border:1px solid #a1b8ca; float:left; margin-top:13px; margin-left:5px;}
+.c_li_15_wrap_second_04 ol li .select_the_area_05:hover{background:#d9e6ed;}
+
+c_li_15_wrap_second_04 ol input[type="submit"]{ border-radius:2px; background:#94b7d4; border:none; outline:none; color:#ffffff; font-size:16px; font-family:"微软雅黑"; width:90px; height:30px; margin-right:13px; margin-left:155px; cursor:pointer;}
+.c_li_15_wrap_second_04 ol input[type="reset"]{ border-radius:2px; background:#94b7d4; border:none; outline:none; color:#ffffff; font-size:16px; font-family:"微软雅黑"; width:90px; height:30px; cursor:pointer;}
+.c_li_15_wrap_second_04 ol textarea{background:#f1f7fa; margin-top:13px; padding:13px 21px; width:539px; height:95px;border-radius:2px;float:left; border:1px solid #85aabe; outline:none; overflow-y:scroll; resize:none; float:left;}
+
+.c_li_15_wrap_second_04 ol li a{ margin-bottom:0; margin-top:15px; border-radius:3px; display:block; float:left; width:152px; height:30px; line-height:30px; background:#dcecf5; border:1px solid #a1b8ca; text-align:center; color:#123b5d; font-size:14px; font-family:"微软雅黑";}
+.c_li_15_wrap_second_04 ol li a:last-child{ margin-left:10px; width:84px; background:#40a1f6; color:#fff; border:1px solid #40a1f6; outline:none;}
+
+/*UsbKey添加、修改页面证书列表div*/
+/*.c_li_15_wrap_second_05{background:#ffffff;border:1px solid #bad4e8; width:99%; margin:12px auto; border-radius:4px;}*/
+.c_li_15_wrap_second_05{background:#ffffff;border:1px solid #bad4e8; width:99%; margin:12px auto; border-radius:4px; min-width:1100px;}
+.c_li_15_wrap_second_05 h2{ padding-left:46px; font-weight:normal; background:#f7fbfd url(../img/li_06_the_info_2.png) no-repeat 13px center; height:37px; line-height:37px; font-size:18; font-family:"微软雅黑"; color:#7c8897; border-bottom:1px solid #dce6ee;}
+
+.c_li_15_wrap_second_05 .certDiv{ width:1000px; margin:0 auto; padding:15px;}
+.c_li_15_wrap_second_05 ol{ margin-left:10%; width:700px; padding-top:14px; padding-bottom:28px;}
+.c_li_15_wrap_second_05 ol li{ overflow:hidden;}
+
+/*UsbKey颁发管理，修改，查看页面的div以及印章信息的样式*/
+.c_li_15_wrap_second_05 .certDiv1{ width:660px; margin:0 auto; padding:2px;}
+.c_li_15_wrap_second_05 div .certTable1{margin-left:-50px; min-width:660px; line-height:38px; overflow:hidden; background:#ffffff; margin-bottom:12px; cellspacing:0; cellpadding:0;}
+
+.c_li_15_wrap_second_05 ol li.the_06_the_r_li{ padding-left:337px;}
+.c_li_15_wrap_second_05 ol label{ color:#1e2a2f; font-size:14px; font-family:"微软雅黑"; line-height:55px; width:70px; float:left; text-align:left; padding-left:25px;}
+/*.c_li_15_wrap_second_05 ol input[type="text"]{background:#f1f7fa; border-radius:2px;float:left; margin-top:13px;width:200px; padding:0 21px; height:28px;  border:1px solid #85aabe; outline:none;}*/
+.c_li_15_wrap_second_05 ol input[type="text"]{border-radius:2px;float:left; margin-top:13px;width:200px; padding:0 21px; height:28px;  border:1px solid #85aabe; outline:none;}
+
+.c_li_15_wrap_second_05 ol input[type="submit"]{ border-radius:2px; background:#94b7d4; border:none; outline:none; color:#ffffff; font-size:16px; font-family:"微软雅黑"; width:90px; height:30px; margin-right:13px; margin-left:155px; cursor:pointer;}
+.c_li_15_wrap_second_05 ol input[type="reset"]{ border-radius:2px; background:#94b7d4; border:none; outline:none; color:#ffffff; font-size:16px; font-family:"微软雅黑"; width:90px; height:30px; cursor:pointer;}
+.c_li_15_wrap_second_05 ol textarea{background:#f1f7fa; margin-top:13px; padding:13px 21px; width:539px; height:95px;border-radius:2px;float:left; border:1px solid #85aabe; outline:none; overflow-y:scroll; resize:none; float:left;}
+
+.c_li_15_wrap_second_05 ol li a{ margin-bottom:0; margin-top:15px; border-radius:3px; display:block; float:left; width:152px; height:30px; line-height:30px; background:#dcecf5; border:1px solid #a1b8ca; text-align:center; color:#123b5d; font-size:14px; font-family:"微软雅黑";}
+.c_li_15_wrap_second_05 ol li a:last-child{ margin-left:10px; width:84px; background:#40a1f6; color:#fff; border:1px solid #40a1f6; outline:none;}
+
+/*导入证书按钮*/
+.c_li_15_wrap_second_05 div .impCertCss{cursor:pointer; margin-bottom:10px;; margin-top:15px; border-radius:3px; display:block; float:left; width:152px; height:30px; line-height:30px; background:#dcecf5; border:1px solid #a1b8ca; text-align:center; color:#123b5d; font-size:14px; font-family:"微软雅黑";}
+.c_li_15_wrap_second_05 div .impCertCss:hover{ background:#d9e6ed; }
+
+/*UsbKey页面中的证书列表样式*/
+.c_li_15_wrap_second_05 div .certTable{min-width:1000px; line-height:38px; overflow:hidden; background:#ffffff; margin-bottom:12px; cellspacing:0; cellpadding:0;}
+.c_li_15_wrap_second_05 div .certTh{ background:#ecf4fa; color:#1e2a2f; font-size:14px; font-family:"微软雅黑"; font-weight:normal; text-align:center; border-right:1px solid #cee2ec; border-top:1px solid #cee2ec; border-bottom:1px solid #cee2ec;}
+.c_li_15_wrap_second_05 div .certTh2{ background:#ecf4fa; color:#1e2a2f; font-size:14px; font-family:"微软雅黑"; font-weight:normal; text-align:center; border:1px solid #cee2ec;}
+.c_li_15_wrap_second_05 div .certTd{ color:#1e2a2f; font-size:14px; font-family:"微软雅黑"; font-weight:normal; border-right:1px solid #cee2ec; border-bottom:1px solid #d4e4eb; padding-left:5px; padding-right:5px;}
+.c_li_15_wrap_second_05 div .certTd2{ color:#1e2a2f; font-size:14px; font-family:"微软雅黑"; font-weight:normal; border-left:1px solid #cee2ec; border-right:1px solid #cee2ec; border-bottom:1px solid #d4e4eb; padding-left:5px; padding-right:5px;}
+.c_li_15_wrap_second_05 div .nocertTd{ color:#1e2a2f; font-size:14px; font-family:"微软雅黑"; font-weight:normal; border-left:1px solid #cee2ec; border-right:1px solid #cee2ec; border-bottom:1px solid #d4e4eb;}
+.c_li_15_wrap_second_05 div .certTable a{ color:#1682d6; text-decoration:underline;}
+
+
+/*备注信息div*/
+/*.c_li_15_wrap_second_06{background:#ffffff;border:1px solid #bad4e8; width:99%; margin:12px auto; border-radius:4px;}*/
+.c_li_15_wrap_second_06{background:#ffffff;border:1px solid #bad4e8; width:99%; margin:12px auto; border-radius:4px;  min-width:1100px;}
+.c_li_15_wrap_second_06 h2{ padding-left:46px; font-weight:normal; background:#f7fbfd url(../img/li_06_the_info_3.png) no-repeat 13px center; height:37px; line-height:37px; font-size:18; font-family:"微软雅黑"; color:#7c8897; border-bottom:1px solid #dce6ee;}
+
+.c_li_15_wrap_second_06 .descDiv{ width:1000px; margin:0 auto;}
+.c_li_15_wrap_second_06 ol{ margin-left:10%; width:700px; padding-top:14px; padding-bottom:28px;}
+.c_li_15_wrap_second_06 ol li{ overflow:hidden;}
+
+.c_li_15_wrap_second_06 ol label{ color:#1e2a2f; font-size:14px; font-family:"微软雅黑"; line-height:55px; width:80px; float:left; text-align:right; padding-right:15px;}
+.c_li_15_wrap_second_06 ol input[type="text"]{background:#f1f7fa; border-radius:2px;float:left; margin-top:13px;width:200px; padding:0 21px; height:28px;  border:1px solid #85aabe; outline:none;}
+.c_li_15_wrap_second_06 ol input[type="submit"]{ border-radius:2px; background:#94b7d4; border:none; outline:none; color:#ffffff; font-size:16px; font-family:"微软雅黑"; width:90px; height:30px; margin-right:13px; margin-left:155px; cursor:pointer;}
+.c_li_15_wrap_second_06 ol input[type="reset"]{ border-radius:2px; background:#94b7d4; border:none; outline:none; color:#ffffff; font-size:16px; font-family:"微软雅黑"; width:90px; height:30px; cursor:pointer;}
+/*.c_li_15_wrap_second_06 ol textarea{background:#f1f7fa; margin-top:13px; padding:13px 21px; width:539px; height:70px;border-radius:2px;float:left; border:1px solid #85aabe; outline:none; overflow-y:scroll; resize:none; float:left;}*/
+.c_li_15_wrap_second_06 ol textarea{margin-top:13px; padding:13px 21px; width:539px; height:70px;border-radius:2px;float:left; border:1px solid #85aabe; outline:none; overflow-y:scroll; resize:none; float:left;}
+
+.c_li_15_wrap_second_06 ol li a{ margin-bottom:0; margin-top:15px; border-radius:3px; display:block; float:left; width:152px; height:30px; line-height:30px; background:#dcecf5; border:1px solid #a1b8ca; text-align:center; color:#123b5d; font-size:14px; font-family:"微软雅黑";}
+.c_li_15_wrap_second_06 ol li a:last-child{ margin-left:10px; width:84px; background:#40a1f6; color:#fff; border:1px solid #40a1f6; outline:none;}
+
+/*底部按键，15——6*/
+.li_15_add_the_6{  text-align:center; border-radius:2px; display:block; margin:0 auto; background:#40a1f6; width:76px; height:33px;line-height:33px;  color:#ffffff; font-size:16px; font-family:"微软雅黑"; margin-left:40%;margin-top:15px;float:left;margin-bottom:50px;  }
+.li_15_add_the_6:hover{ background:#3a92e0;}
+.li_15_add_the_7{  text-align:center; border-radius:2px; display:block; margin:0 auto; background:#40a1f6; width:76px; height:33px;line-height:33px;  color:#ffffff; font-size:16px; font-family:"微软雅黑"; margin-left:40%;margin-top:15px;float:left;margin-bottom:50px;  }
+.li_15_add_the_7:hover{ background:#3a92e0;}
+.li_15_add_the_7{ text-align:center; border-radius:2px; display:block;background:#4cc2a5; width:76px; height:33px;line-height:33px;  color:#ffffff; font-size:16px; font-family:"微软雅黑"; margin-left:2%; margin-top:15px;float:left; }
+.li_15_add_the_7:hover{ background:#41a88f;}
+.li_15_add_the_8{ text-align:center; border-radius:2px; display:block; background:#94b7d4; width:76px; height:33px;line-height:33px;  color:#ffffff; font-size:16px; font-family:"微软雅黑"; margin-left:2%; margin-top:15px;float:left; }
+.li_15_add_the_8:hover{ background:#809db6;}
+
+/*USBKey检测页面*/
+/*“查看” 按钮*/
+#content li.content_li_02 .c_li_02_wrap_third ol input[ id="goBtn"][type="button"].usbKeyCheckDisabledCss{ background:#dddddd; cursor:default; border:1px solid #a2b1ba; border-radius:3px; color:#777777; font-size:14px; font-family:"微软雅黑";font-weight:normal;}
+#content li.content_li_02 .c_li_02_wrap_third ol input[ id="goBtn"][type="button"].usbKeyCheckAbledCss{ background:#94b7d4; cursor:pointer; border:1px solid #a2b1ba; border-radius:3px; color:#ffffff; font-size:14px; font-family:"微软雅黑";font-weight:normal;}
+#content li.content_li_02 .c_li_02_wrap_third ol input[ id="goBtn"][type="button"]:hover{background:#83a3bd;}
+
+
+
+/*设置"认证类型方式"*/
+#content .signMethodCss{background:#ffffff;border:1px solid #bad4e8; width:99%; margin:12px auto; border-radius:4px;}
+#content .signMethodCss h2.deptNameCss{ padding-left:46px; font-weight:normal; background:#f7fbfd url(../img/li_06_the_info_3.png) no-repeat 13px center; height:37px; line-height:37px; font-size:18; font-family:"微软雅黑"; color:#7c8897; border-bottom:1px solid #dce6ee;}
+#content .signMethodCss h2.signMethodCss_H{ padding-left:46px; font-weight:normal; background:#f7fbfd url(../img/li_06_the_info.png) no-repeat 13px center; height:37px; line-height:37px; font-size:18; font-family:"微软雅黑"; color:#7c8897; border-bottom:1px solid #dce6ee;}
+#content .signMethodCss h2.issueByCss{ padding-left:46px; font-weight:normal; background:#f7fbfd url(../img/li_06_the_info_2.png) no-repeat 13px center; height:37px; line-height:37px; font-size:18; font-family:"微软雅黑"; color:#7c8897; border-bottom:1px solid #dce6ee;}
+
+#content .signMethodCss ol{ margin:0 auto; width:560px; padding-top:14px; padding-bottom:28px;}
+
+#content .signMethodCss li{color:#303030; font-size:14px; font-family:"微软雅黑"; overflow:hidden;line-height:36px; border-bottom:1px solid #cee0e8; background:#fff;}
+#content .signMethodCss li:first-child{ background:#ecf4fa;}
+#content .signMethodCss li:last-child{ border:none;}
+#content .signMethodCss strong{ font-weight:normal; float:left; display:block; width:24%; text-align:center; border-right:1px solid #cfe0e9; }
+#content .signMethodCss strong:last-child{ border:none;}
+
+/*
+#content .signMethodCss ol input[type="text"]{ border-radius:2px;float:left; margin-top:13px; width:200px; padding:0 21px; height:28px; line-height:28px\9;  border:1px solid #85aabe; outline:none;}
+#content .signMethodCss ol input[type="button"]{ border-radius:2px; background:#94b7d4; border:none; outline:none; color:#ffffff; font-size:16px; font-family:"微软雅黑"; width:90px; height:30px; margin-right:13px; margin-left:155px; cursor:pointer;}
+#content .signMethodCss ol input[type="reset"]{ border-radius:2px; background:#94b7d4; border:none; outline:none; color:#ffffff; font-size:16px; font-family:"微软雅黑"; width:90px; height:30px; cursor:pointer;}
+/*个人信息页面，修改登录名按钮 鼠标停靠时添加样式*/
+/*#content .signMethodCss ol input[type="button"]:hover{background:#83a3bd;}
+#content .signMethodCss ol input[type="reset"]:hover{background:#83a3bd;}*/
+
+
+#content .signMethodCss li strong a{ border-radius:3px; width:44px; height:20px; display:block; border:1px solid #409bcc; background:#40a1f6; color:#ffffff; font-family:"微软雅黑"; font-size:14px; line-height:20px; margin:0 auto; margin-top:8px;}
+/*鼠标停靠时，“查看”按钮颜色改变*/
+#content .signMethodCss li strong a:hover{background:#3992e0;}
+#content .signMethodCss li.the_add_change strong a{border:1px solid #61af72; background:#74cc9e;}
+#content .signMethodCss li.the_add_change strong a.add_the_remove{ color:#7094a1; font-size:14px; font-family:"微软雅黑";background:#eef5f9; border:1px solid #c6d7e0;}
+/*鼠标停靠时，“删除”按钮颜色改变*/
+#content .signMethodCss li.the_add_change strong a.add_the_remove:hover{ background:#d9e6ed;}
+/*鼠标停靠时，“编辑”按钮颜色改变*/
+#content .signMethodCss li strong a.changSignMethod{border-radius:3px; width:44px; height:20px; display:block; border:1px solid #61af72; background:#76cda0; color:#ffffff; font-family:"微软雅黑"; font-size:14px; line-height:20px; margin:0 auto; margin-top:8px;}
+#content .signMethodCss li strong a.changSignMethod:hover{ background:#44ac92;}
+/*“添加”按钮，鼠标停靠时变色*/
+#content .signMethodCss .li_03_add_the{ text-align:center; border-radius:2px; display:block; margin:0 auto; background:#4cc2a5; width:76px; height:33px;line-height:33px;  color:#ffffff; font-size:16px; font-family:"微软雅黑"; margin-left:45%; margin-top:35px;}
+#content .signMethodCss .li_03_add_the:hover{background:#44ac92;}
+
+/*添加证书过滤器 部分*/
+#content .signMethodCss .c_li_02_wrap_third{background:#ffffff; border-top:1px solid #bad4e8; width:98%; margin:12px auto; border-radius:4px;}
+
+#content .signMethodCss .c_li_02_wrap_third ol{ margin:0 auto; width:560px; padding-top:14px; padding-bottom:28px;}
+#content .signMethodCss .c_li_02_wrap_third ol li{ overflow:hidden;}
+
+#content .signMethodCss .c_li_02_wrap_third ol label{ color:#1e2a2f; font-size:14px; font-family:"微软雅黑"; line-height:55px; clear:left; width:140px; float:left; text-align:right; padding-right:15px;}
+#content .signMethodCss .c_li_02_wrap_third ol input[type="text"]{ border-radius:2px;float:left; margin-top:13px; width:200px; padding:0 21px; height:28px; line-height:28px\9;  border:1px solid #85aabe; outline:none;}
+#content .signMethodCss .c_li_02_wrap_third ol input[type="button"]{ border-radius:2px; background:#94b7d4; border:none; outline:none; color:#ffffff; font-size:16px; font-family:"微软雅黑"; width:90px; height:30px; margin-right:13px; margin-left:155px; cursor:pointer;}
+#content .signMethodCss .c_li_02_wrap_third ol input[type="reset"]{ border-radius:2px; background:#94b7d4; border:none; outline:none; color:#ffffff; font-size:16px; font-family:"微软雅黑"; width:90px; height:30px; cursor:pointer;}
+
+
+/*证书申请*/
+.content_li_02{}
+#content li.content_li_16 .c_li_16_wrap{ background:#ffffff;border:1px solid #bad4e8; width:99%; margin:12px auto; border-radius:4px;}
+#content li.content_li_16 .c_li_16_wrap h2{ padding-left:46px; font-weight:normal; background:#f7fbfd url(../img/add_people_02.png) no-repeat 13px center; height:37px; line-height:37px; font-size:18; font-family:"微软雅黑"; color:#7c8897; border-bottom:1px solid #dce6ee;}
+#content li.content_li_16 .c_li_16_wrap ol{ margin:0 auto; width:560px; padding-top:14px; padding-bottom:28px;}
+#content li.content_li_16 .c_li_16_wrap ol li{ overflow:hidden;}
+#content li.content_li_16 .c_li_16_wrap ol label{ color:#1e2a2f; font-size:14px; font-family:"微软雅黑"; line-height:55px; clear:left; width:70px; float:left; text-align:left; padding-left:85px;}
+#content li.content_li_16 .c_li_16_wrap ol input[type="text"]{ border-radius:2px;float:left; margin-top:13px;width:200px; padding:0 21px; height:28px; line-height:28px\9;  border:1px solid #85aabe; outline:none;}
+#content li.content_li_16 .c_li_16_wrap ol li span{ padding-left:20px; color:#fe0000; font-size:12px; font-family:"宋体"; line-height:55px; float:left;} 
+#content li.content_li_16 .c_li_16_wrap ol input[type="button"]{ border-radius:2px; background:#40a1f6; border:none; outline:none; color:#ffffff; font-size:16px; font-family:"微软雅黑"; width:90px; height:30px; margin-right:13px; margin-left:155px; cursor:pointer;}
+#content li.content_li_16 .c_li_16_wrap ol input[type="button"][name="btnReset"]{  margin-left:5px; border-radius:2px; background:#94b7d4; border:none; outline:none; color:#ffffff; font-size:16px; font-family:"微软雅黑"; width:90px; height:30px; cursor:pointer;}
+/*证书申请页面，修改密码按钮 鼠标停靠时添加样式*/
+#content li.content_li_16 .c_li_16_wrap ol input[type="button"]:hover{background:#3992e0;}
+#content li.content_li_16 .c_li_16_wrap ol input[type="button"][name="btnReset"]:hover{background:#83a3bd;}
+
+#content li.content_li_16 .c_li_16_wrap ol li .select_the_input_05{ width:115px;}
+/*“请选择”按钮*/
+#content li.content_li_16 .c_li_16_wrap ol li .select_the_area_05{ width:78px; padding:0; height:28px; background:url(../img/content_li_12_a_bg.jpg) repeat-x center center; border:1px solid #a1b8ca; float:left; margin-top:13px; margin-left:5px;}
+#content li.content_li_16 .c_li_16_wrap ol li .select_the_area_05:hover{background:#d9e6ed;}
+
+#content li.content_li_16 .c_li_16_wrap ol li a{ margin-bottom:0; margin-top:15px; border-radius:3px; display:block; float:left; width:152px; height:30px; line-height:30px; background:#dcecf5; border:1px solid #a1b8ca; text-align:center; color:#123b5d; font-size:14px; font-family:"微软雅黑";}
+
+
+
+/*角色管理 弹窗*/
+/*===登录注册等等===*/
+#box_wrap{ width:100%;/* height:6000px;*/position:fixed; left:0; top:50%; margin-top:-1000px; z-index:800px; background:#000;filter:alpha(opacity=40);opacity:0.3;}
+/*登陆框*/
+.role_box{ background:#fff; border-radius:5px;  width:678px; height:626px; background:#fff; position:fixed; left:50%; top:50%; margin-left:-339px; margin-top:-323px; z-index:888; overflow:hidden;}
+
+.role_box h3{ background:#f7fbfd; color:#7c8897; font:16px/40px "微软雅黑"; padding:0 20px;  border-bottom:1px solid #dce6ee;}
+.role_box h3 .to_exit_01{ display:block; width:22px; height:22px; border-radius:22px; float:right; border:none; background:url(../img/role_exit.png) no-repeat center center; margin-top:10px;}
+
+.role_box ol{ overflow:hidden; padding-top:20px; padding-left:70px;}
+.role_box ol li{ overflow:hidden;}
+.role_box label{ line-height:50px; font-family:"微软雅黑"; font-size:14px; color:#1e2a2f; width:117px; display:block; padding-left:11px; float:left;}
+
+.role_box label.label_color_connot{ color:#85AABE;}
+
+.role_box ol li input[type="text"]{margin-top:10px; float:left; padding:0 10px; width:290px; height:28px; border:1px solid #85aabe; font-size:14px; outline:none; color:#000000; font-family:"微软雅黑"; clear:right;}
+
+
+.role_box ol li .the_input_div{float:left; overflow:hidden; width:16px; height:16px; margin-top:17px; cursor:pointer;}
+
+.role_box ol li.role_box_li label{ width:60px;}
+.role_box ol li.role_box_li label.first_label{ width:117px}
+
+#resetBtn{ width:120px; height:30px; background:#40a1f6; border-radius:3px; outline:none; border:none; color:#fff; font-size:16px; font-family:"微软雅黑"; cursor:pointer;margin-left:117px; margin-top:10px;}
+#resetBtn:hover{background:#3992e0}
+#okBtn{width:88px; height:30px; background:#4cc2a5; border-radius:3px;outline:none; border:none;color:#fff; font-size:16px; font-family:"微软雅黑";cursor:pointer;margin-left:17px;margin-top:10px;}
+#okBtn:hover{background:#44ac92}
+#cancelBtn{width:88px; height:30px; background:#94b7d4; border-radius:3px;outline:none; border:none;color:#fff; font-size:16px; font-family:"微软雅黑";cursor:pointer;margin-left:17px;margin-top:10px;}
+#cancelBtn:hover{background:#83a3bd}
+#closeBtn{width:88px; height:30px; background:#94b7d4; border-radius:3px;outline:none; border:none;color:#fff; font-size:16px; font-family:"微软雅黑";cursor:pointer;margin-left:17px;margin-top:10px;}
+#closeBtn:hover{background:#83a3bd}
+
+
+/*上传*/
+.upload_box{ background:#fff; border-radius:5px;  width:496px; height:140px; background:#fff; position:fixed; left:50%; top:50%; margin-left:-298px; margin-top:-70px; z-index:888; overflow:hidden;}
+
+.upload_box h3{ background:#f7fbfd; color:#7c8897; font:16px/40px "微软雅黑"; padding:0 20px;  border-bottom:1px solid #dce6ee;}
+.upload_box h3 .upload_to_exit_01{ display:block; width:22px; height:22px; border-radius:22px; float:right; border:none; background:url(../img/role_exit.png) no-repeat center center; margin-top:10px;}
+
+
+.upload_box .line { position:relative; float:left; padding:8px 0px; margin-top:20px; margin-left:60px;} 
+.upload_box .line span { float:left} 
+.upload_box input{ border:1px solid #85aabe; background:#f1f7fa; vertical-align:middle; width:212px; height:28px; outline:none;} 
+.upload_box .file{ position:absolute; display:block; left:220px; top:8px; width:83px; height:30px; display:none;filter:alpha(opacity=0); opacity:0; cursor:pointer;} 
+/*“浏览”按钮，鼠标停靠时按钮样式改变*/
+.upload_box .file1 {display:block; width:83px; height:30px; text-align:center; font-size:14px; font-family:"微软雅黑"; line-height:30px; float:left; background:url(../img/content_li_15_a_bg.jpg) repeat-x center center; color:#123b5d; z-index:1; margin-left:5px; vertical-align:middle; cursor: pointer; border:1px solid #a1b8ca; border-radius:2px;} 
+.upload_box .inputstyle { width:212px; border:1px solid #85aabe; z-index:99} 
+/*“上传”按钮，鼠标停靠时按钮样式改变*/
+.upload_box .upload_to{ display:block; float:left; width:60px; height:30px; text-align:center; font-size:14px; font-family:"微软雅黑"; line-height:30px; background:url(../img/content_li_12_a_bg.jpg) repeat-x center center; color:#123b5d; z-index:1; margin-left:5px; vertical-align:middle; cursor: pointer; border:1px solid #a1b8ca; border-radius:2px;}
+/*.upload_box .upload_to:hover{ background:#d9e6ed; }*/
+
+
+/*证书安装*/
+.line2 {  float:left; padding:0px 0px; margin-top:0px; }
+.line2 .line span { float:left} 
+.line2 input{ border:1px solid #85aabe; background:#f1f7fa; vertical-align:middle; width:200px; height:28px; outline:none; margin-top:13px;width:200px; padding:0 21px} 
+.line2 .file{ position:absolute; display:block; left:220px; top:8px; width:83px; height:30px; display:none;filter:alpha(opacity=0); opacity:0; cursor:pointer;} 
+/*“浏览”按钮*/
+.line2 .file1 {margin-left:5px; margin-top:13px; display:block; width:83px; height:28px; padding-left:5px; text-align:center; font-size:14px; font-family:"微软雅黑"; line-height:30px; float:left; background:url(../img/content_li_15_a_bg.jpg) repeat-x center center; color:#123b5d; z-index:1; vertical-align:middle; cursor: pointer; border:1px solid #a1b8ca; border-radius:2px;} 
+.line2 .inputstyle { width:212px; border:1px solid #85aabe; z-index:99} 
+#labelTitle{ color:#7c8897; font-size:16px; font-family:"微软雅黑"; line-height:55px; width:90%; float:left; text-align:left; padding-left:25px;}
+
+
+/*选择管辖部门弹窗*/
+#box_wrap_dept{ width:100%;/* height:6000px;*/position:fixed; left:0; top:50%; margin-top:-1000px; z-index:800px; background:#000;filter:alpha(opacity=40);opacity:0.3;}
+/*登陆框*/
+.branch_box{ background:#fff; border-radius:5px; width:546px; height:465px; background:#fff; position:fixed; left:50%; top:50%; margin-left:-339px; margin-top:-243px; z-index:888; overflow:hidden;}
+
+.branch_box h3{ background:#f7fbfd; color:#7c8897; font:16px/40px "微软雅黑"; padding:0 20px;  border-bottom:1px solid #dce6ee;}
+.branch_box h3 .branch_to_exit_01{ display:block; width:22px; height:22px; border-radius:22px; float:right; border:none; background:url(../img/role_exit.png) no-repeat center center; margin-top:10px;}
+
+
+/*.branch_box{ background:#fff; border-radius:5px; width:546px; height:442px; background:#fff;/* position:fixed; left:50%; top:50%; margin-left:-298px; margin-top:-180px;*/ /*z-index:888; overflow:hidden; }
+/*.branch_box h3{ background:#f7fbfd; color:#7c8897; font:16px/40px "微软雅黑"; padding:0 20px;  border-bottom:1px solid #dce6ee;}
+.branch_box h3 .branch_to_exit_01{ display:block; width:22px; height:22px; border-radius:22px; float:right; border:none; background:url(../img/role_exit.png) no-repeat center center; margin-top:10px;}*/
+
+.branch_wrap_left{width:546px; height:340px; overflow:auto;}
+
+.branch_wrap_left li{ line-height:28px; padding-left:20px; }
+.branch_wrap_left li strong{white-space:nowrap; line-height:44px; font-weight:normal; padding-left:23px; color:#ff0000; font-size:16px; font-family:"微软雅黑"; cursor:pointer; background:url(../img/lileft_07_strong_01.png) no-repeat 6px center;}
+.branch_wrap_left li dl{ line-height:28px; width:0px;white-space:nowrap; }
+.branch_wrap_left li dl dt{ position:relative; line-height:44px; font-weight:normal; left:0px; color:#ff0000; font-size:16px; font-family:"微软雅黑"; cursor:pointer; }
+.branch_wrap_left li dl dt a{background:url(../img/lileft_07_strong_01.png) no-repeat 30px center; padding-left:50px; color:#303030;  font-family:"微软雅黑"; font-size:14px; padding-right:18px;}
+.branch_wrap_left li dl dd{position:relative; left:22px;}
+.branch_wrap_left dl dd a{background:url(../img/lileft_07_list_02.png) no-repeat 15px center; padding-left:28px; color:#303030; font-family:"微软雅黑"; font-size:14px; padding-right:18px;}
+.branch_wrap_left dl dt a{background:url(../img/lileft_07_strong_01.png) no-repeat 30px center; padding-left:50px; color:#303030; font-family:"微软雅黑"; font-size:14px; padding-right:18px;}
+.branch_wrap_left .setUrlCss{ background:url(../img/lileft_07_strong_02.png) no-repeat 33px center;}
+.branch_wrap_left li dl label{ color:#303030; font-family:"微软雅黑"; font-size:14px; }
+	
+.branch_box a.the_a_blo_01{ float:left;display:block; width:90px; height:30px; line-height:30px; background:#4cc2a5; border-radius:3px; text-align:center; font-family:"微软雅黑"; font-size:14px; color:#fff; margin-left:150px; margin-top:25px;}
+.branch_box a.the_a_blo_01:hover{ background:#41a88f;}
+.branch_box a.the_a_blo_02{ margin-left:10px; float:left;display:block; width:90px; height:30px; line-height:30px; background:#94b7d4; border-radius:3px; text-align:center; font-family:"微软雅黑"; font-size:14px; color:#fff;margin-top:25px;}
+.branch_box a.the_a_blo_02:hover{ background:#809db6;}
+.branch_box a.the_a_blo_03{ margin-left:10px; float:left;display:block; width:90px; height:30px; line-height:30px; background:#94b7d4; border-radius:3px; text-align:center; font-family:"微软雅黑"; font-size:14px; color:#fff;margin-top:25px; margin-left:230px;}
+.branch_box a.the_a_blo_03:hover{ background:#809db6;}
+
+/*iframe*/
+#ifra_the{ display:none; background:#fff; border-radius:5px;  width:680px; height:540px; background:#fff; position:fixed; left:50%; top:50%; margin-left:-340px; margin-top:-270px; z-index:888; overflow:hidden; border:none;}
+
+
+
+/*选择签章人部门弹窗*/
+/*将overflow:none;设置为overflow-y:auto;*/
+.signature_box{ background:#fff; border-radius:5px;  width:680px; height:540px; background:#fff; position:fixed; left:50%; top:50%; margin-left:-340px; margin-top:-270px; z-index:888; overflow-y:auto; }
+
+.signature_box h3{ background:#f7fbfd; color:#7c8897; font:16px/40px "微软雅黑"; padding:0 20px;  border-bottom:1px solid #dce6ee;}
+.signature_box h3 .signature_to_exit_01{ display:block; width:22px; height:22px; border-radius:22px; float:right; border:none; background:url(../img/role_exit.png) no-repeat center center; margin-top:10px;}
+
+/*确定、取消按钮*/
+.signature_box a.signature_the_a_blo_01{ float:left;display:block; width:90px; height:30px; line-height:30px; background:#4cc2a5; border-radius:3px; text-align:center; font-family:"微软雅黑"; font-size:14px; color:#fff; margin-left:240px; margin-top:15px;}
+.signature_box a.signature_the_a_blo_01:hover{background:#41a88f;}
+.signature_box a.signature_the_a_blo_02{ margin-left:10px; float:left;display:block; width:90px; height:30px; line-height:30px; background:#94b7d4; border-radius:3px; text-align:center; font-family:"微软雅黑"; font-size:14px; color:#fff;margin-top:15px;}
+.signature_box a.signature_the_a_blo_02:hover{background:#809db6;}
+
+.signature_wrap_top li{ overflow:hidden;}
+.signature_wrap_top input[type="text"]{ margin-top:10px; width:310px; height:28px; border:1px solid #85aabe; float:left; background:#fff; outline:none;}
+.signature_wrap_top input[type="text"].seach_signature{ width:245px;}
+.signature_wrap_top label{ padding-right:10px; padding-left:125px; font-family:"微软雅黑"; margin-top:10px; font-size:14px; line-height:30px; color:#1e2a2f; float:left;}
+/*“搜索”按钮*/
+.signature_wrap_top input[type="button"]{ float:left; margin-top:10px; width:58px; height:32px; color:#004b74; background:url(../img/content_li_12_a_bg.jpg) repeat-x center center; border:1px solid #a1b8ca; outline:none; margin-left:8px; cursor:pointer; }
+.signature_wrap_top input[type="button"]:hover{ background:#d9e6ed;}
+
+/*将width:646px;修改为width:666px;*/
+.signature_wrap_content{ width:666px; margin:0 auto; border:1px solid #c9dfea; border-bottom:none; margin-top:20px;}
+.signature_wrap_content li{ overflow:hidden; border-bottom:1px solid #c9dfea;}
+/*设置列表页面，li组成的单元格内容换行时，表格线长度自动改变（设置的最高为200px,若高度不够可在自行更改） :padding-bottom:200px; margin-bottom:-200px; 
+word-break:break-all;是断开单词。在单词到边界时，下个字母自动到下一行。主要解决了长串英文的问题。*/
+/*将width:7%;修改了width:6%;*/
+.signature_wrap_content li span{word-break:break-all; padding-bottom:200px; margin-bottom:-200px; float:left; width:6%;border-right:1px solid #c9dfea;}
+.signature_wrap_content li span input{word-break:break-all; width:18px; height:18px; margin:8px 12px; margin:4px 12px\9; border:1px solid #c9dfea; cursor:pointer; }
+/*将width:17%修改为width:15%*/
+.signature_wrap_content li strong{padding-bottom:200px; margin-bottom:-200px;  font-weight:normal; color:#133954; font-family:"微软雅黑"; font-size:14px; float:left; width:15%; text-align:center; line-height:34px; border-right:1px solid #c9dfea;}
+.signature_wrap_content li strong a{word-break:break-all; padding-bottom:200px; margin-bottom:-200px;  color:#1682d6; text-decoration:underline;}
+/*添加了width:18%*/
+.signature_wrap_content li strong.last-child{word-break:break-all; padding-bottom:200px; margin-bottom:-200px; width:18%;  border:none;}
+
+
+.signature_box h4{font:15px/40px "微软雅黑"; color:#033c5d; margin:0 2%; clear:both; border-bottom:1px solid #cee0e8; overflow:hidden;}
+.signature_box h4 span{ color:#979fa5; font-size:14px; padding-right:10px;}
+
+/*底部分页导航栏*/
+.signature_box h4 div{ float:right; padding-right:0.5%; color:#21709d; font-size:14px; font-family:"微软雅黑";}
+.signature_box h4 div a{ margin:0 0 0 5px; color:#21709d; padding:2px 7px; border:1px solid #a3c2ce; background:#f3f9fd;}
+.signature_box h4 div a.current_signature_a{ background:#0f9de4; color:#ffffff;border:1px solid #0f9de4;}
+.signature_box h4 div a:hover{background:#0f9de4; color:#ffffff;border:1px solid #0f9de4;}
+
+
+
+.the_click{ display:block; float:left; width:30px; height:30px; background:url(../img/the_clik.png) no-repeat center center; margin-left:-30px; margin-top:8px; }
+
+.c_li_08_wrap_second ol li a.the_click{ display:block; float:left; width:30px; height:30px; background:url(../img/the_clik.png) no-repeat center center; margin-left:-30px; margin-top:12px; border:none;}
+
+.c_li_08_wrap_second ol li a.the_click_a{ display:block; float:left; width:28px; height:26px; background:#F1F7FA url(../img/the_clik.png) no-repeat center center; margin-left:-30px; margin-top:14px; border:none; }
+
+
+.c_li_08_wrap_second_02 ol li a#the_click{ display:block; float:left; width:30px; height:30px; background:url(../img/the_clik.png) no-repeat center center; margin-left:-30px; margin-top:12px; border:none;}
+
+
+
+.the_add_get{ height:56px; text-align:right; width:97%;border-bottom:1px solid #bed8ea; background:#ecf4fa;color:#174261;padding-right:15px;position:fixed; left:0; top:0; z-index:555;}
+.the_add_get a{ color:#174261; font:14px/56px "微软雅黑";}
+
+
+
+
+
+
+
+
+
+/*滑条*/
+._mCS_1 .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{
+	background:#b8e2ff url(../img/bar_02.png) no-repeat center center;
+	width:10px;
+	opacity:0.47;
+	filter:progid:DXImageTransform.Microsoft.Alpha(opacity=47);
+}
+._mCS_1 .mCSB_scrollTools .mCSB_dragger{
+	width:10px;
+}
+/*底线*/
+._mCS_1 .mCSB_scrollTools .mCSB_draggerRail{
+	width:10px;
+	border-radius:0;
+	/*background:#001d31;*/
+	background: rgba(0,29,49,0.4)
+	
+	
+}
+
+._mCS_1 .mCSB_scrollTools .mCSB_draggerContainer{
+	width:10px;
+	border-radius:0;
+}
+._mCS_1 .mCSB_scrollTools{
+	opacity:0;
+	width:10px;
+	border-radius:0;
+}
+._mCS_1 .mCSB_container{
+	width:224px;
+	border-radius:0;
+}
+
+/*新添加的css页面*/
+/*查看印章、USBKEY页面部按键*/
+/*底部按键，06——2*/
+.li_07_add_the{  text-align:center; border-radius:2px; display:block; margin:0 auto; background:#40a1f6; width:76px; height:33px;line-height:33px;  color:#ffffff; font-size:16px; font-family:"微软雅黑"; margin-left:48%;margin-top:15px;float:left;margin-bottom:50px;  }
+.li_07_add_the:hover{ background:#3a92e0;}
+
+/*证书申请 “等待” 图片*/
+.imgWaitCss{background:url(../img/waiting.gif) no-repeat center center;}

@@ -1,0 +1,79 @@
+package com.sys.bean;
+
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "T_USER")
+public class UserModal  {
+	
+	public UserModal() {
+		super();
+	}
+	
+	public UserModal(String id, String userName, String password,String loginName,String role) {
+		super();
+		this.id = id;
+		this.userName = userName;
+		this.password = password;
+		this.loginName=loginName;
+	}
+
+	/**
+	 * 主键用户ID
+	 */
+	@Id
+	@Column(name="ID", length = 64)
+	private String id;
+	
+	/**
+	 *　名称
+	 */
+	@Column(name = "USERNAME", length = 100)
+	private String userName;
+	/**
+	 *　密码
+	 */
+	@Column(name = "PASSWORD", length = 100)
+	private String password;
+	/**
+	 * 登录名
+	 */
+	@Column(name = "LOGINNAME", length = 100)
+	private String loginName;
+	
+	
+	public String getId() {
+		return id;
+	}
+	public void setId(String id) {
+		this.id = id;
+	}
+	public String getPassword() {
+		return password;
+	}
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
+	public String getUserName() {
+		return userName;
+	}
+
+	public void setUserName(String userName) {
+		this.userName = userName;
+	}
+
+	public String getLoginName() {
+		return loginName;
+	}
+
+	public void setLoginName(String loginName) {
+		this.loginName = loginName;
+	}
+    
+}
+

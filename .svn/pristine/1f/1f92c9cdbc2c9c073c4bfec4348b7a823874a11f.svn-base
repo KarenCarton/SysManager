@@ -1,0 +1,77 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*全局样式*/
+body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div{margin:0;padding:0;border:0;}
+body{background:#000000;color:#333;font-size:12px;font-family:"SimSun","Arial Narrow";background-size:100% 100%;}
+
+ul,ol{list-style-type:none;}
+select,input,img,select{vertical-align:middle;}
+input[type="text"]{ line-height:41px\9;}
+a{text-decoration:none;}
+.clearit{clear:both;}
+.none{ display:none;}
+
+
+
+#wrap{ width:100%; height:900px; background-size:100% 100%; position:relative;}
+
+h3{ position:absolute; width:100%; left:0; top:50%; margin-top:230px; text-align:center; font:14px/14px "微软雅黑"; color:#173682;}
+
+/*外框*/
+#wrap .the_wrap_border{ width:790px; height:362px; margin-top:-223px; margin-left:-395px; left:50%; top:50%;  border:1px solid #ffffff;position:absolute;}
+#wrap .the_wrap{ width:790px; height:362px; margin-top:-181px; margin-left:-395px; left:50%; top:50%; background:#fff; position:absolute; opacity:0.14;filter:progid:DXImageTransform.Microsoft.Alpha(opacity=14);}
+
+
+.content{width:770px; height:344px; background:#f7fbfd; margin-top:-214px; margin-left:-385px; left:50%; top:50%;position:absolute;}
+
+.right{padding:112px 46px 0 46px; width:328px; height:232px;float:right; background:url(../img/index_right_bg.jpg) no-repeat center center;}
+.right input[type="text"]{ padding-left:55px; padding-right:25px; color:#7d97a5; outline:none; margin:16px 0 0 0; width:243px; height:39px; border:1px solid #bdc9d1; border-radius:2px;}
+/*密码文本框*/
+.right input[type="password"]{ padding-left:55px; padding-right:25px; color:#7d97a5; outline:none; margin:16px 0 0 0; width:243px; height:39px; border:1px solid #bdc9d1; border-radius:2px;}
+.right li{ position:relative; overflow:hidden;}
+
+.right input[type="button"]{ color:#ffffff; font:bold 16px/39px "微软雅黑"; outline:none; width:325px; height:41px; border:none; border-radius:3px; background:#20aef6; cursor:pointer;}
+/*“登录”按钮，鼠标停靠时按钮颜色样式改变*/
+.right input[type="button"]:hover{ background:#3992e0; }
+
+.right input[type="checkbox"]{ float:right; margin-top:13px; width:14px; height:14px; cursor:pointer;}
+.right label{ margin-left:4px;float:right; width:60px; font:12px "宋体"; color:#7d97a5; height:38px; line-height:38px;}
+.right li strong{ display:block; width:42px; height:41px; position:absolute; top:17px; left:1px; border-radio:2px; background:#f1f5f8 url(../img/user_icon.png) no-repeat center;}
+.right li strong.last_strong{ background:#f1f5f8 url(../img/password_icon.png) no-repeat center center;}
+
+/*遮罩层div样式*/
+/*弹窗 隐藏修改初始密码框，给div添加属性：display:none;*/
+#box_wrap{display:none; width:100%;position:fixed; left:0; top:50%; margin-top:-1000px; z-index:800px; background:#000;opacity:0.7;filter:progid:DXImageTransform.Microsoft.Alpha(opacity=70); }
+
+#box_wrap_the{display:none; border-radius:5px;  width:710px; height:282px; background:#fff; position:fixed; left:50%; top:50%; margin-left:-355px; margin-top:-186px; z-index:888; overflow:hidden; opacity:0.5;filter:progid:DXImageTransform.Microsoft.Alpha(opacity=50); }
+
+.pass_box{display:none; background:#fff; border-radius:5px;  width:698px; height:270px; background:#fff; position:fixed; left:50%; top:50%; margin-left:-349px; margin-top:-180px; z-index:888; overflow:hidden;}
+
+.pass_box h4{display:none; background:#f7fbfd; color:#7c8897; font:20px/40px "微软雅黑"; padding:0 20px;  border-bottom:1px solid #dce6ee;}
+.pass_box h4 .to_exit{ display:none; width:22px; height:22px; border-radius:22px; float:right; border:none; background:url(../img/role_exit.png) no-repeat center center; margin-top:10px;}
+
+
+.c_li_02_wrap{ background:#ffffff;width:99%; margin:12px auto; border-radius:4px;}
+.c_li_02_wrap ol{ margin:0 auto; width:560px; padding-top:14px; padding-bottom:28px;}
+.c_li_02_wrap ol li{ overflow:hidden;}
+.c_li_02_wrap ol li:first-child{ color:#fe0000; font-family:"微软雅黑"; font-size:16px; text-align:center; padding-right:70px;}
+.c_li_02_wrap ol label{ color:#1e2a2f; font-size:14px; font-family:"微软雅黑"; line-height:55px; clear:left; width:140px; float:left; text-align:right; padding-right:15px;}
+.c_li_02_wrap ol input[type="password"]{ border-radius:2px;float:left; margin-top:13px;width:200px; padding:0 21px; height:28px;  border:1px solid #85aabe; outline:none;}
+.c_li_02_wrap ol li span{ padding-left:20px; color:#fe0000; font-size:12px; font-family:"宋体"; line-height:55px; float:left;} 
+.c_li_02_wrap ol input[type="submit"]{ border-radius:2px; border:none; outline:none; color:#ffffff; font-size:16px; font-family:"微软雅黑"; width:90px; height:30px; margin-right:13px; margin-left:155px; cursor:pointer; background:#40a1f6;}
+/*修改初始密码，“确定”按钮鼠标停靠时按钮颜色改变*/
+.c_li_02_wrap ol input[type="submit"]:hover{ background:#3992e0; }
+.c_li_02_wrap ol input[type="reset"]{ border-radius:2px; background:#94b7d4; border:none; outline:none; color:#ffffff; font-size:16px; font-family:"微软雅黑"; width:90px; height:30px; cursor:pointer;}
+/*修改初始密码，“取消”按钮鼠标停靠时按钮颜色改变*/
+.c_li_02_wrap ol input[type="reset"]:hover{ background:#809db6; }
+
+.c_li_02_wrap ol .the_strong_pass{ height:24px;line-height:24px;}
+.c_li_02_wrap ol .the_strong_pass span{ float:left; height:24px; width:60px; line-height:24px; color:#767676; padding:0;}
+.c_li_02_wrap ol .the_strong_pass div{ margin-top:6px; border:1px solid #d1d1d1; width:124px; height:10px; float:left; margin-right:10px;}
+
+.c_li_02_wrap ol .the_strong_pass div a{ width:38px; height:6px; float:left; background:#d1d1d1; margin-top:2px; margin-left:3px;}
+.c_li_02_wrap ol .the_strong_pass div a:first-child{ margin-left:2px;}
+.c_li_02_wrap ol .the_strong_pass div a.c_02_thea_01{background:#ec5959;}
+.c_li_02_wrap ol .the_strong_pass div a.c_02_thea_02{background:#ffaa15;}
+.c_li_02_wrap ol .the_strong_pass div a.c_02_thea_03{background:#76ce18;}

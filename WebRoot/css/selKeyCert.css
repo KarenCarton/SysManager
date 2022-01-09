@@ -1,0 +1,29 @@
+/*选择证书弹窗*/
+.select7{border-radius:2px;float:left;background:#f1f7fa; margin-top:14px;width:400px; height:30px;line-height:30px\9; border:1px solid #85aabe; outline:none;cursor:pointer; opacity:1;position:relative;}
+
+.signature_box2{ background:#fff; border-radius:5px;  width:680px; height:540px; background:#fff; position:fixed; left:50%; top:50%; margin-left:-340px; margin-top:-270px; z-index:888; overflow:hidden; font-weight:normal; color:#133954; font-family:"微软雅黑"; font-size:14px;}
+
+.signature_box2 h3{ background:#f7fbfd; color:#7c8897; font:16px/40px "微软雅黑"; padding:0 20px;  border-bottom:1px solid #dce6ee; margin-top:0;}
+.signature_box2 h3 .signature_to_exit_01{ display:block; width:22px; height:22px; border-radius:22px; float:right; border:none; background:url(../img/role_exit.png) no-repeat center center; margin-top:10px;}
+
+/*确定、取消按钮*/
+a{text-decoration:none; outline:none;}
+.signature_the_a_blo_01{ float:left;display:block; width:90px; height:30px; line-height:30px; background:#4cc2a5; border-radius:3px; text-align:center; font-family:"微软雅黑"; font-size:14px; color:#fff; margin-left:240px; margin-top:15px;}
+.signature_the_a_blo_01:hover{background:#41a88f;}
+.signature_the_a_blo_02{ margin-left:10px; float:left;display:block; width:90px; height:30px; line-height:30px; background:#94b7d4; border-radius:3px; text-align:center; font-family:"微软雅黑"; font-size:14px; color:#fff;margin-top:15px;}
+.signature_the_a_blo_02:hover{background:#809db6;}
+
+
+.signature_wrap_content2{ width:650px; margin:0 auto; border:1px solid #c9dfea; border-bottom:none; margin-top:20px; font-weight:normal; color:#133954; font-family:"微软雅黑"; font-size:14px; line-height:34px; }
+.signature_wrap_content2 li{ overflow:hidden; border-bottom:1px solid #c9dfea;}
+/*设置列表页面，li组成的单元格内容换行时，表格线长度自动改变（设置的最高为200px,若高度不够可在自行更改） :padding-bottom:200px; margin-bottom:-200px; 
+word-break:break-all;是断开单词。在单词到边界时，下个字母自动到下一行。主要解决了长串英文的问题。*/
+.signature_wrap_content2 li span{word-break:break-all; padding-bottom:200px; margin-bottom:-200px; float:left; width:7%;border-right:1px solid #c9dfea;}
+.signature_wrap_content2 li span input{word-break:break-all; width:18px; height:18px; margin:8px 12px; margin:4px 12px\9; border:1px solid #c9dfea; cursor:pointer; }
+.signature_wrap_content2 li strong{padding-bottom:200px; margin-bottom:-200px;  font-weight:normal; color:#133954; font-family:"微软雅黑"; font-size:14px; float:left; width:18%; text-align:center; line-height:34px; border-right:1px solid #c9dfea;}
+.signature_wrap_content2 li strong a{ color:#1682d6; text-decoration:underline;}
+.signature_wrap_content2 li strong.last-child{ border:none;}
+
+.signature_wrap_top2 label{ padding-right:10px; padding-left:125px; font-family:"微软雅黑"; margin-top:10px; font-size:14px; line-height:30px; color:#1e2a2f; float:left;}
+
+

@@ -1,0 +1,626 @@
+/* Cubic Bezier Transition */
+/*********** 
+    Page Header
+    ***********/
+
+
+
+/****
+    Boby
+    ****/
+body {
+/*   background-color: #364150; */
+ background-color:#07092d;
+ }
+ 
+/* Page sidebar */
+.page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover,
+.page-sidebar {
+  background-color: #32404e;
+  /* Default sidebar */
+  /* light sidebar */
+  /* Sidebar search */ }
+  .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu,
+  .page-sidebar .page-sidebar-menu {
+    /* 1st level links */
+    /* All links */ }
+    .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li > a,
+    .page-sidebar .page-sidebar-menu > li > a {
+      border-bottom: 0.2px solid #d5d5d5;
+      
+      /* color: #b4bcc8;  */
+      color:#B1B8BE;
+      }
+      .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li > a > i,
+      .page-sidebar .page-sidebar-menu > li > a > i {
+      /*   color: #606C7D;  */
+        color:#6d1008;
+        }
+      .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li > a > i[class^="icon-"],
+      .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li > a > i[class*="icon-"],
+      .page-sidebar .page-sidebar-menu > li > a > i[class^="icon-"],
+      .page-sidebar .page-sidebar-menu > li > a > i[class*="icon-"] {
+        color: #6b788b; }
+      .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li > a > .arrow:before, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li > a > .arrow.open:before,
+      .page-sidebar .page-sidebar-menu > li > a > .arrow:before,
+      .page-sidebar .page-sidebar-menu > li > a > .arrow.open:before {
+        color: #606C7D; }
+    .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li.heading > h3,
+    .page-sidebar .page-sidebar-menu > li.heading > h3 {
+      color: #708096; }
+    .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li:hover > a, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li.open > a,
+    .page-sidebar .page-sidebar-menu > li:hover > a,
+    .page-sidebar .page-sidebar-menu > li.open > a {
+      /* background: #2C3542;
+       color: #b4bcc8;  
+       */
+       background:#07092d;
+       color:#fffff;
+       }
+      .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li:hover > a > i, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li.open > a > i,
+      .page-sidebar .page-sidebar-menu > li:hover > a > i,
+      .page-sidebar .page-sidebar-menu > li.open > a > i {
+        color: #f0dcd1; }
+      .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li:hover > a > .arrow:before, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li:hover > a > .arrow.open:before, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li.open > a > .arrow:before, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li.open > a > .arrow.open:before,
+      .page-sidebar .page-sidebar-menu > li:hover > a > .arrow:before,
+      .page-sidebar .page-sidebar-menu > li:hover > a > .arrow.open:before,
+      .page-sidebar .page-sidebar-menu > li.open > a > .arrow:before,
+      .page-sidebar .page-sidebar-menu > li.open > a > .arrow.open:before {
+        color: #606C7D; }
+    .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li.active > a, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li.active.open > a,
+    .page-sidebar .page-sidebar-menu > li.active > a,
+    .page-sidebar .page-sidebar-menu > li.active.open > a {
+       /* 改色 */
+     /*  background:  #3598dc; */
+      background: #4b8ee1;
+      border-top-color: transparent;
+      color: #ffffff; }
+      .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li.active > a:hover, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li.active.open > a:hover,
+      .page-sidebar .page-sidebar-menu > li.active > a:hover,
+      .page-sidebar .page-sidebar-menu > li.active.open > a:hover {
+         /* 改色 */
+           background: #3598dc;
+       }
+      .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li.active > a > i, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li.active.open > a > i,
+      .page-sidebar .page-sidebar-menu > li.active > a > i,
+      .page-sidebar .page-sidebar-menu > li.active.open > a > i {
+        color: #ffffff; }
+      .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li.active > a > .arrow:before, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li.active > a > .arrow.open:before, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li.active.open > a > .arrow:before, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li.active.open > a > .arrow.open:before,
+      .page-sidebar .page-sidebar-menu > li.active > a > .arrow:before,
+      .page-sidebar .page-sidebar-menu > li.active > a > .arrow.open:before,
+      .page-sidebar .page-sidebar-menu > li.active.open > a > .arrow:before,
+      .page-sidebar .page-sidebar-menu > li.active.open > a > .arrow.open:before {
+        color: #ffffff; }
+    .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li.active + li > a,
+    .page-sidebar .page-sidebar-menu > li.active + li > a {
+      border-top-color: transparent; }
+    .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li.active.open + li > a,
+    .page-sidebar .page-sidebar-menu > li.active.open + li > a {
+      border-top-color: #3d4957; }
+  /*   .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li:last-child > a,
+    .page-sidebar .page-sidebar-menu > li:last-child > a {
+      border-bottom: 1px solid transparent !important; } */
+    .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu li > a > .arrow:before, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu li > a > .arrow.open:before,
+    .page-sidebar .page-sidebar-menu li > a > .arrow:before,
+    .page-sidebar .page-sidebar-menu li > a > .arrow.open:before {
+      color: #606C7D; }
+    .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu li:hover > a > .arrow:before, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu li:hover > a > .arrow.open:before,
+    .page-sidebar .page-sidebar-menu li:hover > a > .arrow:before,
+    .page-sidebar .page-sidebar-menu li:hover > a > .arrow.open:before {
+      color: #606C7D; }
+    .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu li.active > a > .arrow:before, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu li.active > a > .arrow.open:before,
+    .page-sidebar .page-sidebar-menu li.active > a > .arrow:before,
+    .page-sidebar .page-sidebar-menu li.active > a > .arrow.open:before {
+      color: #ffffff; }
+    .page-sidebar-closed .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu:hover .sub-menu, .page-sidebar-closed
+    .page-sidebar .page-sidebar-menu:hover .sub-menu {
+      background-color: #364150; }
+    .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu .sub-menu > li > a,
+    .page-sidebar .page-sidebar-menu .sub-menu > li > a {
+      /* color: #b4bcc8;  */
+      color: #6d1008;
+      border-bottom: 1px solid #d5d5d5;
+      }
+      .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu .sub-menu > li > a > i,
+      .page-sidebar .page-sidebar-menu .sub-menu > li > a > i {
+        color: #6d1008; }
+      .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu .sub-menu > li > a > i[class^="icon-"],
+      .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu .sub-menu > li > a > i[class*="icon-"],
+      .page-sidebar .page-sidebar-menu .sub-menu > li > a > i[class^="icon-"],
+      .page-sidebar .page-sidebar-menu .sub-menu > li > a > i[class*="icon-"] {
+        color: #6b788b; }
+      .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu .sub-menu > li > a > .arrow:before, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu .sub-menu > li > a > .arrow.open:before,
+      .page-sidebar .page-sidebar-menu .sub-menu > li > a > .arrow:before,
+      .page-sidebar .page-sidebar-menu .sub-menu > li > a > .arrow.open:before {
+        color: #6d1008; }
+    .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu .sub-menu > li:hover > a, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu .sub-menu > li.open > a, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu .sub-menu > li.active > a,
+    .page-sidebar .page-sidebar-menu .sub-menu > li:hover > a,
+    .page-sidebar .page-sidebar-menu .sub-menu > li.open > a,
+    .page-sidebar .page-sidebar-menu .sub-menu > li.active > a {
+       /*改色*/
+        /* background:  #5c7186 !important; */
+   /*   background: #565E67 !important; */
+   /*   color:#E2DEDE;  */
+       background: #d8634f !important; 
+        color:#ffffff;
+      }
+     
+      .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu .sub-menu > li:hover > a > i, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu .sub-menu > li.open > a > i, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu .sub-menu > li.active > a > i,
+      .page-sidebar .page-sidebar-menu .sub-menu > li:hover > a > i,
+      .page-sidebar .page-sidebar-menu .sub-menu > li.open > a > i,
+      .page-sidebar .page-sidebar-menu .sub-menu > li.active > a > i {
+        color: #606C7D;
+        color: #f0dcd1; 
+       }
+      .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu .sub-menu > li:hover > a > .arrow:before, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu .sub-menu > li:hover > a > .arrow.open:before, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu .sub-menu > li.open > a > .arrow:before, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu .sub-menu > li.open > a > .arrow.open:before, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu .sub-menu > li.active > a > .arrow:before, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu .sub-menu > li.active > a > .arrow.open:before,
+      .page-sidebar .page-sidebar-menu .sub-menu > li:hover > a > .arrow:before,
+      .page-sidebar .page-sidebar-menu .sub-menu > li:hover > a > .arrow.open:before,
+      .page-sidebar .page-sidebar-menu .sub-menu > li.open > a > .arrow:before,
+      .page-sidebar .page-sidebar-menu .sub-menu > li.open > a > .arrow.open:before,
+      .page-sidebar .page-sidebar-menu .sub-menu > li.active > a > .arrow:before,
+      .page-sidebar .page-sidebar-menu .sub-menu > li.active > a > .arrow.open:before {
+        color: #f0dcd1; }
+       .page-sidebar .page-sidebar-menu .sub-menu li,
+      .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu .sub-menu li {
+       	background-color: #142146 ;
+      }
+  
+  .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .sidebar-toggler,
+  .page-sidebar .sidebar-toggler {
+    }
+    /*2019.11.05  缩进条*/
+    .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .sidebar-toggler > span,
+    .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .sidebar-toggler > span:before,
+    .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .sidebar-toggler > span:after,
+    .page-sidebar .sidebar-toggler > span,
+    .page-sidebar .sidebar-toggler > span:before,
+    .page-sidebar .sidebar-toggler > span:after {
+      background: #b92911; }
+    .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .sidebar-toggler > span:hover,
+    .page-sidebar .sidebar-toggler > span:hover {
+      background: #b92911; }
+      .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .sidebar-toggler > span:hover:before, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .sidebar-toggler > span:hover:after,
+      .page-sidebar .sidebar-toggler > span:hover:before,
+      .page-sidebar .sidebar-toggler > span:hover:after {
+        background: #a7b5c6; }
+    .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .sidebar-toggler.th-toggle-exit > span,
+    .page-sidebar .sidebar-toggler.th-toggle-exit > span {
+      background-color: transparent !important; }
+     
+     /* 2019.11.05 导航条缩进
+     */
+    .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .sidebar-toggler:hover,
+    .page-sidebar .sidebar-toggler:hover {
+      background: #f6ab53; }
+ 
+/******
+    Page Footer 
+    ******/
+.page-footer .page-footer-inner {
+  color: #98a6ba; }
+
+.page-footer-fixed .page-footer {
+  background-color: #28303b; }
+
+
+
+/****
+ CSS3 Spinner Bar删
+****/
+
+/*
+	2019.11.01
+	皮肤修改
+*/
+/* 头部颜色 改为#ee3f14
+	侧边栏颜色 改为#b92911
+	背景颜色 改为#e5e5e5
+	第132行 border-top 改为 border-bottom:d5d5d5 
+	第224行 二级菜单boder-bottom颜色改为 #6d1008 字体颜色改为#6d1008
+	第138行 一级菜单左边字体图标颜色
+	第164行 字体图标颜色改为#f0dcd1(隐藏侧边栏，hover字体颜色)
+	第243行 ！importent 二级菜单 hover背景颜色
+	第228行 二级菜单字体图标颜色改为 #6d1008
+	第256行 二级菜单字体图标颜色 hover时 #f0dcd1
+	第264行 二级菜单字体图标颜色 hover时 #f0dcd1
+	第238行 二级菜单右边字体图标颜色改为 #6d1008
+*/
+
+.page-sidebar-menu {
+	background: #ee3f14;
+	color: #fff;
+}
+.page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu {
+  background-color: #ee3f14;
+}
+.page-header navbar navbar-fixed-top   {
+	background-color: #ee3f14;
+}
+
+
+.page-header.navbar {
+	background-color: #ee3f14;
+}
+ .page-sidebar-menu {
+ 	background: #e5e5e5;
+ }
+
+ 
+.page-sidebar .page-sidebar-menu .sub-menu > li.open > a, .page-sidebar .page-sidebar-menu .sub-menu > li.active > a {
+	background-color: #e5e5e5;
+	border-left: 0.2rem solid #ffd801;
+}
+
+
+.page-sidebar .page-sidebar-menu .sub-menu > li.open > a, .page-sidebar .page-sidebar-menu .sub-menu > li.active > a {
+    background: #e5e5e5;
+}
+.page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover  {
+	background-color: #b92911;
+}
+
+ .page-sidebar .page-sidebar-menu > li.active.open > a :hover {
+	background-color: #b92911;
+}
+
+/*
+.page-sidebar .page-sidebar-menu .sub-menu li :hover {
+	background-color: #b92911;
+}
+
+div.page-sidebar :hover {
+	background-color: #b92911;
+}*/
+
+
+
+
+.page-sidebar .page-sidebar-menu .sub-menu > li.active > a:hover {
+	background-color: #b92911;
+}
+
+
+
+
+/*一级菜单字体颜色改为#6d1008*/
+.page-sidebar .page-sidebar-menu > li > a {
+	background-color: #e5e5e5;
+	color: #6d1008;
+}
+.page-sidebar .page-sidebar-menu > li:hover > a {
+	background-color: #b92911;
+}
+.page-sidebar .page-sidebar-menu > li.active > a:hover, .page-sidebar .page-sidebar-menu > li.active.open > a:hover {
+	background-color: #b92911;
+}
+.page-sidebar .page-sidebar-menu > li.open > a {
+	background-color: #b92911;
+}
+.page-sidebar .page-sidebar-menu > li.open > a {
+	background-color: #b92911;
+}
+body {
+	background-color:#e5e5e5;
+}
+
+.page-sidebar .page-sidebar-menu .sub-menu > li {
+	background-color: #e5e5e5;
+}
+
+.page-sidebar .page-sidebar-menu > li > a:hover {
+	color: #cde5ff;
+}
+
+
+.page-sidebar .page-sidebar-menu > li > a:hover {
+	border-left: 2px solid #ffd800;
+}
+.page-sidebar .page-sidebar-menu > li.active.open > a > .arrow.open:before {
+	color: #cde5ff;
+}
+
+.page-sidebar .page-sidebar-menu li > a > .arrow:before, 
+.page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu li > a > .arrow:before {
+	content: "\f105";
+	color: #6d1008;
+}
+.page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu li:hover > a > .arrow:before, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu li:hover > a > .arrow.open:before,
+    .page-sidebar .page-sidebar-menu li:hover > a > .arrow:before,
+    .page-sidebar .page-sidebar-menu li:hover > a > .arrow.open:before {
+    color: #cde5ff;
+}
+
+.page-sidebar .page-sidebar-menu .sub-menu > li:hover > a {
+	border-left: 2px solid #ffd800;
+	
+}
+.page-sidebar .page-sidebar-menu > li.active > a, .page-sidebar .page-sidebar-menu > li.active.open > a {
+	background-color: #b92911;
+}
+.page-sidebar .page-sidebar-menu  {
+	
+	font-weight: bold;
+	color: #cde5ff;
+}
+/* 2019.11.05
+   表格皮肤修改*/
+
+
+
+
+/*2019.11.06*/
+/* 页面头部*/
+.page-header.navbar.navbar-fixed-top {
+	background-image:url("image/page-header-bg.png"); 
+	background-size: 100% 100%; 
+	background-repeat: no-repeat;
+}
+.page-header-menu .nav-item {
+	color: #ecf3ff;
+}
+
+.page-header-menu .nav-item.active {
+    border-bottom:0.6rem solid #ff7f58;
+    background-color: #bb2e03;
+}
+
+.page-header-menu .nav-item a.nav-link {
+	color: #ecf3ff;
+}
+
+.page-header-menu .nav-item a.nav-link:hover {
+	color: #fff;
+}
+.page-header-menu .nav-item a.nav-link.active {
+	color: #fff;
+	background-color: #22bcc3;
+}
+
+
+/*分页组件*/
+.pagination > .active > a, .pagination > .active > a:hover, .pagination > .active > a:focus, .pagination > .active > span, .pagination > .active > span:hover, .pagination > .active > span:focus {
+    z-index: 3;
+    color: #fff;
+    background-color: #fd8876;
+    border: 1px solid #fd8876;
+
+}
+.pagination > li > a, .pagination > li > span {
+
+    color: #fd8876;
+    background-color: #fff;
+    border: 1px solid #fd8876;
+}
+.pagination > li > a:hover, .pagination > li > a:focus, .pagination > li > span:hover, .pagination > li > span:focus {
+    z-index: 2;
+    color: #fff;
+    background-color: #eeeeee;
+    border-color: #ddd;
+    border: 1px solid #fd8876;
+}
+.table-striped > tbody > tr:nth-of-type(even) {
+  background-color: #fdf9f8; 
+ }
+.table>thead>tr>th {
+     family-weight: bold;
+  }
+.table > tbody > tr > td {
+	display: table-cell;
+	vertical-align: middle;
+
+}
+
+.table-scrollable>table>thead>tr>th {
+     family-weight: bold;
+  }
+.table-advance thead tr th {
+   background-color: #f4e9e3;
+  font-weight: bold;
+}
+.table-hover > tbody > tr:hover > td{
+	background-color: #fdf2d2;
+}
+ .table.table-light.table-hover > tbody > tr > td:hover,
+ .table.table-light.table-hover > tbody > tr > th:hover,
+ .table.table-light.table-hover > tbody > tr:hover > td {
+    background: #f9fafb ; }
+ .table > thead > tr > th, .table > thead > tr > td, .table > tbody > tr > th, .table > tbody > tr > td, .table > tfoot > tr > th, .table > tfoot > tr > td {
+    display: table-cell;
+    vertical-align: middle;
+}   
+ 
+
+ /*
+    表格图标按钮颜色
+ */ 
+.operation-icon {
+	color: #fd8876;
+}
+.operation-icon:hover {
+    color: #b92911;
+}
+.operation-line {
+	background-color: #fd8876;
+	display: table-cell;
+	vertical-align: middle;
+	
+}
+.top-btn-color {
+
+	color: #fff;
+ 	background-color:#fd8876;
+}
+.top-btn-color:hover , .top-btn-color:focus  {
+     background-color:#fd8876;
+   color: #fff;
+    text-decoration: none;
+}
+
+
+
+/*
+第736行 修改顶部右侧图标，选中背景色
+
+*/
+/*表单集合*/
+.md-checkbox label > .check {
+	border: 1px solid #fb7268;
+	border-top: none;
+	border-left: none;
+}
+.md-checkbox label > .box {
+	border : 1px solid #d4e5ef;
+}
+.md-radio label > .box {
+	border: 1px solid #d4e5ef;	
+}
+ .md-radio label > .check {
+    background: #fb7268;
+ }
+/*
+  输入框选中
+*/
+.form-control:focus {
+  border-color: #fd8876;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(253, 136, 118, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(253, 136, 118, 0.6);
+}
+
+/*多选下拉框*/
+ .select2-container--bootstrap .select2-dropdown{
+  	border-color: #fd8876;
+  }
+  .select2-container--bootstrap.select2-container--focus .select2-selection,
+.select2-container--bootstrap.select2-container--open .select2-selection{
+	border-color: #fd8876;
+  }
+ /*按钮*/
+ .btn-primary:not(.btn-outline) {
+  color: #fff;
+  background-color: #fd8876;
+  border-color: #fd8876; 
+ }
+ .btn-primary:not(.btn-outline):focus, .btn-primary:not(.btn-outline).focus {
+  color: #fff;
+  background-color: #fd8876;
+  border-color: #fd8876; }
+.btn-primary:not(.btn-outline):hover {
+  color: #fff;
+  background-color:  #b92911;
+  border-color: #b92911; }
+.btn-primary:not(.btn-outline):active, .btn-primary:not(.btn-outline).active,
+.open > .btn-primary:not(.btn-outline).dropdown-toggle {
+  color: #fff;
+  background-color: #b92911;
+  border-color: #3a8ee6; }
+ .select2-container--bootstrap .select2-results__option--highlighted[aria-selected]{
+  background-color: #fd8876;
+ }
+ .btn.btn-outline.btn-primary {
+  border-color: #fd8876;
+  color: #fd8876;
+  background: none; }
+.btn.btn-outline.btn-primary:hover, .btn.btn-outline.btn-primary:active, .btn.btn-outline.btn-primary:active:hover, .btn.btn-outline.btn-primary:active:focus, .btn.btn-outline.btn-primary:focus, .btn.btn-outline.btn-primary.active {
+  border-color: #edd8ce;
+  color: #FFFFFF;
+  background-color: #b92911; }
+  
+  /*弹出框*/
+.modal-header  {
+	background-color: #fd8876;
+}
+
+
+/*标题*/
+.top-title{
+  color: #fd8876;
+  border-left: 5px solid #fd8876;
+}
+.bigbox.box-primary {
+    border-top-color: #fff;
+}
+.space-line{
+  background-color:#f5f5f5;
+}
+
+/*背景颜色*/     
+.page-content {
+  background-color: #f5f5f5;
+  }
+  /*日期选择器*/
+.datetimepicker table tr td span.active:active,
+.datetimepicker table tr td span.active:hover:active,
+.datetimepicker table tr td span.active.disabled:active,
+.datetimepicker table tr td span.active.disabled:hover:active,
+.datetimepicker table tr td span.active.active,
+.datetimepicker table tr td span.active:hover.active,
+.datetimepicker table tr td span.active.disabled.active,
+.datetimepicker table tr td span.active.disabled:hover.active {
+  background-color: #fd8876 ;
+  /*改色*/
+}
+.datetimepicker table tr td.active:active,
+.datetimepicker table tr td.active:hover:active,
+.datetimepicker table tr td.active.disabled:active,
+.datetimepicker table tr td.active.disabled:hover:active,
+.datetimepicker table tr td.active.active,
+.datetimepicker table tr td.active:hover.active,
+.datetimepicker table tr td.active.disabled.active,
+.datetimepicker table tr td.active.disabled:hover.active {
+  background-color: #fd8876;
+    color: #000;
+}
+.datetimepicker thead tr:first-child th:hover,
+.datetimepicker tfoot th:hover {
+  background: #b92911;
+}
+.datetimepicker table thead tr:nth-child(1){
+ background-color: #fd8876;
+}
+.datetimepicker table tr td.day:hover {
+  background: #fd8876;
+  cursor: pointer;
+}
+.datetimepicker table tr td span:hover {
+  background: #fd8876;
+}
+
+/*鼠标移入项背景色*/
+.selectbox-tree a:hover{
+	background-color: #fd8876 !important;/*鼠标移入项背景色*/
+	
+}
+.multiSelectZtree li  a:hover{
+	background-color: #fd8876 !important;/*鼠标移入项背景色*/
+}
+
+ /*
+ 字体图标颜色库
+*/
+i .fa {
+	 color: #fd8876; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

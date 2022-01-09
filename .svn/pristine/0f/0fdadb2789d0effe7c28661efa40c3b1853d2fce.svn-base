@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Basic Calendar - jQuery EasyUI Demo</title>
+	<link rel="stylesheet" type="text/css" href="../../themes/default/easyui.css">
+	<link rel="stylesheet" type="text/css" href="../../themes/icon.css">
+	<link rel="stylesheet" type="text/css" href="../demo.css">
+	<script type="text/javascript" src="../../jquery.min.js"></script>
+	<script type="text/javascript" src="../../jquery.easyui.min.js"></script>
+</head>
+<body>
+	<h2>Basic Calendar</h2>
+	<p>Click to select date.</p>
+	<div style="margin:20px 0"></div>
+	<div class="easyui-calendar" style="width:250px;height:250px;" id ="cc" data-options="formatter:formatDay" ></div>
+	<script>
+		
+		function formatDay(date){	
+			var y = date.getYear();
+			var m = date.getMonth()+1;
+			var d = date.getDate();
+			//var strTime = y+"-"+ (m > 10? m ; ("0"+ m)) +"-"+ (d > 10? d ; ("0"+ d));
+			var strTime = y+"-"+m+"-"+d;
+			if (d){
+				/* return '<div><a onclick = "javascript:onClickEvent();">' + d + '</a></div>'; */
+				return '<div><a onclick = "javascript:onClickEvent();">' + d + '</a></div>'; 
+			} 
+		} 
+		/*  $("cc").calendar({
+			current:new Date();
+			onSelect:function(date){
+				alert(date.getFullYear()+":"+(date.getMonth()+1)+":"+date.getDate()); 
+				
+			}
+		});  */
+		function onClickEvent(){
+		
+			window.open("custom.html");
+		}
+	</script>
+	<style scoped="scoped">
+		.md{
+			height:16px;
+			line-height:16px;
+			background-position:2px center;
+			text-align:right;
+			font-weight:bold;
+			padding:0 2px;
+			color:red;
+		}
+	</style>
+</body>
+</html>

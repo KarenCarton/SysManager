@@ -1,0 +1,16 @@
+﻿/*核心样式开始*/
+
+/*
+@import url(bootstrap.css);
+*/
+
+@import url(ezui-core.css);
+/*核心样式结束*/
+/*插件样式开始*/
+@import url(plugin.css);
+/*布局样式开始*/
+@import url(layout.css);
+/*布局样式结束*/
+
+/*插件样式结束*/
+@import url(font.css);

@@ -1,0 +1,640 @@
+@CHARSET "UTF-8";
+/*************************************
+ ******       Author:Joey       ******
+ *************************************/
+
+/*-*-*-*-*-*-*-*-*-*-* 通页元素设置 *-*-*-*-*-*-*-*-*-*-*-*/
+@font-face {
+	font-family: pingfang;
+	src: url('../../font/pingfang.ttf');
+}
+@font-face {
+	font-family: Digital;
+	src: url('../../font/Digital.ttf');
+}
+@font-face {
+	font-family: DIGITAL-Regular;
+	src: url('../../font/DIGITAL-Regular.ttf');
+}
+
+html { /* 自定义滚动条样式  */
+	scrollbar-3dlight-color: #999;
+	scrollbar-darkshadow-color: #999;
+	scrollbar-highlight-color: #fff;
+	scrollbar-shadow-color: #eee;
+	scrollbar-arrow-color: #000;
+	scrollbar-face-color: #ddd;
+	scrollbar-track-color: #eee;
+	scrollbar-base-color: #ddd;
+}
+
+body {
+	font-size: 12px;
+	margin: 0px;
+	background: white;
+}
+
+form {
+	margin: 0px;
+}
+
+td {
+	font-size: 12px;
+	line-height: 24px;
+}
+
+div {
+	font-size: 12px;
+}
+
+/* select输入框通用样式 */
+.normalSelect{
+	border:1px solid #ccc;
+	border-radius: 3px;
+	padding: 3px;
+}
+.normalSelect:focus{
+	border-color:#66afe9;
+	outline:0;
+	-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+	box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+}
+}
+
+/* 渐变body样式 */
+.normalBody{
+	background-image: linear-gradient(to top,#FFF1EB 0%,#E1EEF5 100%);
+}
+
+/* input输入框通用样式 */
+.normalInput{
+	outline-style:none;
+	border:1px solid #CCC;
+	border-radius: 3px;
+	padding:5px;
+	font-family: "微软雅黑";
+}
+.normalInput:focus{
+	border-color:#66afe9;
+	outline:0;
+	-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+	box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+}
+/* 淡蓝色扁平按钮样式*/
+.lightBlueInput{
+	background: #D0EEFF;
+	border: 1px solid #99D3F5 !important;
+	cursor: pointer;
+	color: #1E88C7;
+}
+.lightBlueInput:hover{
+	background:#AADFFD;
+	border-color:#78C3F3;
+	color:#004974;
+}
+
+/* textarea通用样式 */
+.normalTextarea{
+	border:1px solid #ccc;
+	border-radius: 3px;
+	padding:4px;
+}
+.normalTextarea:focus{
+	border-color:#66afe9;
+	outline:0;
+	-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+	box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+}
+
+
+/* a按钮通用样式  */
+.a_Btn_green{
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #FFFFFF;
+    background-color: #61ba9e;
+    border-color: #4fb393;
+    display: inline-block;
+    cursor: pointer;
+    border: 1px solid transparent;
+    white-space: nowrap;
+}
+.a_Btn_green:hover{
+	background-color: #46A285;
+	border-color: #3B8970;
+}
+
+.a_Btn_red{
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #FFFFFF;
+    background-color: #e78b7e;
+    border-color: #DD6459;
+    display: inline-block;
+    cursor: pointer;
+    border: 1px solid transparent;
+    white-space: nowrap;
+}
+.a_Btn_red:hover{
+	background-color: #E17162;
+	border-color: #E48162;
+}
+
+/* 表单input输入框样式 */
+.tableFrameForm_value>input{
+	outline-style:none;
+	border:1px #ccc solid;
+	border-radius: 3px;
+	padding:4px;
+	font-family: "微软雅黑";
+}
+.tableFrameForm_value>input:focus{
+	border-color:#66afe9;
+	outline:0;
+	-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+	box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+}
+
+/* 表单下拉框样式 */
+.tableFrameForm_value>select{
+	border:1px solid #ccc;
+	border-radius: 3px;
+	padding: 3px;
+}
+.tableFrameForm_value>select:focus{
+	border-color:#66afe9;
+	outline:0;
+	-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+	box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+}
+
+/* 表单textarea样式 */
+.tableFrameForm_value>textarea{
+	border:1px solid #ccc;
+	border-radius: 3px;
+	padding:4px;
+}
+.tableFrameForm_value>textarea:focus{
+	border-color:#66afe9;
+	outline:0;
+	-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+	box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+}
+
+/*信息提示*/
+.info {
+	background: url(info.gif);
+	width: 234px;
+	height: 150px;
+	position: absolute;
+	top: 30%;
+	left: 40%;
+	text-align: left;
+	filter: alpha(opacity = 95);
+	color: white;
+	letter-spacing: 1px;
+	display: none;
+}
+
+.info .infoinner {
+	margin-top: 40px;
+	margin-left: 25px;
+	margin-right: 25px;
+	height: 79px;
+}
+
+.info .confirm {
+	background: url(info_yes.gif) no-repeat;
+	border: 0px;
+	width: 50px;
+	height: 18px;
+	cursor: pointer;
+}
+
+.info .cancel {
+	background: url(info_no.gif) no-repeat;
+	border: 0px;
+	width: 50px;
+	height: 18px;
+	cursor: pointer;
+}
+
+.info A {
+	color: #0f0;
+}
+
+.info A:hover {
+	color: red
+}
+/*-*-*-*-*-*-*-*-*-*-* 数据框架设置 *-*-*-*-*-*-*-*-*-*-*-*/
+.contentPage {
+	margin: 1px;
+}
+/*数据表头*/
+.tableFrameT {
+	
+}
+
+.tableFrameTL {
+	background: url(tableFrameTL.gif) left top no-repeat;
+}
+
+.tableFrameTC {
+	background: url(tableFrameTC.gif) top;
+}
+
+.tableFrameTR {
+	height: 30px;
+	line-height: 30px;
+	background: url(tableFrameTR.gif) right top no-repeat;
+	padding-left: 20px;
+	font-family:微软雅黑;
+	font-size: 14px;
+	color: white;
+	font-weight: bolder;
+	text-align: left;
+}
+
+.tableFrameTBtn {
+	text-align: right;
+	margin-top: -25px;
+	padding-right: 20px;
+}
+
+/* 展数据图标 */
+.tableFrameTitlePlus { 
+	background: url(plus.gif) center center no-repeat;
+	display: block;
+	width: 11px;
+	height: 11px;
+	float: left;
+	margin: 10px 3px !important;
+	margin: 0px 3px;
+	cursor: pointer;
+}
+
+ /* 收数据图标 */
+.tableFrameTitleMinus {
+	background: url(minus.gif) center center no-repeat;
+	display: block;
+	width: 11px;
+	height: 11px;
+	float: left;
+	margin: 9px 3px 10px 3px !important;
+	margin: 0px 3px;
+	cursor: pointer;
+}
+
+/*数据表尾*/
+.tableFrameD {
+	height: 25px;
+	font-size: 1px;
+}
+
+.tableFrameD_simple {
+	height: 3px;
+	font-size: 1px;
+	border-top: #ccc 1px solid;
+}
+
+.tableFrameDL {
+	height: 25px;
+}
+
+.tableFrameDC {
+	height: 25px;
+}
+
+.tableFrameDR {
+	padding: 2px;
+	border: #ADC3D7 1px solid;
+	background: #f4f4f4;
+	text-align: center;
+	padding-top: 1px;
+	border-top: 0px;
+}
+
+/* 打印图标 */
+.printer { 
+	background: url(print.gif) no-repeat;
+	display: block;
+	width: 50px;
+	height: 16px;
+	float: left;
+	margin: 0px 3px;
+	cursor: pointer;
+}
+/* 列表数据内容设置 */
+.tableFrameData {
+	
+}
+
+.tableFrameDataFlowDiv {
+	background: url(tablelistbk.gif) left repeat-y #f4f4f4;
+	overflow-y: scroll;
+}
+
+.tableFrameData table {
+	width: 100%;
+	border-collapse: collapse;
+	border: 0px;
+	border-spacing: 0px;
+	border-left: #adc3d7 1px solid;
+	border-right: #adc3d7 1px solid;
+	border-bottom: #adc3d7 1px solid;
+	padd: expression(this. cellpadding = 0);
+}
+
+.tableFrameData table A {
+	color: #3e4a5b;
+	text-decoration: none;
+}
+
+.tableFrameData table A:hover {
+	color: #f60;
+}
+
+.tableFrameData table tr {
+	height: 25px;
+	background: white;
+}
+
+.tableFrameData table td {
+	border-left: #adc3d7 1px solid;
+	border-right: #adc3d7 1px solid;
+	padding: 3px 5px;
+	height: 24px;
+	line-height: 24px;
+}
+
+.tableFrameData thead tr {
+	/* background: url(tableFrameHeadBk.gif); */
+	background-image: linear-gradient(to top,#c2e9fb 0%,#a1c4fd 100%);
+}
+
+.tableFrameData table th {
+	border-left: #adc3d7 1px solid;
+	border-right: #adc3d7 1px solid;
+	border-bottom: #849eb5 1px solid;
+	padding: 3px 5px;
+	font-size: 12px;
+	color: #3E4A5B;
+}
+
+/* Js间色使用的Css */
+tr.alt td {
+	background: #D9EAF2; /*这行将给所有的tr加上背景色*/
+}
+
+tr.over td {
+	background: #FFF18C; /*这个将是鼠标高亮行的背景色  #FF0  FFFA94*/
+}
+
+tr.click td {
+	/* background: url(table_thbk.gif) left center;  *//*这个将是鼠标单击行的背景色*/
+	background: #ACD3FF;
+}
+
+/* 表单数据内容设置 */
+.tableFrameForm {
+	
+}
+
+.tableFrameForm table {
+	width: 100%;
+	background: #f1f1f1;
+	border-collapse: collapse;
+	border: 0px;
+	border-spacing: 0px;
+	border-left: #adc3d7 1px solid;
+	border-right: #adc3d7 1px solid;
+	border-bottom: #adc3d7 1px solid;
+	padd: expression(this. cellpadding = 0);
+}
+
+.tableFrameForm table A {
+	color: #3E4A5B; /* #1C63BD */
+}
+
+.tableFrameForm table A:hover {
+	color: #f60;
+}
+
+.tableFrameForm table tr {
+	height: 28px;
+}
+
+.tableFrameForm table td {
+	border-left: #d6d6d6 1px solid;
+	border-right: #d6d6d6 1px solid;
+	border-top: #d6d6d6 1px solid;
+	line-height: 24px;
+	padding: 0px 3px;
+}
+
+.tableFrameForm thead tr {
+	background: url(tableFrameHeadBk.gif);
+	
+}
+
+.tableFrameForm table th {
+	border-left: #adc3d7 1px solid;
+	border-right: #adc3d7 1px solid;
+	border-bottom: #adc3d7 1px solid;
+	padding: 0px 5px;
+	font-size: 12px;
+}
+
+.link {
+	color: #3E4A5B;
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+.requiredStar {
+	color: red;
+	font-size: 14px;
+	padding-left: 3px;
+}
+
+.updownPageSep {
+	text-align: center;
+	background: #f4f4f4;
+	border-left: #adc3d7 1px solid;
+	border-right: #adc3d7 1px solid;
+	border-bottom: #adc3d7 1px solid;
+}
+/* block形式的分页 */
+.blockPageSep {
+	text-align: center;
+	margin-top: 5px;
+}
+
+.blockPageSep a {
+	text-decoration: none;
+}
+
+.blockPageSep .blockPageSep_normal {
+	background: white;
+	border: #9aafe5 1px solid;
+	color: #2e6ab1;
+	line-height: 20px;
+	margin-left: 3px;
+}
+
+.blockPageSep .blockPageSep_normal:hover {
+	background: #9aafe5;
+	border: #2b66a5 1px solid;
+	color: #000;
+}
+
+.blockPageSep .blockPageSep_selected {
+	background: #2e6ab1;
+	border: #008 1px solid;
+	color: #fff;
+	line-height: 20px;
+	margin-left: 3px;
+}
+
+/* 按钮 */
+.button_n {
+	background: url(button_n.gif);
+	border: 0px;
+	width: 78px;
+	height: 21px;
+	color: #333;
+}
+
+.button_l {
+	background: url(button_l.gif);
+	border: 0px;
+	width: 140px;
+	height: 21px;
+	color: #333;
+}
+
+.button2_n {
+	background: url(button2_n.gif);
+	border: 0px;
+	width: 78px;
+	height: 21px;
+	color: #333;
+}
+
+.button2_l {
+	background: url(button2_l.gif);
+	border: 0px;
+	width: 140px;
+	height: 21px;
+	color: #333;
+}
+
+.buttonh_n {
+	background: url(buttonh_n.gif);
+	border: 0px;
+	width: 78px;
+	height: 21px;
+	color: #333;
+}
+
+.button_b {
+	background: url(button_b.gif);
+	border: 0px;
+	width: 130px;
+	height: 26px;
+	color: #333;
+}
+
+/* 查看表格样式定义 */
+td.tableFrameForm_info {
+	text-align: right;
+}
+
+td.tableFrameForm_value {
+	background: white;
+}
+
+/* 小tab标签样式 */
+.littleTab {
+	background: url(tabbj.gif) repeat-x;
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	height: 28px;
+}
+
+.littleTab_li {
+	float: left;
+	width: 60px;
+	height: 28px;
+	line-height: 28px;
+	cursor: pointer;
+	text-align: center;
+}
+
+.littleTab_li a {
+	float: left;
+	width: 100%;
+	height: 28px;
+	line-height: 28px;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	color: black;
+}
+
+.littleTab_liActive {
+	background: url(tab_l.gif) top left no-repeat;
+	height: 28px;
+	color: #fff;
+	margin-left: 5px;
+}
+
+.littleTab_liActive a {
+	background: url(tab_r.gif) top right no-repeat;
+	height: 28px;
+	color: #fff;
+}
+
+/* buiding */
+.building {
+	background: url(building.jpg) center center no-repeat fixed;
+}
+/* alone */
+.alone {
+	background: url(aloneBk.jpg) center center no-repeat fixed;
+}
+::-webkit-scrollbar-thumb{/*滚动条默认显示样式*/
+	background-color:#eeeeee;
+	height:40px;
+	outline-offset:-2px;
+	outline:2px soild #fff;
+	-webkit-border-radius:4px;
+	border:2px solid #fff;
+	border-radius:10px;
+	-webkit-box-shandow:inset 0 0 6px rgba(0,0,0,3);
+}
+::-webkit-scrollbar-thumb:hover{/*鼠标点击滚动条样式*/
+	background-color:#c0c0c0;
+	height:50px;
+	-webkit-border-radius:10px;
+	
+}
+::-webkit-scrollbar-track{
+	-webkit-box-shandow:inset 0 0 6px rgba(0,0,0,3);
+	border-radius:10px;
+	background-color:#F5F5F5;
+}
+::-webkit-scrollbar{/*滚动条大小*/
+	width:12px;
+	height:8px;
+}
+::-webkit-scrollbar-track-piece{/*滚动条背景样式*/
+	backgroud-color:#fff;
+	-webkit-border-radius:0;
+}
